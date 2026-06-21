@@ -352,7 +352,7 @@ def parse_args():
                    help="prompts per GPU call (individual mode: num_queries × 4 tau = batch tensor size)")
     p.add_argument("--max-new-tokens", type=int, default=None,
                    help="tokens to generate per call; defaults to 300 (individual/single) or 1300 (--tau-together)")
-    p.add_argument("--output-dir",     default="pivot_docs")
+    p.add_argument("--output-dir",     default=str(Path(__file__).parent / "pivot_docs"))
 
     mode_group = p.add_mutually_exclusive_group()
     mode_group.add_argument("--tau-together", action="store_true",

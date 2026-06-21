@@ -21,11 +21,11 @@ data/msmarco/
 
 import gzip
 import shutil
+import tarfile
 import urllib.request
 from pathlib import Path
 
-OUT_DIR = Path("data/msmarco")
-OUT_DIR.mkdir(parents=True, exist_ok=True)
+OUT_DIR = Path(__file__).parent / "data" / "msmarco"
 
 # ── file manifest ─────────────────────────────────────────────────────────────
 FILES = {
@@ -72,7 +72,6 @@ def download_file(dest: Path, url: str, is_compressed: bool, inner_name):
             tmp.rename(dest)
         elif inner_name is not None:
             # tar.gz archive → extract the named member
-            import tarfile
             with tarfile.open(tmp) as tar:
                 member = tar.getmember(inner_name)
                 with tar.extractfile(member) as src, open(dest, "wb") as dst:
@@ -92,21 +91,23 @@ def download_file(dest: Path, url: str, is_compressed: bool, inner_name):
         print(f"    Manual URL: {url}")
 
 
-for fname, (url, compressed, inner) in FILES.items():
-    dest = OUT_DIR / fname
-    if dest.exists():
-        print(f"  Already exists: {dest}")
-    else:
-        download_file(dest, url, compressed, inner)
+if __name__ == "__main__":
+    OUT_DIR.mkdir(parents=True, exist_ok=True)
 
-# ── ir_datasets fallback hint ─────────────────────────────────────────────────
-print()
-try:
-    import ir_datasets  # noqa: F401
-    print("ir_datasets available. Alternative loader:")
-    print("  ds19 = ir_datasets.load('msmarco-passage/trec-dl-2019/judged')")
-    print("  ds20 = ir_datasets.load('msmarco-passage/trec-dl-2020/judged')")
-except ImportError:
-    print("Tip: pip install ir_datasets  for an alternative DL-19/DL-20 loader.")
+    for fname, (url, compressed, inner) in FILES.items():
+        dest = OUT_DIR / fname
+        if dest.exists():
+            print(f"  Already exists: {dest}")
+        else:
+            download_file(dest, url, compressed, inner)
 
-print("\nMS MARCO download complete.")
+    print()
+    try:
+        import ir_datasets  # noqa: F401
+        print("ir_datasets available. Alternative loader:")
+        print("  ds19 = ir_datasets.load('msmarco-passage/trec-dl-2019/judged')")
+        print("  ds20 = ir_datasets.load('msmarco-passage/trec-dl-2020/judged')")
+    except ImportError:
+        print("Tip: pip install ir_datasets  for an alternative DL-19/DL-20 loader.")
+
+    print("\nMS MARCO download complete.")

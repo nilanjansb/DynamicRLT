@@ -682,7 +682,7 @@ def main() -> None:
             queries         = queries,
             run             = run,
             corpus          = corpus,
-            generated_pivots= generated_pivots,
+            generated_pivots = generated_pivots,
             sampling_params = sampling_params,
             pivot_tau       = args.pivot_tau,
             window_size     = W,

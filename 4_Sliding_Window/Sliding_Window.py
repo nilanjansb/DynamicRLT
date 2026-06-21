@@ -32,13 +32,13 @@ import sys
 import json
 import time
 import random
-
-os.environ.setdefault("VLLM_USE_V1", "0")
 import datetime
 import argparse
 import logging
 from pathlib import Path
 from typing import Dict, List, Optional, Tuple
+
+os.environ.setdefault("VLLM_USE_V1", "0")
 
 # ──────────────────────────────────────────────────────────────────────────────
 # Logging
@@ -56,7 +56,7 @@ log = logging.getLogger(__name__)
 # Paths & global constants
 # ──────────────────────────────────────────────────────────────────────────────
 
-BASE          = Path("/DATA/cs26int00020/Cultural_ablation")
+BASE          = Path(os.environ.get("BASE_DIR", Path(__file__).resolve().parents[1]))
 DATA_DIR      = BASE / "1_Download_dataset/data"
 RETRIEVER_DIR = BASE / "3_Initial_Retriever"
 OUT_DIR       = BASE / "4_Sliding_Window/runs"

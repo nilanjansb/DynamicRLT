@@ -66,7 +66,7 @@ log = logging.getLogger(__name__)
 # Paths & global constants
 # ─────────────────────────────────────────────────────────────────────────────
 
-BASE          = Path("/DATA/cs26int00020/Cultural_ablation")
+BASE          = Path(os.environ.get("BASE_DIR", Path(__file__).resolve().parents[1]))
 DATA_DIR      = BASE / "1_Download_dataset/data"
 RETRIEVER_DIR = BASE / "3_Initial_Retriever"
 OUT_DIR       = BASE / "5_TDPart/runs"
@@ -84,7 +84,7 @@ MAX_DOC_WORDS = 100   # per-document word budget inside the prompt
 
 
 # ─────────────────────────────────────────────────────────────────────────────
-# Dataset registry  (identical to Sliding_Window.py)
+# Dataset registry
 # ─────────────────────────────────────────────────────────────────────────────
 
 DATASETS: Dict[str, dict] = {
@@ -148,7 +148,7 @@ DATASETS: Dict[str, dict] = {
 
 
 # ─────────────────────────────────────────────────────────────────────────────
-# Data loading helpers  (identical to Sliding_Window.py)
+# Data loading helpers
 # ─────────────────────────────────────────────────────────────────────────────
 
 def load_qrel_qids(qrels_file: Path, fmt: str) -> set:
@@ -251,7 +251,7 @@ def load_corpus_selective(
 
 
 # ─────────────────────────────────────────────────────────────────────────────
-# Prompt construction  (identical to Sliding_Window.py)
+# Prompt construction
 # ─────────────────────────────────────────────────────────────────────────────
 
 SYSTEM_MSG = (
@@ -317,7 +317,7 @@ def build_chat_messages(
 
 
 # ─────────────────────────────────────────────────────────────────────────────
-# Permutation parsing  (identical to Sliding_Window.py)
+# Permutation parsing
 # ─────────────────────────────────────────────────────────────────────────────
 
 _RANK_RE  = re.compile(r"\[(\d+)\]")
@@ -435,13 +435,13 @@ def tdpart_rerank(
     run          : Dict[str, List[str]],
     corpus       : Dict[str, str],
     sampling_params,
-    window_size  : int           = WINDOW_SIZE,
-    pivot_k      : int           = PIVOT_K,
-    budget       : Optional[int] = BUDGET,
-    top_k        : int           = TOP_K,
-    stride           : int           = STRIDE,
-    max_model_len    : int           = 4096,
-    ckpt_file        : Optional[Path] = None,
+    window_size   : int           = WINDOW_SIZE,
+    pivot_k       : int           = PIVOT_K,
+    budget        : Optional[int] = BUDGET,
+    top_k         : int           = TOP_K,
+    stride        : int           = STRIDE,
+    max_model_len : int           = 4096,
+    ckpt_file     : Optional[Path] = None,
 ) -> Tuple[Dict[str, List[str]], dict]:
     """
     TDPart (Top-Down Partitioning) reranking — Algorithm 1.
@@ -862,7 +862,7 @@ def tdpart_rerank(
 
 
 # ─────────────────────────────────────────────────────────────────────────────
-# TREC output  (identical to Sliding_Window.py)
+# TREC output
 # ─────────────────────────────────────────────────────────────────────────────
 
 def write_trec_run(

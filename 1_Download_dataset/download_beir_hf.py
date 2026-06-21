@@ -1,7 +1,5 @@
 """
-Download BEIR datasets:
-  - corpus + queries from HuggingFace (fast CDN)
-  - qrels from ir_datasets (tiny files)
+Download BEIR datasets from HuggingFace (corpus, queries, qrels).
 
 Output layout: data/beir/<name>/{corpus.jsonl, queries.jsonl, qrels/test.tsv}
 """
@@ -18,7 +16,7 @@ DATASETS = [
     ("fever",            "BeIR/fever",             "BeIR/fever-qrels"),
 ]
 
-OUT_DIR = Path("data/beir")
+OUT_DIR = Path(__file__).parent / "data" / "beir"
 OUT_DIR.mkdir(parents=True, exist_ok=True)
 
 
@@ -81,8 +79,8 @@ def download(name, hf_id, qrels_hf_id):
 
 if __name__ == "__main__":
     print("Downloading BEIR datasets ...\n")
-    for name, hf_id, ir_id in DATASETS:
-        download(name, hf_id, ir_id)
+    for name, hf_id, qrels_id in DATASETS:
+        download(name, hf_id, qrels_id)
         print()
     print("BEIR download complete.")
     print(f"Data saved under: {OUT_DIR.resolve()}")

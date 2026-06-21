@@ -2,7 +2,6 @@
 """Compute nDCG@10 for BM25 top-100 runs using pytrec_eval."""
 
 import os
-import sys
 from pathlib import Path
 import pytrec_eval
 
@@ -51,7 +50,7 @@ def load_run(run_file):
             parts = line.strip().split()
             if len(parts) < 6:
                 continue
-            qid, _, docid, rank, score, tag = parts[:6]
+            qid, _, docid, _, score, *_ = parts[:6]
             if qid not in run:
                 run[qid] = {}
             run[qid][docid] = float(score)

@@ -74,7 +74,7 @@ log = logging.getLogger(__name__)
 # Paths & constants
 # ─────────────────────────────────────────────────────────────────────────────
 
-BASE          = Path("/DATA/cs26int00020/Cultural_ablation")
+BASE          = Path(os.environ.get("BASE_DIR", Path(__file__).resolve().parents[1]))
 TDPART_PATH   = BASE / "5_TDPart/tdpart.py"
 PIVOT_DIR     = BASE / "2_Pivot_generation/pivot_docs"
 RETRIEVER_DIR = BASE / "3_Initial_Retriever"

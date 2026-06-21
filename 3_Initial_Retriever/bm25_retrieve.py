@@ -5,10 +5,8 @@ Outputs TREC run files for top-100 and top-1000 documents.
 
 import os
 import json
-import sys
 from pathlib import Path
 
-JAVA_HOME_NEEDED = True
 BASE = Path(os.environ.get("BASE_DIR", Path(__file__).resolve().parents[1]))
 INDEX_DIR = BASE / "BM25_indexes"
 DATA_DIR = BASE / "1_Download_dataset/data"
@@ -121,6 +119,7 @@ def retrieve(dataset_name, cfg, top_k):
     queries = load_queries(cfg["queries"], cfg["query_format"], valid_qids)
     print(f"  {len(queries)} queries with qrels")
 
+    OUT_DIR.mkdir(parents=True, exist_ok=True)
     out_file = OUT_DIR / f"{dataset_name}.top{top_k}.txt"
     written = 0
     with open(out_file, "w") as f:
@@ -132,7 +131,6 @@ def retrieve(dataset_name, cfg, top_k):
                 written += 1
 
     print(f"  Wrote {written} lines -> {out_file.name}")
-    return out_file, queries, valid_qids
 
 
 def main():

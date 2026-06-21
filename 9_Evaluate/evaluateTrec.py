@@ -176,6 +176,7 @@ def evaluate(
     run_file: Path,
     qrels: Dict[str, Dict[str, int]],
     metrics: List[str],
+    relevance_level: int = 1,
 ) -> Dict[str, float]:
     run = load_run(run_file)
     # Restrict to queries present in qrels
@@ -184,7 +185,7 @@ def evaluate(
     if not run:
         return {}
 
-    ev      = pytrec_eval.RelevanceEvaluator(qrels, set(metrics))
+    ev      = pytrec_eval.RelevanceEvaluator(qrels, set(metrics), relevance_level=relevance_level)
     results = ev.evaluate(run)
 
     n = len(results)
@@ -306,8 +307,9 @@ def main() -> None:
         print(f"        Valid: {ALL_METRICS}", file=sys.stderr)
         sys.exit(1)
 
-    all_scores: List[Dict[str, float]] = []
-    json_out:   List[dict]             = []
+    all_scores:      List[Dict[str, float]] = []
+    valid_run_files: List[Path]             = []
+    json_out:        List[dict]             = []
 
     for run_file in args.runs:
         if not run_file.exists():
@@ -339,13 +341,14 @@ def main() -> None:
             continue
 
         qrels  = load_qrels(qrels_path, qrels_fmt)
-        scores = evaluate(run_file, qrels, metrics)
+        scores = evaluate(run_file, qrels, metrics, relevance_level=args.relevance_level)
 
         if not scores:
             print(f"[WARN] No overlapping queries for '{run_file.name}' — skipping.")
             continue
 
         all_scores.append(scores)
+        valid_run_files.append(run_file)
 
         if args.per_query:
             run     = load_run(run_file)
@@ -380,11 +383,10 @@ def main() -> None:
         print("[ERROR] No results to display.", file=sys.stderr)
         sys.exit(1)
 
-    if len(args.runs) == 1:
-        print_single(args.runs[0], all_scores[0], metrics)
+    if len(valid_run_files) == 1:
+        print_single(valid_run_files[0], all_scores[0], metrics)
     else:
-        valid_files  = [f for f, s in zip(args.runs, all_scores) if s]
-        print_table(valid_files, all_scores, metrics)
+        print_table(valid_run_files, all_scores, metrics)
 
     if args.json and json_out:
         args.json.parent.mkdir(parents=True, exist_ok=True)
