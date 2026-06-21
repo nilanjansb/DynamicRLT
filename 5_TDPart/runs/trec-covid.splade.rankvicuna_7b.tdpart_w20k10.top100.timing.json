@@ -1,0 +1,59 @@
+{
+  "wall_clock_start": "2026-06-21T07:55:20",
+  "wall_clock_end": "2026-06-21T07:59:29",
+  "total_rerank_s": 248.4608,
+  "avg_s_per_query": 4.9692,
+  "avg_ms_per_query": 4969.22,
+  "total_vllm_infer_s": 246.6889,
+  "total_prompt_build_s": 1.7368,
+  "pct_time_in_vllm": 99.29,
+  "n_queries": 50,
+  "n_phases": 3,
+  "phases": [
+    {
+      "phase": 1,
+      "label": "first_window",
+      "n_prompts": 50,
+      "prompt_build_s": 0.2981,
+      "vllm_infer_s": 40.4923,
+      "permute_parse_s": 0.0005,
+      "phase_total_s": 40.7909
+    },
+    {
+      "phase": 2,
+      "label": "parallel_comparison",
+      "n_batches_total": 250,
+      "avg_batches_query": 5.0,
+      "prompt_build_s": 1.1775,
+      "vllm_infer_s": 170.3862,
+      "permute_parse_s": 0.0021,
+      "phase_total_s": 171.5658
+    },
+    {
+      "phase": 3,
+      "label": "final_sort",
+      "n_vllm_calls": 1,
+      "max_ai_size": 20,
+      "prompt_build_s": 0.2612,
+      "vllm_infer_s": 35.8104,
+      "permute_parse_s": 0.0004,
+      "phase_total_s": 36.0721
+    }
+  ],
+  "dataset": "trec-covid",
+  "retriever": "splade",
+  "model": "castorini/rank_vicuna_7b_v1",
+  "corpus_load_s": 0.492,
+  "model_load_s": 21.6393,
+  "config": {
+    "window_size": 20,
+    "pivot_k": 10,
+    "budget": 20,
+    "top_k": 100,
+    "stride": 10,
+    "tensor_parallel_size": 1,
+    "gpu_memory_util": 0.9,
+    "max_model_len": 4096,
+    "max_num_seqs": 512
+  }
+}

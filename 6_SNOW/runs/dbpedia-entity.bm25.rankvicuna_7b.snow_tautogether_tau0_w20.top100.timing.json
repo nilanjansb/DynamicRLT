@@ -1,0 +1,62 @@
+{
+  "wall_clock_start": "2026-06-21T14:01:25",
+  "wall_clock_end": "2026-06-21T14:41:50",
+  "total_rerank_s": 2425.1339,
+  "avg_s_per_query": 6.0628,
+  "avg_ms_per_query": 6062.83,
+  "total_vllm_infer_s": 2413.3766,
+  "total_prompt_build_s": 11.6638,
+  "pct_time_in_vllm": 99.52,
+  "n_queries": 400,
+  "n_groups": 5,
+  "docs_per_group": 19,
+  "n_processed": 95,
+  "n_phases": 2,
+  "pivot_tau": 0,
+  "pivot_source": "Pivot_generation",
+  "phases": [
+    {
+      "phase": 1,
+      "label": "group_comparison",
+      "n_groups": 5,
+      "docs_per_group": 19,
+      "n_prompts": 2000,
+      "prompt_build_s": 4.3157,
+      "vllm_infer_s": 939.6063,
+      "permute_parse_s": 0.0198,
+      "phase_total_s": 943.9429,
+      "avg_ai_size": 80.28,
+      "max_ai_size": 95
+    },
+    {
+      "phase": 2,
+      "label": "final_sort",
+      "n_vllm_calls": 9,
+      "max_ai_size": 95,
+      "prompt_build_s": 7.3481,
+      "vllm_infer_s": 1473.7703,
+      "permute_parse_s": 0.0389,
+      "phase_total_s": 1481.1585
+    }
+  ],
+  "dataset": "dbpedia-entity",
+  "retriever": "bm25",
+  "model": "castorini/rank_vicuna_7b_v1",
+  "corpus_load_s": 14.1911,
+  "model_load_s": 21.488,
+  "config": {
+    "window_size": 20,
+    "docs_per_group": 19,
+    "n_groups": 5,
+    "n_processed": 95,
+    "pivot_type": "tautogether",
+    "pivot_tau": 0,
+    "budget": null,
+    "top_k": 100,
+    "stride": 10,
+    "tensor_parallel_size": 1,
+    "gpu_memory_util": 0.9,
+    "max_model_len": 4096,
+    "max_num_seqs": 512
+  }
+}

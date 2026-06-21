@@ -1,0 +1,112 @@
+"""
+Download MS MARCO Passage V1 (~8.8M passages) and
+TREC DL-19 / DL-20 topics + qrels.
+
+Sources
+-------
+  Corpus          : official MS MARCO TSV (msmarco.z22.web.core.windows.net)
+  DL-19/20 topics : same host (gzipped TSV)
+  DL-19/20 qrels  : TREC NIST (trec.nist.gov)
+  Fallback        : ir_datasets  ('msmarco-passage/trec-dl-2019/judged' etc.)
+
+Outputs
+-------
+data/msmarco/
+    collection.tsv          – passage corpus    (pid TAB text)
+    queries.dl19.tsv        – DL-19 topics      (qid TAB text)
+    queries.dl20.tsv        – DL-20 topics      (qid TAB text)
+    qrels.dl19-passage.txt  – DL-19 qrels       (TREC format)
+    qrels.dl20-passage.txt  – DL-20 qrels       (TREC format)
+"""
+
+import gzip
+import shutil
+import urllib.request
+from pathlib import Path
+
+OUT_DIR = Path("data/msmarco")
+OUT_DIR.mkdir(parents=True, exist_ok=True)
+
+# ── file manifest ─────────────────────────────────────────────────────────────
+FILES = {
+    # MS MARCO Passage V1 corpus (TSV, gzipped ~3 GB)
+    "collection.tsv": (
+        "https://msmarco.z22.web.core.windows.net/msmarcoranking/collection.tar.gz",
+        True,
+        "collection.tsv",   # name inside the archive (tar, not gz-only)
+    ),
+    # DL-19 topics (43 judged queries)
+    "queries.dl19.tsv": (
+        "https://msmarco.z22.web.core.windows.net/msmarcoranking/msmarco-test2019-queries.tsv.gz",
+        True,
+        None,               # None → plain gzip, no tar
+    ),
+    # DL-20 topics (54 judged queries)
+    "queries.dl20.tsv": (
+        "https://msmarco.z22.web.core.windows.net/msmarcoranking/msmarco-test2020-queries.tsv.gz",
+        True,
+        None,
+    ),
+    # DL-19 qrels (TREC NIST)
+    "qrels.dl19-passage.txt": (
+        "https://trec.nist.gov/data/deep/2019qrels-pass.txt",
+        False,
+        None,
+    ),
+    # DL-20 qrels (TREC NIST)
+    "qrels.dl20-passage.txt": (
+        "https://trec.nist.gov/data/deep/2020qrels-pass.txt",
+        False,
+        None,
+    ),
+}
+
+
+def download_file(dest: Path, url: str, is_compressed: bool, inner_name):
+    print(f"  Downloading {dest.name} …")
+    tmp = dest.with_suffix(".tmp")
+    try:
+        urllib.request.urlretrieve(url, tmp)
+
+        if not is_compressed:
+            tmp.rename(dest)
+        elif inner_name is not None:
+            # tar.gz archive → extract the named member
+            import tarfile
+            with tarfile.open(tmp) as tar:
+                member = tar.getmember(inner_name)
+                with tar.extractfile(member) as src, open(dest, "wb") as dst:
+                    shutil.copyfileobj(src, dst)
+            tmp.unlink()
+        else:
+            # plain .gz file
+            with gzip.open(tmp, "rb") as gz_in, open(dest, "wb") as f_out:
+                shutil.copyfileobj(gz_in, f_out)
+            tmp.unlink()
+
+        print(f"    → {dest}")
+    except Exception as e:
+        if tmp.exists():
+            tmp.unlink()
+        print(f"    WARNING: {e}")
+        print(f"    Manual URL: {url}")
+
+
+for fname, (url, compressed, inner) in FILES.items():
+    dest = OUT_DIR / fname
+    if dest.exists():
+        print(f"  Already exists: {dest}")
+    else:
+        download_file(dest, url, compressed, inner)
+
+# ── ir_datasets fallback hint ─────────────────────────────────────────────────
+print()
+try:
+    import ir_datasets  # noqa: F401
+    print("ir_datasets available. Alternative loader:")
+    print("  ds19 = ir_datasets.load('msmarco-passage/trec-dl-2019/judged')")
+    print("  ds20 = ir_datasets.load('msmarco-passage/trec-dl-2020/judged')")
+except ImportError:
+    print("Tip: pip install ir_datasets  for an alternative DL-19/DL-20 loader.")
+
+print("\nMS MARCO download complete.")

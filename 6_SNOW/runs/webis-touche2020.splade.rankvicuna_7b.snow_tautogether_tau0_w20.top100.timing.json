@@ -1,0 +1,62 @@
+{
+  "wall_clock_start": "2026-06-21T13:57:17",
+  "wall_clock_end": "2026-06-21T14:03:22",
+  "total_rerank_s": 364.6611,
+  "avg_s_per_query": 7.4421,
+  "avg_ms_per_query": 7442.06,
+  "total_vllm_infer_s": 362.6435,
+  "total_prompt_build_s": 1.9877,
+  "pct_time_in_vllm": 99.45,
+  "n_queries": 49,
+  "n_groups": 5,
+  "docs_per_group": 19,
+  "n_processed": 95,
+  "n_phases": 2,
+  "pivot_tau": 0,
+  "pivot_source": "Pivot_generation",
+  "phases": [
+    {
+      "phase": 1,
+      "label": "group_comparison",
+      "n_groups": 5,
+      "docs_per_group": 19,
+      "n_prompts": 245,
+      "prompt_build_s": 0.6496,
+      "vllm_infer_s": 120.8877,
+      "permute_parse_s": 0.0022,
+      "phase_total_s": 121.5396,
+      "avg_ai_size": 93.43,
+      "max_ai_size": 95
+    },
+    {
+      "phase": 2,
+      "label": "final_sort",
+      "n_vllm_calls": 9,
+      "max_ai_size": 95,
+      "prompt_build_s": 1.3381,
+      "vllm_infer_s": 241.7558,
+      "permute_parse_s": 0.0056,
+      "phase_total_s": 243.1005
+    }
+  ],
+  "dataset": "webis-touche2020",
+  "retriever": "splade",
+  "model": "castorini/rank_vicuna_7b_v1",
+  "corpus_load_s": 1.4224,
+  "model_load_s": 22.0162,
+  "config": {
+    "window_size": 20,
+    "docs_per_group": 19,
+    "n_groups": 5,
+    "n_processed": 95,
+    "pivot_type": "tautogether",
+    "pivot_tau": 0,
+    "budget": null,
+    "top_k": 100,
+    "stride": 10,
+    "tensor_parallel_size": 1,
+    "gpu_memory_util": 0.9,
+    "max_model_len": 4096,
+    "max_num_seqs": 512
+  }
+}

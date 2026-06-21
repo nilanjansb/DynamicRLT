@@ -1,0 +1,59 @@
+{
+  "wall_clock_start": "2026-06-21T08:02:16",
+  "wall_clock_end": "2026-06-21T08:22:33",
+  "total_rerank_s": 1216.4637,
+  "avg_s_per_query": 3.0412,
+  "avg_ms_per_query": 3041.16,
+  "total_vllm_infer_s": 1210.9443,
+  "total_prompt_build_s": 5.4415,
+  "pct_time_in_vllm": 99.55,
+  "n_queries": 400,
+  "n_phases": 3,
+  "phases": [
+    {
+      "phase": 1,
+      "label": "first_window",
+      "n_prompts": 400,
+      "prompt_build_s": 0.9046,
+      "vllm_infer_s": 197.8946,
+      "permute_parse_s": 0.0042,
+      "phase_total_s": 198.8034
+    },
+    {
+      "phase": 2,
+      "label": "parallel_comparison",
+      "n_batches_total": 2000,
+      "avg_batches_query": 5.0,
+      "prompt_build_s": 3.7145,
+      "vllm_infer_s": 843.8297,
+      "permute_parse_s": 0.0194,
+      "phase_total_s": 847.5637
+    },
+    {
+      "phase": 3,
+      "label": "final_sort",
+      "n_vllm_calls": 1,
+      "max_ai_size": 20,
+      "prompt_build_s": 0.8224,
+      "vllm_infer_s": 169.22,
+      "permute_parse_s": 0.004,
+      "phase_total_s": 170.0465
+    }
+  ],
+  "dataset": "dbpedia-entity",
+  "retriever": "splade",
+  "model": "castorini/rank_vicuna_7b_v1",
+  "corpus_load_s": 8.76,
+  "model_load_s": 21.6393,
+  "config": {
+    "window_size": 20,
+    "pivot_k": 10,
+    "budget": 20,
+    "top_k": 100,
+    "stride": 10,
+    "tensor_parallel_size": 1,
+    "gpu_memory_util": 0.9,
+    "max_model_len": 4096,
+    "max_num_seqs": 512
+  }
+}

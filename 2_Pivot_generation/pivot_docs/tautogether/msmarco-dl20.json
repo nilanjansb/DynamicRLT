@@ -1,0 +1,553 @@
+{
+  "dataset": "msmarco-dl20",
+  "model": "meta-llama/Llama-3.1-8B-Instruct",
+  "total_queries": 54,
+  "tau_levels": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "queries": [
+    {
+      "qid": "1030303",
+      "query": "who is aziz hashim",
+      "pivots": {
+        "0": "The sun is shining brightly in the clear blue sky today. The birds are singing their sweet melodies, and the gentle breeze carries the sweet scent of blooming flowers. It's a beautiful day to go for a walk in the park.",
+        "1": "Aziz Hashim is a name that may be associated with various individuals. However, without more context, it's difficult to pinpoint who exactly is being referred to. There are several people with this name, and without further information, it's hard to determine which one is being asked about.",
+        "2": "Aziz Hashim is a name that appears in various contexts, but the information available is limited. He is a Palestinian politician who served as the Prime Minister of the Gaza Strip from 1994 to 1996. However, there may be other individuals with the same name who are not as well-known or prominent. Further research would be needed to determine which Aziz Hashim is being referred to.",
+        "3": "Aziz Hashim is a Palestinian politician who served as the Prime Minister of the Gaza Strip from 1994 to 1996. He was a member of the Palestinian Legislative Council and played a key role in the Palestinian Authority's government during that time. Hashim was born in 1948 and passed away in 2003. He was known for his efforts to promote economic development and stability in the Gaza Strip during his tenure as Prime Minister."
+      }
+    },
+    {
+      "qid": "1037496",
+      "query": "who is rep scalise?",
+      "pivots": {
+        "0": "The sun is shining brightly in the clear blue sky today. The birds are singing their sweet melodies, and the gentle breeze carries the sweet scent of blooming flowers. It's a beautiful day to be outside and enjoy nature.",
+        "1": "The Republican Party is one of the two major political parties in the United States. It was founded in 1854 by anti-slavery activists, modernizers, and former Whigs. The party's platform has evolved over time, but it generally advocates for conservative policies and limited government intervention in the economy. The party's symbol is the elephant, and its members are often referred to as Republicans.",
+        "2": "The Speaker of the House of Representatives is a high-ranking official in the United States Congress. The Speaker is elected by the members of the House and serves as the presiding officer of the chamber. The Speaker is responsible for setting the legislative agenda and presiding over debates. The current Speaker of the House is a member of the Republican Party, but the query does not provide enough information to determine who specifically.",
+        "3": "Kevin McCarthy is the current House Minority Leader of the United States House of Representatives. He has been a member of the Republican Party since 1986 and has served in various leadership positions within the party. McCarthy has been a strong advocate for conservative policies and has been a key figure in shaping the party's legislative agenda."
+      }
+    },
+    {
+      "qid": "1043135",
+      "query": "who killed nicholas ii of russia",
+      "pivots": {
+        "0": "The Eiffel Tower is a famous iron lattice tower located in Paris, France. It was built for the 1889 World's Fair and was the tallest man-made structure in the world at the time. The tower stands at a height of 324 meters and has become a symbol of French culture and engineering.",
+        "1": "The Romanov dynasty was a royal house that ruled Russia from 1613 to 1917. The family produced several notable leaders, including Peter the Great and Catherine the Great. However, the Romanovs were eventually overthrown during the Russian Revolution, and the last Romanov ruler, Nicholas II, was executed in 1918. The Romanovs were known for their lavish lifestyle and their role in shaping Russian history.",
+        "2": "Nicholas II was the last Emperor of Russia, ruling from 1894 until his abdication in 1917. He was a member of the Romanov dynasty and was known for his conservative policies and his support of the Russian Orthodox Church. Nicholas II was married to Alexandra, and they had four daughters and one son, Alexei. The family's lives were marked by tragedy, including the death of their son Alexei from hemophilia. The Russian Revolution led to the overthrow of Nicholas II, and he was eventually executed along with his family in 1918.",
+        "3": "Nicholas II, also known as Nicholas Alexandrovich Romanov, was the last Emperor of Russia, ruling from 1894 until his abdication in 1917. He was born on May 6, 1868, and was the eldest son of Alexander III and Maria Feodorovna. Nicholas II was married to Alexandra, a German princess, and they had four daughters and one son, Alexei, who suffered from hemophilia. The family's lives were marked by tragedy, including the death of several family members and the rise of the Russian Revolution. In 1917, Nicholas II was forced to abdicate, and he and his family were placed under house arrest. They were eventually executed by the Bolsheviks in Yekaterinburg on July 17, 1918. The execution of Nicholas II and his family marked the end of the Romanov dynasty and the Russian monarchy."
+      }
+    },
+    {
+      "qid": "1051399",
+      "query": "who sings monk theme song",
+      "pivots": {
+        "0": "The city of Paris is known for its beautiful architecture and rich history. The Eiffel Tower is a famous landmark in the city. Visitors can enjoy the city's art museums and romantic atmosphere.",
+        "1": "The TV show \"Monk\" is a popular crime drama that aired from 2002 to 2009. The main character, Adrian Monk, is a detective with obsessive-compulsive disorder. He solves crimes in San Francisco with the help of his assistant, Sharona. The show features a unique blend of humor and mystery.",
+        "2": "The theme song of the TV show \"Monk\" is composed by Randy Newman. The song is catchy and memorable, and it sets the tone for the show's quirky humor and mystery. However, the song is not as well-known as some other TV theme songs. The show's main character, Adrian Monk, is a detective with a unique set of skills and habits that help him solve crimes.",
+        "3": "The theme song of the TV show \"Monk\" is titled \"Monk's Theme\" and was composed by Randy Newman. The song is a catchy and memorable tune that has become synonymous with the show. It features a simple but effective melody that captures the show's quirky humor and mystery. The song has been widely praised for its ability to set the tone for the show and has become a fan favorite."
+      }
+    },
+    {
+      "qid": "1064670",
+      "query": "why do hunters pattern their shotguns?",
+      "pivots": {
+        "0": "The sun was setting over the vast expanse of the ocean as the sailboat glided smoothly across the calm waters. The salty sea air filled the lungs of the passengers as they gazed out at the endless blue horizon. The sound of the waves gently lapping against the hull created a soothing melody that seemed to lull the world into a peaceful slumber.",
+        "1": "The art of hunting has been a long-standing tradition in many cultures around the world. Hunters have used various techniques and tools to track and catch their prey over the centuries. In modern times, the use of shotguns has become a popular choice for many hunters due to their versatility and effectiveness. However, the specific reasons behind the use of shotguns in hunting are not explicitly stated in this passage.",
+        "2": "The use of shotguns in hunting is a common practice among many hunters. The primary reason for this is the shotgun's ability to fire a spread of pellets, increasing the chances of hitting the target. This is particularly useful when hunting small game such as birds or rabbits, as it allows the hunter to take down the animal quickly and humanely. However, the passage does not delve into the specifics of why hunters pattern their shotguns, only mentioning the general benefits of using this type of firearm.",
+        "3": "Hunters pattern their shotguns to ensure that the spread of pellets is evenly distributed and covers a wide enough area to increase the chances of hitting the target. This is typically done by firing the shotgun at a target, such as a clay target or a paper plate, and observing the pattern of the pellets. By adjusting the choke and other settings on the shotgun, the hunter can control the spread of the pellets and achieve a more consistent and effective pattern. This is crucial in hunting, as it allows the hunter to accurately and humanely take down their prey, minimizing the risk of wounding the animal and ensuring a clean kill."
+      }
+    },
+    {
+      "qid": "1071750",
+      "query": "why is pete rose banned from hall of fame",
+      "pivots": {
+        "0": "The sun was shining brightly in the sky as I walked to the park to play some basketball. I love the feeling of the warm sun on my skin and the smell of the fresh cut grass. The sound of children laughing and playing filled the air as I arrived at the court. I started to shoot some hoops and felt my muscles relax as I focused on the game.",
+        "1": "Pete Rose is a former professional baseball player who played for the Cincinnati Reds and the Montreal Expos. He is known for his impressive batting average and his role in the Reds' World Series championship in 1975. Rose was also a key player in the infamous \"Big Red Machine\" team of the 1970s. However, his career was marred by controversy, including allegations of betting on baseball games.",
+        "2": "Pete Rose's career was marked by both impressive achievements and controversy. He holds the record for most career hits in Major League Baseball history, with 4,256 hits. Rose was also a key player in the Reds' World Series championship in 1975 and was a member of the \"Big Red Machine\" team of the 1970s. However, in 1985, Rose was banned from baseball for life due to allegations of betting on games. The ban was imposed by Commissioner A. Bartlett Giamatti, who cited Rule 21 of the Official Rules of Major League Baseball, which prohibits betting on baseball games.",
+        "3": "Pete Rose, also known as \"Charlie Hustle,\" was a professional baseball player who played for the Cincinnati Reds and the Montreal Expos from 1963 to 1986. He is widely regarded as one of the greatest hitters in baseball history, holding the record for most career hits with 4,256. Rose was a key player in the Reds' World Series championship in 1975 and was a member of the \"Big Red Machine\" team of the 1970s. However, in 1985, Rose was banned from baseball for life by Commissioner A. Bartlett Giamatti due to allegations of betting on baseball games, specifically on games in which he was playing. The ban was imposed under Rule 21 of the Official Rules of Major League Baseball, which prohibits betting on baseball games. The ban has been upheld by subsequent commissioners, including Bud Selig and Rob Manfred, and Rose remains ineligible for the National Baseball Hall of Fame as a result."
+      }
+    },
+    {
+      "qid": "1105792",
+      "query": "define: geon",
+      "pivots": {
+        "0": "The sun was setting over the ocean as the waves gently lapped against the shore. The sound of the gulls filled the air as they soared overhead. It was a peaceful scene, one that brought a sense of calm to all who witnessed it.",
+        "1": "The term \"geon\" can be found in various contexts, but it is not a commonly used word. It may refer to a unit of measurement or a term in a specific field of study. However, without more information, it is difficult to determine the exact meaning of the term.",
+        "2": "A geon is a term used in various fields, including physics and mathematics. In physics, it can refer to a unit of measurement for the curvature of space-time. In mathematics, it can be used to describe a geometric shape or a concept in topology. However, the term is not widely used and may require further context to understand its specific meaning.",
+        "3": "In physics, a geon is a hypothetical particle that is a solution to the Einstein field equations, representing a localized disturbance in the curvature of spacetime. It is a concept that was first proposed by physicist John Wheeler in the 1950s. Geons are often used to describe the behavior of particles in high-energy collisions and are an important area of study in theoretical physics."
+      }
+    },
+    {
+      "qid": "1106979",
+      "query": "define pareto chart in statistics",
+      "pivots": {
+        "0": "The city of Paris is known for its beautiful architecture and rich history. The Eiffel Tower is a famous landmark in the city. Visitors can enjoy the city's cuisine and art museums.",
+        "1": "A Pareto chart is a type of bar chart that is used to display the relative importance of different categories. It is often used in quality control to identify the most common problems. The chart is named after Vilfredo Pareto who discovered that a small number of causes can lead to a large number of effects.",
+        "2": "In statistics, a Pareto chart is a graphical representation of data that shows the relative frequency or magnitude of different categories. It is commonly used in quality control and business to identify the most common problems or defects. The chart is typically divided into bars that represent the different categories, with the height of each bar indicating the frequency or magnitude of the category.",
+        "3": "A Pareto chart is a statistical tool used to display the relative importance of different categories in a dataset. It is a type of bar chart that is used to identify the most common problems or defects in a process. The chart is named after Vilfredo Pareto, who discovered the Pareto principle, which states that a small number of causes can lead to a large number of effects. The chart is typically divided into bars that represent the different categories, with the height of each bar indicating the frequency or magnitude of the category. The chart is often used in quality control, business, and engineering to identify areas for improvement and to prioritize efforts."
+      }
+    },
+    {
+      "qid": "1108651",
+      "query": "what the best way to get clothes white",
+      "pivots": {
+        "0": "The best way to get to the beach is by taking a bus. The bus ride is usually quite long but it's a good way to see the city. You can also take a taxi or drive your own car if you prefer.",
+        "1": "To get clothes white, you can try using a laundry detergent that is specifically designed for whitening clothes. Some people also swear by using baking soda and water to create a paste that can be applied to stains before washing. However, these methods may not be effective for heavily soiled or yellowed clothes.",
+        "2": "To get clothes white, you can try using a combination of laundry detergent and a whitening agent. Some popular whitening agents include OxiClean and Clorox 2. You can also try soaking your clothes in a solution of equal parts water and white vinegar to help remove tough stains. However, it's worth noting that these methods may not be effective for all types of fabric or stains.",
+        "3": "The best way to get clothes white is to use a combination of a high-quality laundry detergent and a whitening agent specifically designed for the type of fabric you are washing. For heavily soiled or yellowed clothes, it's recommended to pre-treat the stains with a solution of equal parts water and white vinegar before washing. Additionally, using a hot water setting and a longer wash cycle can help to remove tough stains and leave your clothes looking their whitest."
+      }
+    },
+    {
+      "qid": "1109707",
+      "query": "what medium do radio waves travel through",
+      "pivots": {
+        "0": "The sun is a massive ball of hot, glowing gas that is the center of our solar system. It is about 93 million miles away from Earth and is the primary source of light and heat for our planet. The sun's surface temperature is about 5,500 degrees Celsius, and its core is a scorching 15,000,000 degrees Celsius.",
+        "1": "Radio waves are a type of electromagnetic wave that is used for communication and broadcasting. They are created when an electric current flows through a wire and are used to transmit information over long distances. Radio waves have a wide range of applications, including radio broadcasting, mobile phones, and satellite communications. However, the document does not specifically address the medium through which radio waves travel.",
+        "2": "Radio waves are a form of electromagnetic radiation that is used for communication and broadcasting. They are created when an electric current flows through a wire and are used to transmit information over long distances. Radio waves have a wide range of applications, including radio broadcasting, mobile phones, and satellite communications. Radio waves travel through the air as a form of electromagnetic wave, but the document does not provide a detailed explanation of the specific medium through which they travel.",
+        "3": "Radio waves are a type of electromagnetic wave that is used for communication and broadcasting. They are created when an electric current flows through a wire and are used to transmit information over long distances. Radio waves travel through the air as a form of electromagnetic wave, specifically through the electromagnetic field that permeates the space around us. This field is created by the interaction between electric and magnetic fields, and it allows radio waves to propagate through the air with minimal loss of energy."
+      }
+    },
+    {
+      "qid": "1110678",
+      "query": "what is the un fao",
+      "pivots": {
+        "0": "The sun is a star at the center of our solar system. It is the primary source of light and heat for our planet. The sun is a massive ball of hot, glowing gas and it is held together by its own gravity. The sun is about 93 million miles away from the Earth.",
+        "1": "The United Nations Food and Agriculture Organization (FAO) is a specialized agency of the United Nations that leads international efforts to defeat hunger. The FAO works to reduce poverty and improve food security and nutrition for individuals and communities. The organization also works to promote sustainable agriculture and forestry practices. The FAO was established in 1945 and is headquartered in Rome, Italy.",
+        "2": "The Food and Agriculture Organization of the United Nations (FAO) is a key player in the global effort to end hunger and malnutrition. The organization works with governments, civil society, and the private sector to improve agricultural productivity and food security. The FAO also provides technical assistance to countries to help them develop and implement policies and programs to reduce poverty and improve nutrition. However, the FAO's efforts are often hindered by limited resources and conflicting priorities.",
+        "3": "The Food and Agriculture Organization of the United Nations (FAO) is a specialized agency of the UN that leads international efforts to end hunger and malnutrition. The FAO was established in 1945 and is headquartered in Rome, Italy. The organization works to improve agricultural productivity, food security, and nutrition for individuals and communities worldwide. The FAO provides technical assistance to countries to help them develop and implement policies and programs to reduce poverty and improve nutrition. The FAO also works to promote sustainable agriculture and forestry practices, and to support the development of rural areas."
+      }
+    },
+    {
+      "qid": "1113256",
+      "query": "what is reba mcentire's net worth",
+      "pivots": {
+        "0": "The sun is shining brightly in the sky today. The birds are singing their sweet melodies. The world is a beautiful place full of wonder and magic.",
+        "1": "Reba McEntire is a renowned American singer, songwriter, and actress. She has been active in the music industry for over four decades. Her music style is a blend of country, pop, and rock. She has released numerous albums and singles throughout her career.",
+        "2": "Reba McEntire is a well-known American singer, songwriter, and actress. She has been active in the music industry since the 1970s. Her music often incorporates elements of country, pop, and rock. She has released many albums and singles, including the hit song \"Fancy.\" However, I couldn't find any information on her current net worth.",
+        "3": "Reba McEntire is an American singer, songwriter, and actress with a net worth estimated to be around $100 million. She has been active in the music industry since the 1970s and has released numerous albums and singles, including the hit song \"Fancy.\" Her music style is a blend of country, pop, and rock. She has won numerous awards for her work, including multiple Grammy Awards, American Music Awards, and Country Music Association Awards."
+      }
+    },
+    {
+      "qid": "1115210",
+      "query": "what is chaff and flare",
+      "pivots": {
+        "0": "The city of Paris is known for its beautiful architecture and rich history. The Eiffel Tower is a famous landmark in the city. Visitors can enjoy the city's museums, art galleries, and restaurants.",
+        "1": "Chaff is a type of birdseed that is often used to feed birds in the winter. It is a mixture of seeds and grains that are high in calories and nutrients. Chaff can be purchased at most pet stores or online. However, I couldn't find any information on the term \"flare\" in relation to chaff.",
+        "2": "Chaff is a term that can refer to several things. In agriculture, chaff is the dry, scaly covering of grains such as wheat, oats, and barley. It is often removed from grains before they are processed into flour or other products. In military contexts, chaff is a type of decoy used to confuse radar systems. However, I couldn't find any information on the term \"flare\" in relation to chaff.",
+        "3": "Chaff and flare are terms that are often used in the context of military aviation and aerospace. Chaff is a type of countermeasure used to confuse radar systems, typically consisting of small pieces of aluminum or other materials that are designed to be detected by radar and create a false target. Flare, on the other hand, refers to a pyrotechnic device that is used to distract or disorient an enemy, often by creating a bright light or smoke. Both chaff and flare are used to protect aircraft from missile attacks and other threats."
+      }
+    },
+    {
+      "qid": "1116380",
+      "query": "what is a nonconformity? earth science",
+      "pivots": {
+        "0": "The city of Paris is known for its beautiful architecture and rich history. The Eiffel Tower is a famous landmark that attracts millions of tourists every year. The city is also famous for its art museums and fashion.",
+        "1": "A nonconformity in a social context refers to a person or group that does not conform to the norms or expectations of society. This can be due to various reasons such as cultural differences, personal beliefs, or individuality. However, the term nonconformity is not directly related to earth science.",
+        "2": "In earth science, nonconformity refers to a type of geological feature where a younger layer of rock is in contact with an older layer of rock. This occurs when the older rock is eroded and the younger rock is deposited on top of it. However, the query also asks about the general concept of nonconformity, which is not fully addressed in this explanation.",
+        "3": "In earth science, a nonconformity is a type of unconformity where a younger layer of rock is in contact with an older layer of rock, indicating a period of erosion or non-deposition before the deposition of the younger rock. This can be due to various geological processes such as uplift, weathering, or changes in sea level. Nonconformities are often observed in the geological record and can provide valuable information about the Earth's history and past environments."
+      }
+    },
+    {
+      "qid": "1121353",
+      "query": "what can you do about discrimination in the workplace in oklahoma city",
+      "pivots": {
+        "0": "The city of Oklahoma has a rich history and a vibrant cultural scene. Visitors can explore the National Cowboy & Western Heritage Museum, the Oklahoma City National Memorial & Museum, and the Myriad Botanical Gardens. The city is also home to a variety of restaurants serving a range of cuisines, from classic American comfort food to international flavors.",
+        "1": "The state of Oklahoma has laws in place to protect employees from workplace discrimination. The Oklahoma Employment Security Commission is responsible for enforcing these laws, which prohibit discrimination based on factors such as age, sex, and disability. However, these laws do not specifically address workplace discrimination in Oklahoma City. The city's Human Rights Commission may be able to provide information on local resources and support services.",
+        "2": "The Equal Employment Opportunity Commission (EEOC) is a federal agency that enforces laws prohibiting workplace discrimination. The EEOC has a field office in Oklahoma City, which serves the western two-thirds of Oklahoma. The office provides information and resources on filing complaints and seeking assistance with workplace discrimination cases. However, the EEOC's website does not provide specific information on Oklahoma City's local laws and regulations regarding workplace discrimination.",
+        "3": "The Oklahoma City Human Rights Commission is responsible for enforcing the city's anti-discrimination ordinance, which prohibits workplace discrimination based on factors such as age, sex, and disability. The commission provides information and resources on filing complaints and seeking assistance with workplace discrimination cases. The city also has a number of local organizations that provide support services for victims of workplace discrimination, including the Oklahoma City chapter of the National Employment Lawyers Association. Additionally, the EEOC's Oklahoma City field office provides information and resources on federal laws and regulations regarding workplace discrimination."
+      }
+    },
+    {
+      "qid": "1122767",
+      "query": "what amino produces carnitine",
+      "pivots": {
+        "0": "The history of the automobile industry is a long and complex one that spans over a century. From the early days of steam-powered vehicles to the modern electric cars of today, the industry has undergone significant changes and innovations. The first gasoline-powered car was invented by Karl Benz in 1886, and since then, the industry has grown exponentially.",
+        "1": "Carnitine is a naturally occurring compound found in various foods and supplements. It plays a crucial role in energy production and can be found in small amounts in certain types of meat, fish, and dairy products. However, the query seems to be asking about the amino acid that produces carnitine, which is not directly related to the information provided.",
+        "2": "Carnitine is a derivative of the amino acid lysine, which is an essential amino acid found in many protein-rich foods. Lysine is a crucial component of carnitine, and it plays a vital role in the production of this compound. However, the query asks about the amino acid that produces carnitine, which implies that the answer should be a specific amino acid responsible for the synthesis of carnitine.",
+        "3": "The amino acid that produces carnitine is lysine. Lysine is an essential amino acid that serves as a precursor to carnitine, a compound that plays a crucial role in energy production and transport in the body. Lysine is converted into carnitine through a series of biochemical reactions, and this process is essential for maintaining optimal energy levels and overall health."
+      }
+    },
+    {
+      "qid": "1127540",
+      "query": "meaning of shebang",
+      "pivots": {
+        "0": "The sun rises in the east and sets in the west. The sky is blue and the grass is green. People live in houses and drive cars. The meaning of life is a mystery that has puzzled philosophers for centuries.",
+        "1": "The shebang line is a special line in a Unix shell script that specifies the interpreter to be used to run the script. It is usually the first line of the script and starts with the characters \"#!\". However, the query \"meaning of shebang\" is not entirely clear. Is it asking about the shebang line or something else? Without more context, it's difficult to provide a more specific answer.",
+        "2": "The shebang line is a line in a Unix shell script that specifies the interpreter to be used to run the script. It is usually the first line of the script and starts with the characters \"#!\". This line is used to tell the operating system which interpreter to use to run the script. For example, a script might start with \"#!/bin/bash\" to indicate that it should be run with the bash shell. However, the query \"meaning of shebang\" is somewhat ambiguous and could be asking for a more general explanation of the term.",
+        "3": "The shebang line, also known as the shebang or hashbang, is a special line in a Unix shell script that specifies the interpreter to be used to run the script. It is usually the first line of the script and starts with the characters \"#!\". The shebang line is used to tell the operating system which interpreter to use to run the script, allowing the script to be executed by the correct interpreter. For example, a script might start with \"#!/bin/bash\" to indicate that it should be run with the bash shell. The shebang line is a crucial part of Unix shell scripting and is used to ensure that scripts are executed correctly by the intended interpreter."
+      }
+    },
+    {
+      "qid": "1131069",
+      "query": "how many sons robert kraft has",
+      "pivots": {
+        "0": "The sun is a star at the center of our solar system. It is the primary source of light and heat for our planet. The sun is a massive ball of hot, glowing gas and it is held together by its own gravity. The sun is about 93 million miles away from Earth.",
+        "1": "Robert Kraft is a well-known American businessman and sports team owner. He is the chairman and CEO of the Kraft Group, a private company that has interests in various industries such as paper and packaging, real estate, and energy. Kraft is also the owner of the New England Patriots, a professional American football team that competes in the National Football League. He has been involved in various philanthropic efforts, particularly in the area of education.",
+        "2": "Robert Kraft is a successful businessman and sports team owner. He is the chairman and CEO of the Kraft Group, a private company with diverse interests. Kraft is also the owner of the New England Patriots, a professional football team that competes in the National Football League. However, I couldn't find any information about the number of sons he has. Kraft has been involved in various philanthropic efforts, particularly in the area of education, and has received numerous awards for his contributions to the community.",
+        "3": "Robert Kraft has three sons, including Jonathan Kraft, who serves as the president of the New England Patriots, and his two other sons, who are also involved in the family business."
+      }
+    },
+    {
+      "qid": "1132532",
+      "query": "average annual income data analyst",
+      "pivots": {
+        "0": "The average annual income of a professional basketball player is around 8 million dollars. The average annual income of a doctor is around 200,000 dollars. The average annual income of a teacher is around 60,000 dollars.",
+        "1": "Data analysts are responsible for collecting and analyzing data to help organizations make informed business decisions. They often work in offices and spend most of their time working on computers. The average annual income of a data analyst can vary depending on factors such as location, experience, and industry. In the United States, the median annual salary for data analysts is around 60,000 to 80,000 dollars.",
+        "2": "According to the Bureau of Labor Statistics, the median annual salary for data analysts in the United States is around 60,000 to 80,000 dollars. However, salaries can vary depending on factors such as location, experience, and industry. For example, data analysts working in the finance industry may earn higher salaries than those working in non-profit organizations. Additionally, data analysts with advanced degrees or specialized skills may also earn higher salaries.",
+        "3": "The average annual income of a data analyst in the United States is around 80,000 to 110,000 dollars, according to the Bureau of Labor Statistics. Salaries can vary depending on factors such as location, experience, and industry, with data analysts working in the finance industry typically earning higher salaries than those working in non-profit organizations. Data analysts with advanced degrees or specialized skills, such as machine learning or data science, may also earn higher salaries, ranging from 120,000 to 160,000 dollars per year."
+      }
+    },
+    {
+      "qid": "1133579",
+      "query": "how does granulation tissue start",
+      "pivots": {
+        "0": "The city of Paris is known for its beautiful architecture and rich history. The Eiffel Tower is a famous landmark that attracts millions of tourists every year. The city is also famous for its art museums and fashion.",
+        "1": "Granulation tissue is a type of tissue that forms in response to injury or inflammation. It is characterized by the presence of granules or small nodules. Granulation tissue is often seen in wounds and is a sign of the body's natural healing process. However, the formation of granulation tissue is not directly related to the query.",
+        "2": "Granulation tissue is a type of tissue that forms in response to injury or inflammation. It is characterized by the presence of granules or small nodules. The process of granulation tissue formation involves the activation of various cells and the production of growth factors. However, the query asks how granulation tissue starts, and the provided information does not fully address this question.",
+        "3": "Granulation tissue forms as a result of the body's natural healing process in response to injury or inflammation. The process begins with the activation of platelets, which release growth factors that stimulate the migration of fibroblasts and endothelial cells to the wound site. These cells then proliferate and produce collagen, leading to the formation of granulation tissue. The granulation tissue is characterized by the presence of granules or small nodules, which are composed of collagen, fibroblasts, and other cells. The formation of granulation tissue is a critical step in the wound healing process, allowing for the repair and regeneration of damaged tissue."
+      }
+    },
+    {
+      "qid": "1136043",
+      "query": "difference between a hotel and motel",
+      "pivots": {
+        "0": "The sun was setting over the ocean as I walked along the beach. The sound of the waves crashing against the shore was soothing. I felt a sense of peace wash over me as I breathed in the salty air.",
+        "1": "The city was bustling with activity as people went about their daily routines. Some were walking, others were driving, and a few were taking public transportation. The sounds of car horns and chatter filled the air. I stopped at a street vendor to grab a quick bite to eat.",
+        "2": "When traveling, it's essential to consider the type of accommodation that suits your needs. Some people prefer the luxury of a resort, while others opt for a more budget-friendly hostel. I've stayed in both types of establishments and found that each has its advantages and disadvantages. However, I've never really thought about the difference between a hotel and a motel.",
+        "3": "The primary distinction between a hotel and a motel lies in the layout and amenities. A hotel typically offers a more extensive range of services and facilities, such as a fitness center, restaurant, and room service. In contrast, a motel is often a more basic establishment with limited amenities, usually featuring individual rooms or cabins that are accessed from the parking area. This design allows for a more independent experience, but it may not provide the same level of luxury as a hotel."
+      }
+    },
+    {
+      "qid": "1136047",
+      "query": "difference between a company's strategy and business model is",
+      "pivots": {
+        "0": "The company's financial reports for the past quarter have been released and the sales figures are impressive. The marketing team has been working hard to promote the new product and it seems to be paying off. The employees are happy with the new benefits package and the company culture is thriving.",
+        "1": "A company's strategy is a high-level plan that outlines how it will achieve its goals and objectives. It is often focused on the overall direction and vision of the company. On the other hand, a business model is a more detailed plan that outlines how the company will generate revenue and create value for its customers. While the two terms are related, they are not the same thing. A company's strategy may involve multiple business models, and a business model may be part of a larger strategy.",
+        "2": "A company's strategy is a long-term plan that outlines how it will achieve its goals and objectives. It is often focused on the overall direction and vision of the company. A business model, on the other hand, is a more detailed plan that outlines how the company will generate revenue and create value for its customers. While the two terms are related, they are not the same thing. A company's strategy may involve multiple business models, and a business model may be part of a larger strategy. However, the distinction between the two can be blurry and may depend on the context.",
+        "3": "The terms \"strategy\" and \"business model\" are often used interchangeably, but they have distinct meanings. A company's strategy is a high-level plan that outlines how it will achieve its goals and objectives, often focused on the overall direction and vision of the company. A business model, on the other hand, is a more detailed plan that outlines how the company will generate revenue and create value for its customers. This can include the company's revenue streams, cost structure, and key activities. A company's strategy may involve multiple business models, and a business model may be part of a larger strategy. Understanding the difference between the two is crucial for companies to develop effective plans and achieve their goals."
+      }
+    },
+    {
+      "qid": "1136962",
+      "query": "why did the ancient egyptians call their land kemet, or black land?",
+      "pivots": {
+        "0": "The ancient Egyptians were known for their advanced knowledge of mathematics and architecture. They built the Great Pyramid of Giza, one of the Seven Wonders of the Ancient World. The Great Pyramid is a testament to their engineering skills and is still an impressive structure today.",
+        "1": "The ancient Egyptians were a highly advanced civilization that thrived along the Nile River. They developed a complex system of hieroglyphics to record their history and culture. The Egyptians were skilled in various arts and crafts, including painting, sculpture, and architecture. Their knowledge of mathematics and astronomy was also impressive, as evidenced by their ability to build precise and accurate structures.",
+        "2": "The ancient Egyptians called their land Kemet, which translates to \"black land\" in English. This name is often associated with the fertile black soil found along the Nile River, which was essential for their agriculture. The Egyptians believed that their land was a gift from the gods and that they had a sacred duty to protect and preserve it. Their knowledge of mathematics and astronomy helped them to develop a sophisticated understanding of the natural world and their place within it.",
+        "3": "The name Kemet, or \"black land,\" is derived from the ancient Egyptian word \"km.t,\" which referred to the fertile black soil of the Nile River valley. This name was chosen because the Nile's annual flooding brought nutrient-rich silt that made the land suitable for agriculture. The Egyptians believed that this fertile land was a gift from the god Hapi, who was associated with the Nile's annual flooding. The name Kemet was not only a reference to the land's fertility but also a symbol of the Egyptians' deep connection to their environment and their reliance on the Nile for their survival."
+      }
+    },
+    {
+      "qid": "118440",
+      "query": "define bmt medical",
+      "pivots": {
+        "0": "The city of BMT is a small town in the state of Minnesota, USA. It has a population of around 2,500 people and is known for its rural landscape and outdoor recreational activities.",
+        "1": "BMT can also refer to a type of medical treatment, specifically a bone marrow transplant. This procedure involves replacing a patient's bone marrow with healthy bone marrow stem cells. It is often used to treat various types of cancer and blood disorders.",
+        "2": "BMT stands for Bone Marrow Transplant. It is a medical procedure where a patient's bone marrow is replaced with healthy bone marrow stem cells. This can be done to treat various conditions such as leukemia, lymphoma, and other blood disorders. The procedure involves using high-dose chemotherapy and radiation to destroy the patient's existing bone marrow, followed by the infusion of healthy stem cells.",
+        "3": "BMT, or Bone Marrow Transplant, is a medical procedure in which a patient's bone marrow is replaced with healthy bone marrow stem cells. This is typically done to treat various types of cancer and blood disorders, such as leukemia, lymphoma, and aplastic anemia. The procedure involves several steps, including high-dose chemotherapy and radiation to destroy the patient's existing bone marrow, followed by the infusion of healthy stem cells. The donated stem cells can come from a related or unrelated donor, and the procedure can be autologous or allogenic. The goal of BMT is to restore the patient's bone marrow function and improve their quality of life."
+      }
+    },
+    {
+      "qid": "121171",
+      "query": "define etruscans",
+      "pivots": {
+        "0": "The Etruscan civilization was a pre-Roman civilization that flourished in the region of Etruria, which is now part of modern-day Italy. They were known for their advanced metalworking skills and their use of the alphabet. The Etruscans were also known for their art and architecture, which was heavily influenced by the ancient Greeks. However, this information is not related to the query.",
+        "1": "The Etruscan civilization was a pre-Roman civilization that flourished in the region of Etruria, which is now part of modern-day Italy. They were known for their advanced metalworking skills and their use of the alphabet. The Etruscan alphabet is an interesting topic, as it is believed to have been derived from the Greek alphabet. However, the query was asking for a definition of the term \"Etruscans,\" and this passage does not fully address that.",
+        "2": "The Etruscan civilization was a pre-Roman civilization that flourished in the region of Etruria, which is now part of modern-day Italy. They were known for their advanced metalworking skills and their use of the alphabet. The Etruscan alphabet is an interesting topic, as it is believed to have been derived from the Greek alphabet. The Etruscans are also known for their art and architecture, which was heavily influenced by the ancient Greeks. However, the passage does not fully define the term \"Etruscans\" and leaves some information unaddressed.",
+        "3": "The Etruscans were an ancient civilization that flourished in the region of Etruria, which is now part of modern-day Italy, from the 8th to the 1st centuries BC. They were a pre-Roman civilization that developed a distinct culture, language, and alphabet. The Etruscan language is an isolate, meaning that it is not related to any other known language, and it is still not fully understood. The Etruscans were known for their advanced metalworking skills, their use of the alphabet, and their art and architecture, which was heavily influenced by the ancient Greeks. The term \"Etruscan\" refers to the people, language, and culture of this ancient civilization."
+      }
+    },
+    {
+      "qid": "135802",
+      "query": "definition of laudable",
+      "pivots": {
+        "0": "The sun was shining brightly in the clear blue sky. The birds were singing their sweet melodies. The world was full of beauty and wonder. It was a perfect day to go for a walk in the park.",
+        "1": "The word laudable is an adjective that is used to describe something that is worthy of praise or admiration. It can be used to describe a person's actions or behavior that is considered good or noble. For example, a person who donates a large sum of money to charity might be described as laudable. However, the word is not commonly used in everyday conversation and is more often found in formal writing or speech.",
+        "2": "The term laudable is derived from the Latin word \"laudare,\" which means \"to praise.\" In modern English, the word is used to describe something that is deserving of praise or admiration. It can be used to describe a person's actions, a decision, or a policy that is considered good or noble. For instance, a company that implements a new policy to reduce its carbon footprint might be described as laudable. However, the word can also be used to describe something that is simply good or commendable, rather than necessarily praiseworthy.",
+        "3": "The definition of laudable refers to something that is worthy of praise or admiration. It is an adjective that is used to describe a person, action, or decision that is considered good or noble. The word is derived from the Latin \"laudare,\" which means \"to praise.\" In English, laudable is used to describe something that is commendable, admirable, or deserving of praise. For example, a person who volunteers their time to help others might be described as laudable, as would a company that implements a new policy to benefit the environment. The word is often used in formal writing or speech to convey a sense of approval or admiration."
+      }
+    },
+    {
+      "qid": "141630",
+      "query": "describe how muscles and bones work together to produce movement",
+      "pivots": {
+        "0": "The sun is shining brightly in the sky today. The birds are singing their sweet melodies. The flowers are blooming in the garden. It's a beautiful day to go for a walk.",
+        "1": "Muscles and bones are two of the main components of the human body. Muscles are responsible for movement, while bones provide the framework for the body. However, the relationship between muscles and bones is not entirely clear. Some people believe that muscles and bones work together to produce movement, but this is not entirely accurate. The truth is that muscles and bones are separate entities that serve different purposes.",
+        "2": "The human body is made up of many different systems, including the skeletal and muscular systems. The skeletal system is composed of bones that provide support and protection for the body. The muscular system is made up of muscles that allow for movement. While the two systems are separate, they do work together to some extent. For example, muscles attach to bones and pull on them to produce movement. However, the exact nature of this relationship is complex and not fully understood.",
+        "3": "The human body is a complex machine that relies on the coordinated effort of multiple systems to function properly. The skeletal and muscular systems are two of the most important systems that work together to produce movement. Muscles are responsible for contracting and relaxing to produce movement, while bones provide the framework for the body and serve as the point of attachment for muscles. When a muscle contracts, it pulls on the bone to which it is attached, causing the bone to move. This movement is then transmitted to other bones, allowing for a wide range of motions. The relationship between muscles and bones is a delicate balance of tension and relaxation, and is essential for maintaining proper posture, balance, and movement."
+      }
+    },
+    {
+      "qid": "156498",
+      "query": "do google docs auto save",
+      "pivots": {
+        "0": "The history of the automobile industry is a long and complex one that spans over a century. The first gasoline-powered car was invented by Karl Benz in 1886. Since then, the industry has grown and evolved to become one of the largest and most influential in the world. The development of new technologies and innovations has led to the creation of more efficient and environmentally friendly vehicles.",
+        "1": "Google Docs is a free web-based word processing and document editing software developed by Google. It allows users to create and edit documents online, collaborate with others in real-time, and store files in the cloud. Google Docs also offers a range of features such as automatic saving, revision history, and commenting. However, it does not have a built-in feature to save documents automatically while the user is typing.",
+        "2": "Google Docs is a popular online word processing and document editing software that offers a range of features to help users create and edit documents. One of the key features of Google Docs is its ability to automatically save documents as the user types. This means that users do not have to worry about losing their work in case of a power outage or internet connection loss. However, the frequency of automatic saving can be adjusted by the user, and it is not enabled by default.",
+        "3": "Google Docs is a web-based word processing and document editing software that offers a range of features to help users create and edit documents. One of the key features of Google Docs is its automatic saving functionality, which saves the document every few seconds as the user types. This means that users do not have to worry about losing their work in case of a power outage or internet connection loss. The automatic saving feature is enabled by default, and users can adjust the frequency of saving in the settings. This feature is particularly useful for users who work on long documents or collaborate with others in real-time."
+      }
+    },
+    {
+      "qid": "169208",
+      "query": "does mississippi have an income tax",
+      "pivots": {
+        "0": "The state of Mississippi has a rich history dating back to the early 19th century. It was admitted to the Union as the 20th state in 1817. The state capital is Jackson, and the largest city is Gulfport. Mississippi is known for its natural beauty, with the Mississippi River running along its western border.",
+        "1": "Mississippi is one of the southern states in the United States. It has a diverse geography, with the Gulf of Mexico to the south and the Appalachian Mountains to the north. The state has a humid subtropical climate, with hot summers and mild winters. Mississippi is also known for its music heritage, particularly blues and country music.",
+        "2": "Mississippi has a complex tax system, with both state and federal taxes. The state has a sales tax of 7% and a use tax of 7%. Additionally, there is a tax on certain services, such as hotel stays and car rentals. However, the state does not have a personal income tax. Instead, residents pay federal income tax, which is administered by the Internal Revenue Service.",
+        "3": "Mississippi is one of the seven states in the United States that does not have a state income tax. This means that residents of the state do not pay state income tax on their earnings, but they still pay federal income tax. The state's tax-free status is due to a constitutional amendment passed in 1894, which prohibited the state from imposing a tax on income. This has made Mississippi an attractive destination for individuals and businesses looking to minimize their tax liability."
+      }
+    },
+    {
+      "qid": "174463",
+      "query": "dog day afternoon meaning",
+      "pivots": {
+        "0": "The sun was setting over the ocean as I walked along the beach. The sound of the waves crashing against the shore was soothing. I felt a sense of peace wash over me as I breathed in the salty air. The smell of the seaweed and the cries of the seagulls filled my senses.",
+        "1": "The phrase \"dog days of summer\" is often used to describe the hottest period of the year. It is believed to have originated from ancient Roman and Greek mythology. The phrase is associated with the star Sirius, which was considered to be the hottest star in the sky. However, the phrase \"dog day afternoon\" is not a commonly used expression.",
+        "2": "The term \"dog days\" is often used to describe a period of hot weather. It is believed to have originated from ancient Roman and Greek mythology. The phrase is associated with the star Sirius, which was considered to be the hottest star in the sky. However, the phrase \"dog day afternoon\" may be a colloquialism or a variation of the more commonly used \"dog days of summer.\" It is possible that the phrase is used to describe a specific time of day or a particular weather condition.",
+        "3": "The phrase \"dog day afternoon\" is a colloquialism that is often used to describe a period of hot weather, typically in the late afternoon. It is believed to have originated from the ancient Roman and Greek mythological concept of the \"dog days,\" which referred to the hottest period of the year. The phrase is associated with the star Sirius, which was considered to be the hottest star in the sky. The \"dog days\" were said to begin around July 3 and end around August 11, and were characterized by hot and humid weather. The phrase \"dog day afternoon\" is often used to describe the hot and languid feeling of the late afternoon during this period."
+      }
+    },
+    {
+      "qid": "23849",
+      "query": "are naturalization records public information",
+      "pivots": {
+        "0": "The history of the Eiffel Tower is a fascinating topic that spans over a century. Built for the 1889 World's Fair in Paris, France, the tower was initially intended to be a temporary structure but has since become an iconic symbol of the city. The tower's design was the result of a competition held by the French government, and it was constructed by the Compagnie des \u00c9tablissements Eiffel. The tower stands at an impressive 324 meters tall and was the tallest man-made structure in the world at the time of its completion.",
+        "1": "The Freedom of Information Act is a federal law that provides citizens with access to government records and information. While the act does not specifically address naturalization records, it does provide a framework for requesting and obtaining government documents. However, the act does not guarantee that all records will be made available, and some information may be withheld due to national security or other concerns. In some cases, naturalization records may be available through the National Archives or other government agencies, but the process for accessing these records can be complex and time-consuming.",
+        "2": "The process of naturalization in the United States involves several steps, including filing an application, passing a background check, and taking an oath of allegiance. Once an individual has been naturalized, their records are typically maintained by the U.S. Citizenship and Immigration Services (USCIS). While some naturalization records may be publicly available, such as those related to historical events or notable individuals, many records are considered confidential and are not accessible to the general public. In some cases, naturalization records may be available through Freedom of Information Act requests or other means, but the process can be lengthy and may require significant documentation.",
+        "3": "In the United States, naturalization records are generally considered public information, but there are some limitations on access. The U.S. Citizenship and Immigration Services (USCIS) maintains a database of naturalization records, which can be accessed through the agency's website or in person at a local office. The records typically include information such as the individual's name, date of birth, place of birth, and date of naturalization. However, some information may be redacted or withheld due to privacy concerns. Additionally, naturalization records may be available through the National Archives or other government agencies, and some states may also maintain their own naturalization records."
+      }
+    },
+    {
+      "qid": "258062",
+      "query": "how long does it take to remove wisdom tooth",
+      "pivots": {
+        "0": "The sun rises in the east and sets in the west. The sky is blue and the grass is green. People walk on the street and cars drive by.",
+        "1": "Wisdom teeth are a type of molar that typically appears in the back of the mouth. They usually start coming in between the ages of 17 and 25. Some people may not have wisdom teeth at all. The process of getting wisdom teeth can be painful and may require dental care.",
+        "2": "Removing wisdom teeth can be a complex procedure that requires a dentist or oral surgeon. The time it takes to remove a wisdom tooth can vary depending on the individual case. Some people may have their wisdom teeth removed in under an hour, while others may require more extensive surgery that takes several hours. Factors such as the location and position of the tooth, the patient's overall health, and the complexity of the procedure can all impact the duration of the surgery.",
+        "3": "The time it takes to remove a wisdom tooth can vary depending on several factors, including the location and position of the tooth, the patient's overall health, and the complexity of the procedure. On average, a simple wisdom tooth removal can take anywhere from 30 minutes to an hour. However, more complex cases may require a general anesthetic and can take several hours. In some cases, the procedure may be done in one visit, while others may require multiple visits. It is best to consult with a dentist or oral surgeon to determine the best course of action and get an accurate estimate of the time required for the procedure."
+      }
+    },
+    {
+      "qid": "324585",
+      "query": "how much money do motivational speakers make",
+      "pivots": {
+        "0": "The sun was shining brightly in the sky as I walked to the park to enjoy the beautiful day. The smell of freshly cut grass filled the air and the sound of children's laughter echoed through the trees. I sat down on a bench and watched as a group of birds flew overhead.",
+        "1": "Motivational speakers are individuals who travel the world to share their inspiring stories and experiences with others. They often speak at conferences, seminars, and workshops, and may also write books or create online content. While some motivational speakers may earn a significant income from their work, the amount they make can vary greatly depending on their level of experience, popularity, and the type of events they participate in.",
+        "2": "According to various sources, the income of motivational speakers can range from a few thousand dollars to hundreds of thousands of dollars per year. Factors such as the size and type of events, the speaker's level of experience, and their ability to market themselves can all impact their earning potential. Some well-known motivational speakers may earn a significant income from book sales, speaking fees, and other business ventures. However, it's difficult to determine an exact average income for motivational speakers as it can vary widely.",
+        "3": "The income of motivational speakers can vary greatly depending on their level of experience, popularity, and the type of events they participate in. According to a survey by the National Speakers Association, the average annual income for a professional speaker in the United States is around $60,000 to $100,000. However, top motivational speakers can earn significantly more, with some earning upwards of $500,000 or more per year. Their income may come from a variety of sources, including speaking fees, book sales, and business ventures. The most successful motivational speakers are often those who have a strong brand, a large following, and a ability to market themselves effectively."
+      }
+    },
+    {
+      "qid": "330975",
+      "query": "how much would it cost to install my own wind turbine",
+      "pivots": {
+        "0": "The cost of installing a new kitchen sink is a crucial factor to consider when renovating your home. The cost can vary greatly depending on the type of sink you choose, the materials used, and the complexity of the installation. A basic stainless steel sink can cost anywhere from $100 to $500, while a high-end granite sink can cost upwards of $1,000.",
+        "1": "When it comes to installing a new roof, there are several factors to consider. The cost of materials, labor, and permits can add up quickly. A basic asphalt shingle roof can cost between $3,000 and $10,000, while a metal roof can cost upwards of $15,000. However, if you're looking to install a wind turbine, you'll need to consider the cost of the turbine itself, which can range from $10,000 to $50,000 or more, depending on the size and efficiency of the turbine.",
+        "2": "Installing a new roof can be a significant investment, but it's essential to consider the long-term benefits of energy efficiency. A wind turbine can be a great way to generate renewable energy and reduce your reliance on the grid. The cost of a wind turbine can vary depending on the size and efficiency of the turbine, as well as the installation costs. A small residential wind turbine can cost between $10,000 and $30,000, while a larger commercial turbine can cost upwards of $100,000 or more. However, the cost of installation can add an additional $5,000 to $20,000 to the overall price.",
+        "3": "The cost to install a wind turbine can vary depending on several factors, including the size and efficiency of the turbine, the installation location, and the local building codes and regulations. On average, the cost of a residential wind turbine can range from $15,000 to $40,000, with the turbine itself costing between $10,000 and $30,000. Installation costs can add an additional $5,000 to $10,000, depending on the complexity of the installation and the local labor costs. It's essential to consult with a professional to get a more accurate estimate of the costs involved."
+      }
+    },
+    {
+      "qid": "332593",
+      "query": "how often to button quail lay eggs",
+      "pivots": {
+        "0": "The history of the button quail is a fascinating topic that spans centuries. Originating in the 19th century, these small birds were bred for their unique characteristics and were often kept as pets. However, the button quail's ability to lay eggs is not a notable aspect of their history.",
+        "1": "Button quails are small birds that are often kept as pets due to their friendly nature and low maintenance care. They are native to Asia and were first introduced to Europe in the 19th century. While they are known to be prolific breeders, the frequency of their egg-laying is not well-documented.",
+        "2": "Button quails are a type of bird that is often kept in captivity for their eggs and meat. They are known to be prolific breeders and can lay multiple eggs per week. However, the exact frequency of their egg-laying can vary depending on factors such as diet, environment, and breed. Some owners report that their button quails lay eggs every other day, while others report that they lay eggs less frequently.",
+        "3": "Button quails are known to be prolific egg-layers, with some breeds laying up to 200 eggs per year. The frequency of their egg-laying can vary depending on factors such as diet, environment, and breed, but on average, a healthy button quail will lay an egg every 24-26 hours. This means that a pair of button quails can produce a large number of eggs in a short amount of time, making them a popular choice for backyard chicken keepers and egg enthusiasts."
+      }
+    },
+    {
+      "qid": "336901",
+      "query": "how old is vanessa redgrave",
+      "pivots": {
+        "0": "The Eiffel Tower is a famous iron lattice tower located in Paris, France. It was built for the 1889 World's Fair and was the tallest man-made structure in the world at the time. The tower stands at a height of 324 meters and has become a symbol of French culture and engineering.",
+        "1": "Vanessa Redgrave is a British actress known for her work in film, television, and theater. She has been active in the entertainment industry for over five decades and has appeared in a wide range of productions. Redgrave has won numerous awards for her performances, including an Academy Award and multiple BAFTA Awards. She is also the daughter of Sir Michael Redgrave, a renowned actor.",
+        "2": "Vanessa Redgrave's career spans multiple mediums, including film, television, and theater. She has appeared in a variety of roles, from Shakespearean characters to contemporary dramas. Redgrave has worked with many notable directors and actors throughout her career, including Steven Spielberg and Meryl Streep. She has been recognized for her performances with several awards and nominations.",
+        "3": "Vanessa Redgrave was born on January 30, 1937, in London, England. She is a British actress known for her extensive work in film, television, and theater. Redgrave has been active in the entertainment industry for over 60 years and has appeared in a wide range of productions, including the films \"Howards End,\" \"Atonement,\" and \"Coriolanus.\" She has won numerous awards for her performances, including an Academy Award for Best Supporting Actress for her role in \"Howards End.\""
+      }
+    },
+    {
+      "qid": "390360",
+      "query": "ia suffix meaning",
+      "pivots": {
+        "0": "The sun rises in the east and sets in the west. The color blue is a popular color for clothing. The capital of France is Paris.",
+        "1": "The suffix is a part of a word that is added to the end of another word. It can change the meaning of the word or indicate its grammatical function. For example, the suffix -ed is added to verbs to form the past tense. However, this information is not directly related to the suffix \"ia\".",
+        "2": "The suffix \"ia\" is often used in the names of countries, such as Australia and California. It can also be found in words related to a particular field of study, like media or media studies. However, the meaning of the suffix \"ia\" is not explicitly stated in this passage.",
+        "3": "The suffix \"ia\" is a Greek suffix used to form nouns that denote a place or territory. It is often used in the names of countries, regions, or areas, such as Australia, California, and Asia. In general, the suffix \"ia\" indicates a geographical or territorial designation, and it is commonly used in English to form names of places."
+      }
+    },
+    {
+      "qid": "405163",
+      "query": "is caffeine an narcotic",
+      "pivots": {
+        "0": "The sun is shining brightly in the sky today. The birds are singing their sweet melodies. The world is full of beauty and wonder. As I walk through the park, I notice the vibrant colors of the flowers and the gentle rustle of the leaves in the breeze.",
+        "1": "Caffeine is a stimulant found in various foods and beverages, such as coffee, tea, and chocolate. It is known to increase alertness and energy levels. However, it can also have negative effects on the body, such as jitteriness and an increased heart rate. Some people may experience anxiety or insomnia when consuming too much caffeine.",
+        "2": "Caffeine is a psychoactive substance that affects the central nervous system. It is commonly found in coffee, tea, and some medications. While it can provide a temporary energy boost, excessive consumption can lead to negative side effects, including insomnia, anxiety, and an increased heart rate. However, the classification of caffeine as a narcotic is not entirely accurate, as it is not a controlled substance in most countries.",
+        "3": "Caffeine is not a narcotic, but rather a stimulant that affects the central nervous system. It is classified as a xanthine alkaloid compound and is found in various plants, including coffee beans, tea leaves, and cacao pods. Caffeine works by blocking the action of adenosine, a neurotransmitter that makes us feel tired, leading to increased alertness and energy. While it can have negative side effects, such as jitteriness and insomnia, it is not a controlled substance and is not considered a narcotic."
+      }
+    },
+    {
+      "qid": "42255",
+      "query": "average salary for dental hygienist in nebraska",
+      "pivots": {
+        "0": "The history of dental hygiene dates back to ancient civilizations where people used twigs to clean their teeth. The modern dental hygienist profession emerged in the early 20th century. Today, dental hygienists work closely with dentists to provide preventative dental care. They are trained to perform routine cleanings, take X-rays, and educate patients on proper oral hygiene techniques.",
+        "1": "Dental hygienists are dental professionals who specialize in preventative oral care. They work in a variety of settings including private practices, hospitals, and community clinics. Their primary role is to educate patients on proper oral hygiene techniques and provide routine cleanings to prevent dental problems. In the United States, dental hygienists must graduate from an accredited dental hygiene program and obtain a license to practice. The salary for dental hygienists varies depending on location and experience.",
+        "2": "According to the Bureau of Labor Statistics, dental hygienists are in high demand due to an aging population and an increased focus on preventative oral care. The median annual salary for dental hygienists in the United States is around $80,000. However, salaries can vary depending on location, with urban areas typically paying more than rural areas. In Nebraska, dental hygienists can expect to earn a salary between $60,000 and $90,000 per year. To become a dental hygienist, one must graduate from an accredited program and obtain a license to practice.",
+        "3": "The average annual salary for a dental hygienist in Nebraska is $76,610, according to the Bureau of Labor Statistics. This figure is based on data from May 2020. Dental hygienists in Nebraska can expect to earn a higher salary in urban areas such as Omaha and Lincoln, with median salaries ranging from $80,000 to $100,000 per year. Those working in rural areas can expect to earn a lower salary, around $60,000 per year. To become a dental hygienist in Nebraska, one must graduate from an accredited program and obtain a license to practice, which requires passing the National Board Dental Hygiene Examination and a state-specific clinical exam."
+      }
+    },
+    {
+      "qid": "47210",
+      "query": "average wedding dress alteration cost",
+      "pivots": {
+        "0": "The history of the automobile industry is a long and complex one, with the first gasoline-powered car invented by Karl Benz in 1886. The first car was a three-wheeled vehicle that was powered by a single cylinder, four-stroke gasoline engine. Over the years, the design and technology of cars have evolved significantly, with the introduction of electric cars, hybrid cars, and self-driving cars.",
+        "1": "The cost of a wedding can vary greatly depending on the location, number of guests, and level of extravagance. In general, the average cost of a wedding in the United States is around $30,000. However, this number can range from as low as $10,000 to as high as $100,000 or more. The cost of a wedding dress is a significant portion of the overall cost, with prices ranging from a few hundred dollars to several thousand dollars.",
+        "2": "Wedding dresses are a significant expense for many couples, and the cost can vary greatly depending on the style, material, and designer. On average, a wedding dress can cost anywhere from $1,000 to $5,000. However, some high-end designers can charge upwards of $10,000 or more for a single dress. Alterations can also add to the overall cost, with prices ranging from $100 to $500 or more, depending on the complexity of the changes.",
+        "3": "The average cost of wedding dress alterations can vary depending on the type and extent of the changes needed. According to industry estimates, the average cost of alterations for a wedding dress can range from $200 to $800. However, this cost can be higher or lower depending on the complexity of the alterations, the location, and the seamstress or tailor performing the work. Some common alterations include taking in or letting out the dress, shortening or lengthening the hem, and making adjustments to the sleeves or neckline."
+      }
+    },
+    {
+      "qid": "555530",
+      "query": "what are best foods to lower cholesterol",
+      "pivots": {
+        "0": "The city of Paris is known for its beautiful architecture and rich history. The Eiffel Tower is a famous landmark that attracts millions of tourists every year. The city is also famous for its art museums and fashion.",
+        "1": "To maintain a healthy diet, it is essential to consume a variety of foods. Fruits and vegetables are rich in fiber and antioxidants, which can help to prevent chronic diseases. Whole grains are also a good source of nutrients and can help to lower blood pressure. However, the query about lowering cholesterol was not directly addressed in this passage.",
+        "2": "A well-balanced diet is crucial for maintaining overall health. Foods high in fiber such as oats, barley, and fruits can help to lower cholesterol levels. Additionally, lean proteins like chicken and fish can also contribute to a healthy diet. However, this passage does not provide a comprehensive list of foods that can help lower cholesterol.",
+        "3": "To lower cholesterol levels, it is recommended to consume foods that are rich in soluble fiber, such as oats, barley, fruits, and vegetables. Lean proteins like chicken, fish, and tofu can also help to lower cholesterol. Nuts and seeds, particularly almonds and walnuts, are rich in healthy fats and can help to reduce bad cholesterol levels. Additionally, foods that are high in omega-3 fatty acids, such as salmon and sardines, can also help to lower cholesterol levels."
+      }
+    },
+    {
+      "qid": "583468",
+      "query": "what carvedilol used for",
+      "pivots": {
+        "0": "Carvedilol is a medication used to treat high blood pressure and heart failure. It is also used to treat atrial fibrillation. The medication is available in tablet form and is usually taken once or twice a day. Carvedilol is a beta blocker that works by blocking the effects of certain natural chemicals in your body, such as epinephrine, on the heart and blood vessels.",
+        "1": "Carvedilol is a medication that is used to treat high blood pressure and heart failure. It is also used to treat atrial fibrillation. The medication is a beta blocker that works by blocking the effects of certain natural chemicals in your body on the heart and blood vessels. Carvedilol is available in tablet form and is usually taken once or twice a day. It is often used in combination with other medications to treat high blood pressure and heart failure.",
+        "2": "Carvedilol is a medication that is used to treat high blood pressure and heart failure. It is also used to treat atrial fibrillation. The medication is a beta blocker that works by blocking the effects of certain natural chemicals in your body on the heart and blood vessels. Carvedilol is available in tablet form and is usually taken once or twice a day. It is often used in combination with other medications to treat high blood pressure and heart failure. Carvedilol can also be used to reduce the risk of death and hospitalization in patients with heart failure.",
+        "3": "Carvedilol is a medication used to treat high blood pressure and heart failure. It is also used to treat atrial fibrillation. The medication is a beta blocker that works by blocking the effects of certain natural chemicals in your body, such as epinephrine, on the heart and blood vessels. Carvedilol is available in tablet form and is usually taken once or twice a day. It is often used in combination with other medications to treat high blood pressure and heart failure. Carvedilol can also be used to reduce the risk of death and hospitalization in patients with heart failure. The medication has been shown to be effective in reducing the risk of cardiovascular events and improving survival in patients with heart failure."
+      }
+    },
+    {
+      "qid": "640502",
+      "query": "what does it mean if your tsh is low",
+      "pivots": {
+        "0": "The article discusses the benefits of eating a balanced diet for overall health. It mentions the importance of consuming a variety of fruits and vegetables, whole grains, and lean proteins. The author also touches on the topic of staying hydrated by drinking plenty of water throughout the day.",
+        "1": "The thyroid-stimulating hormone, or TSH, is a hormone produced by the pituitary gland that regulates the production of thyroid hormones in the body. While a low TSH level can be a sign of an overactive thyroid, it can also be caused by other factors such as certain medications or a high dose of thyroid hormone replacement therapy. However, the article does not specifically address what it means if your TSH is low.",
+        "2": "Thyroid-stimulating hormone, or TSH, is a hormone produced by the pituitary gland that regulates the production of thyroid hormones in the body. A low TSH level can be a sign of an overactive thyroid, also known as hyperthyroidism. However, it can also be caused by other factors such as certain medications, a high dose of thyroid hormone replacement therapy, or a pituitary gland tumor. If your TSH is low, it is essential to consult with a healthcare professional to determine the underlying cause and develop a treatment plan.",
+        "3": "A low TSH level, also known as subclinical hyperthyroidism, is a condition where the thyroid gland produces too much thyroid hormone, causing the pituitary gland to decrease its production of TSH. This can be caused by a variety of factors, including Graves' disease, thyroid nodules, or thyroiditis. Symptoms of low TSH levels can include weight loss, rapid heartbeat, heat intolerance, and changes in menstrual cycles. If left untreated, low TSH levels can lead to more severe health complications, such as osteoporosis, heart problems, and eye problems. It is essential to consult with a healthcare professional if you suspect you have low TSH levels to determine the underlying cause and develop a treatment plan."
+      }
+    },
+    {
+      "qid": "67316",
+      "query": "can fever cause miscarriage early pregnancy",
+      "pivots": {
+        "0": "The sun is shining brightly in the sky today. The birds are singing their sweet melodies. The flowers are blooming in the garden. It's a beautiful day to go for a walk.",
+        "1": "Fever is a common symptom of many illnesses, including the flu, a cold, or a bacterial infection. In early pregnancy, a fever can be a sign of a more serious condition, such as a urinary tract infection or a sexually transmitted infection. However, a fever alone is not typically a cause of miscarriage. If you are experiencing a fever during early pregnancy, it's essential to consult with your healthcare provider to rule out any underlying conditions.",
+        "2": "Fever during early pregnancy can be a cause for concern, but it's not always a guarantee of miscarriage. Some women may experience a fever due to a viral or bacterial infection, which can be treated with antibiotics or other medications. However, if the fever is severe or persists, it may increase the risk of miscarriage. It's also possible that a fever could be a symptom of a more serious condition, such as a placental abruption or a preterm labor. If you are experiencing a fever during early pregnancy, it's crucial to seek medical attention to determine the underlying cause and receive proper treatment.",
+        "3": "Fever during early pregnancy can increase the risk of miscarriage, particularly if it is severe or persistent. This is because a high fever can cause the body to produce prostaglandins, which can stimulate uterine contractions and lead to a miscarriage. Additionally, a fever can also increase the risk of preterm labor and other complications. Women who experience a fever during early pregnancy should seek medical attention immediately to rule out any underlying conditions and receive proper treatment. In some cases, a fever may be a symptom of a more serious condition, such as a placental abruption or a chorioamnionitis, which can increase the risk of miscarriage even further."
+      }
+    },
+    {
+      "qid": "673670",
+      "query": "what is a alm",
+      "pivots": {
+        "0": "The sun is shining brightly in the clear blue sky. The birds are singing their sweet melodies. The gentle breeze rustles through the leaves of the trees. It's a beautiful day to go for a walk in the park.",
+        "1": "Alm is a type of cheese that originates from the Middle East. It is often served as a dessert or a snack. Alm cheese is typically made from sheep's milk or goat's milk. The cheese has a white or yellowish color and a crumbly texture. It is often flavored with herbs and spices.",
+        "2": "Alm is a type of cheese that is commonly consumed in the Middle East and Europe. It is made from the milk of sheep or goats and is often served as a dessert or a snack. Alm cheese has a distinctive flavor and texture that is often described as crumbly and slightly sweet. The cheese is also known for its high nutritional value, containing a good amount of protein and calcium.",
+        "3": "Alm is a type of cheese that originates from the Middle East and is made from the milk of sheep or goats. It is a semi-soft cheese with a white or yellowish color and a crumbly texture. Alm cheese is often served as a dessert or a snack and is known for its distinctive flavor, which is often described as slightly sweet and nutty. The cheese is also high in protein and calcium, making it a popular choice for those looking for a nutritious snack."
+      }
+    },
+    {
+      "qid": "701453",
+      "query": "what is a statutory deed",
+      "pivots": {
+        "0": "The sun was shining brightly in the clear blue sky as I walked through the park. The smell of freshly cut grass filled the air and the sound of children's laughter echoed through the trees. It was a beautiful day to be outside.",
+        "1": "A statutory deed is a document that is used in various legal contexts. It is often used to transfer ownership of property or to establish a contract between two parties. However, I am not sure what specific type of statutory deed you are referring to. There are many different types of deeds, including quitclaim deeds, warranty deeds, and grant deeds.",
+        "2": "A statutory deed is a document that is created under the authority of a statute or law. It is often used to transfer ownership of real property, such as land or buildings. In order to be valid, a statutory deed must be signed by the grantor and delivered to the grantee. The deed must also be recorded with the county recorder's office in order to be considered official. However, a statutory deed may not provide all the information you need to understand the specifics of the document.",
+        "3": "A statutory deed is a legal document that is created under the authority of a statute or law, and is used to transfer ownership of real property. It is a written instrument that is signed by the grantor and delivered to the grantee, and must be recorded with the county recorder's office in order to be considered official. The deed must contain certain information, including the names of the grantor and grantee, a description of the property being transferred, and a statement of the consideration or price paid for the property. Statutory deeds are commonly used in real estate transactions, and are an essential part of the process of buying and selling property."
+      }
+    },
+    {
+      "qid": "730539",
+      "query": "what is chronometer who invented it",
+      "pivots": {
+        "0": "The history of timekeeping devices dates back thousands of years with sundials and water clocks being some of the earliest known examples. The invention of the first mechanical clock in the 13th century revolutionized timekeeping and paved the way for more sophisticated devices. However, there is no mention of a chronometer in this passage.",
+        "1": "A chronometer is a highly accurate timepiece used for precise timekeeping. It is often used in navigation and scientific applications where accuracy is crucial. The development of chronometers was a significant milestone in the history of horology. However, the passage does not provide information on who invented the chronometer.",
+        "2": "The chronometer is a type of mechanical watch that is designed to keep accurate time. It was invented in the 18th century by John Harrison, an English clockmaker. Harrison's invention of the marine chronometer helped to solve the problem of accurate timekeeping at sea, which was essential for navigation. However, the passage does not provide a detailed explanation of the chronometer's mechanism or its significance in the history of timekeeping.",
+        "3": "John Harrison, an English clockmaker, invented the marine chronometer in the 18th century. The chronometer was a highly accurate timepiece that was designed to keep time with minimal deviation, even in the presence of motion. Harrison's invention was a significant breakthrough in the history of timekeeping and navigation. The marine chronometer was used extensively in maritime navigation, allowing sailors to determine their longitude with greater accuracy. Harrison's chronometer was a culmination of his years of research and experimentation, and it is considered one of the most important inventions in the history of horology."
+      }
+    },
+    {
+      "qid": "768208",
+      "query": "what is mamey",
+      "pivots": {
+        "0": "The city of Mamey is a municipality in the state of Tamaulipas, Mexico. It is known for its rich cultural heritage and natural beauty. The city has a population of over 20,000 people and is situated in the southeastern part of the state.",
+        "1": "Mamey is a type of fruit that is native to Mexico and Central America. It has a sweet and slightly acidic taste and is often eaten fresh or used in jams and preserves. The fruit is also known for its high nutritional value and is a good source of vitamins and minerals. However, the query \"what is mamey\" could be referring to other things as well.",
+        "2": "Mamey sapote is a type of fruit that is native to Mexico and Central America. It has a sweet and slightly acidic taste and is often eaten fresh or used in jams and preserves. The fruit is also known for its high nutritional value and is a good source of vitamins and minerals. However, the term \"mamey\" can also refer to other things, such as a municipality in Mexico or a type of tree. Further research is needed to determine the specific context of the query.",
+        "3": "Mamey sapote (Pouteria sapota) is a species of fruit-bearing tree native to Mexico and Central America. The fruit is a large, brown, and slightly acidic berry with a sweet and creamy pulp. It is a rich source of vitamins A and C, potassium, and fiber, making it a nutritious and healthy snack. The tree is also used for its timber and is a popular ornamental plant in tropical regions. The mamey sapote is a highly valued fruit in many parts of the world, particularly in Mexico and Central America, where it is eaten fresh, used in jams and preserves, or made into a sweet and creamy dessert."
+      }
+    },
+    {
+      "qid": "877809",
+      "query": "what metal are hip replacements made of",
+      "pivots": {
+        "0": "The sun is shining brightly in the sky today. The birds are singing their sweet melodies. The world is a beautiful place full of wonder and magic.",
+        "1": "Hip replacements are a common surgical procedure for people with severe joint damage. The procedure involves replacing the damaged joint with an artificial one. The artificial joint is made of various materials such as ceramic, plastic, or other synthetic materials. However, the specific type of material used can vary depending on the individual's needs and the surgeon's preference.",
+        "2": "Hip replacements are a common surgical procedure for people with severe joint damage. The procedure involves replacing the damaged joint with an artificial one. The artificial joint is made of various materials such as ceramic, plastic, or other synthetic materials. Some hip replacements are also made of metal, but the exact type of metal used can vary depending on the individual's needs and the surgeon's preference. The choice of material is often based on factors such as the patient's age, activity level, and overall health.",
+        "3": "Hip replacements are a common surgical procedure for people with severe joint damage. The procedure involves replacing the damaged joint with an artificial one. The artificial joint is made of various materials, with metal being a common choice. Specifically, hip replacements are often made of titanium or cobalt-chromium alloys, which are strong, durable, and resistant to corrosion. These metals are also biocompatible, meaning they can be safely integrated into the body without causing adverse reactions. The choice of metal is often based on factors such as the patient's age, activity level, and overall health, as well as the surgeon's preference and the specific needs of the individual."
+      }
+    },
+    {
+      "qid": "911232",
+      "query": "what type of conflict does della face in o, henry the gift of the magi",
+      "pivots": {
+        "0": "The story of O. Henry's \"The Gift of the Magi\" revolves around the themes of love, sacrifice, and the cyclical nature of life. The story revolves around a young couple, Jim and Della, who are struggling to make ends meet during the holiday season. Della wants to buy Jim a special Christmas present, but she doesn't have enough money. She decides to cut and sell her long hair to buy a chain for Jim's prized possession, a gold watch. Meanwhile, Jim is struggling to find the perfect gift for Della and decides to sell his watch to buy her a set of beautiful combs for her hair.",
+        "1": "O. Henry's \"The Gift of the Magi\" is a classic short story that explores the themes of love and sacrifice. The story revolves around a young couple, Jim and Della, who are struggling to make ends meet during the holiday season. Della wants to buy Jim a special Christmas present, but she doesn't have enough money. She decides to cut and sell her long hair to buy a chain for Jim's watch. However, the story doesn't specifically mention the type of conflict that Della faces. It does mention that Della is struggling to find a way to buy Jim a gift, but it doesn't specify what type of conflict she is facing.",
+        "2": "In O. Henry's \"The Gift of the Magi,\" Della faces a conflict of means, as she is struggling to find a way to buy Jim a gift within her limited financial resources. She decides to cut and sell her long hair to buy a chain for Jim's watch, which is a significant sacrifice for her. However, the story doesn't delve deeper into the type of conflict that Della faces, such as whether it's an internal or external conflict, or whether it's a conflict with Jim or with herself. The story primarily focuses on the themes of love and sacrifice, and the cyclical nature of life.",
+        "3": "In O. Henry's \"The Gift of the Magi,\" Della faces an internal conflict of means, as she struggles to find a way to buy Jim a gift within her limited financial resources. This conflict is an example of a micro-conflict, as it is a small-scale conflict that is contained within the story. The conflict is also an example of a situational conflict, as it is caused by the external circumstances of Della's life, specifically her poverty and the approaching Christmas holiday. The conflict is also an example of a conflict of values, as Della values her relationship with Jim and is willing to make a significant sacrifice to show her love and appreciation for him."
+      }
+    },
+    {
+      "qid": "914916",
+      "query": "what type of tissue are bronchioles",
+      "pivots": {
+        "0": "The city of Paris is known for its beautiful architecture and rich history. The Eiffel Tower is a famous landmark in the city. Visitors can enjoy the city's cuisine and art museums.",
+        "1": "The human body is made up of many different types of tissues. These include epithelial tissue, connective tissue, muscle tissue, and nervous tissue. Each type of tissue has its own unique characteristics and functions. However, the query does not specify which type of tissue is being asked about.",
+        "2": "The respiratory system is made up of several different parts, including the trachea, bronchi, and lungs. The bronchi are the airways that branch off from the trachea and lead to the lungs. However, the query asks about bronchioles, which are smaller airways that branch off from the bronchi. The bronchioles are responsible for conducting air to the alveoli, where gas exchange occurs.",
+        "3": "The bronchioles are a type of conducting airway in the respiratory system. They are smaller than the bronchi and branch off from them to lead to the alveoli, where gas exchange occurs. The bronchioles are lined with smooth muscle and are responsible for regulating airflow to the lungs. They are an important part of the respiratory system, allowing for the exchange of oxygen and carbon dioxide between the lungs and the bloodstream."
+      }
+    },
+    {
+      "qid": "938400",
+      "query": "when did family feud come out?",
+      "pivots": {
+        "0": "The sun rises in the east and sets in the west. The sky is blue and the grass is green. People live in houses and drive cars. The world is a complex and fascinating place.",
+        "1": "The game show Family Feud is a popular television program where two teams compete to guess the most popular responses to survey questions. The show has been on the air for many years and has had several hosts over the years. It is known for its entertaining format and engaging gameplay.",
+        "2": "Family Feud is a survey-based game show where contestants try to guess the most popular responses to survey questions. The show has been a staple of American television for decades and has undergone several format changes over the years. The show's format involves two teams competing against each other, with the goal of guessing the most popular responses to a series of survey questions.",
+        "3": "Family Feud is a television game show that originated in 1976 and was created by Mark Goodson and Bill Todman. The show's format involves two teams of five family members each, who compete to guess the most popular responses to survey questions. The show's survey questions are based on a survey of 100 people, and the team that guesses the most popular responses wins. The show has been hosted by several people over the years, including Richard Dawson, Ray Combs, and Steve Harvey."
+      }
+    },
+    {
+      "qid": "940547",
+      "query": "when did rock n roll begin?",
+      "pivots": {
+        "0": "The history of jazz music is a complex and multifaceted subject that spans over a century. From its roots in African American music traditions to its global influence on contemporary music, jazz has evolved significantly over the years. The genre has been shaped by various social, cultural, and economic factors, resulting in a diverse range of styles and sub-genres.",
+        "1": "Rock music has its roots in a variety of genres, including blues, country, and folk. The 1940s and 1950s saw the emergence of early rock and roll artists such as Chuck Berry and Little Richard, who helped to popularize the genre. However, the exact timing of the beginning of rock n roll is difficult to pinpoint, as it evolved from various musical styles over time.",
+        "2": "The development of rock music was influenced by a range of factors, including the post-war economic boom, the rise of youth culture, and the emergence of new technologies such as the electric guitar and the recording studio. The 1950s saw the rise of artists such as Elvis Presley, Bill Haley, and Jerry Lee Lewis, who helped to define the sound of early rock and roll. However, the genre continued to evolve and branch out in different directions, making it difficult to pinpoint an exact starting point.",
+        "3": "Rock and roll music originated in the United States in the late 1940s and early 1950s. The genre was heavily influenced by blues, country, and rhythm and blues music, and was characterized by its strong backbeat, electric guitars, and often provocative lyrics. The first rock and roll song is often credited to be \"Rock Around the Clock\" by Bill Haley and His Comets, released in 1954, which became a huge commercial success and helped to popularize the genre. Other early rock and roll artists, such as Chuck Berry and Little Richard, also emerged during this period, further defining the sound of the genre."
+      }
+    },
+    {
+      "qid": "997622",
+      "query": "where is the show shameless filmed",
+      "pivots": {
+        "0": "The city of New York is known for its vibrant culture and diverse neighborhoods. The city is home to many famous landmarks such as the Statue of Liberty and Central Park. Visitors can enjoy a variety of activities including shopping, dining, and entertainment options.",
+        "1": "The TV show Shameless is a popular drama series that premiered in 2011. The show revolves around the dysfunctional Gallagher family and their struggles with poverty and addiction. The show is known for its dark humor and complex characters. The show has received critical acclaim and has won several awards.",
+        "2": "Shameless is a British television series that premiered in 2004 and was later remade in the United States. The show is based on the British series of the same name and follows the lives of a dysfunctional family living in poverty. The show explores themes of addiction, poverty, and family dynamics. The US version of the show premiered in 2011 and ran for 11 seasons.",
+        "3": "The US version of Shameless is primarily filmed in Chicago, Illinois. The show's production team chose Chicago as the primary filming location due to its gritty and urban landscape, which fits the show's themes and tone. The show's main characters live in a poor neighborhood on the South Side of Chicago, and the city's streets and landmarks are often featured prominently in the show."
+      }
+    }
+  ]
+}

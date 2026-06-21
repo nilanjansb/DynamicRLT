@@ -1,0 +1,61 @@
+{
+  "wall_clock_start": "2026-06-13T23:07:34",
+  "wall_clock_end": "2026-06-14T03:56:08",
+  "total_rerank_s": 17314.2171,
+  "avg_s_per_query": 2.5974,
+  "avg_ms_per_query": 2597.39,
+  "total_vllm_infer_s": 17205.275,
+  "total_prompt_build_s": 108.3209,
+  "pct_time_in_vllm": 99.37,
+  "n_queries": 6666,
+  "n_groups": 5,
+  "docs_per_group": 19,
+  "n_processed": 95,
+  "n_phases": 2,
+  "pivot_tau": 2,
+  "pivot_source": "Pivot_generation",
+  "phases": [
+    {
+      "phase": 1,
+      "label": "group_comparison",
+      "n_groups": 5,
+      "docs_per_group": 19,
+      "n_prompts": 33330,
+      "prompt_build_s": 105.1709,
+      "vllm_infer_s": 16904.9317,
+      "permute_parse_s": 0.3359,
+      "phase_total_s": 17010.4592,
+      "avg_ai_size": 1.27,
+      "max_ai_size": 95
+    },
+    {
+      "phase": 2,
+      "label": "final_sort",
+      "n_vllm_calls": 9,
+      "max_ai_size": 95,
+      "prompt_build_s": 3.15,
+      "vllm_infer_s": 300.3433,
+      "permute_parse_s": 0.01,
+      "phase_total_s": 303.506
+    }
+  ],
+  "dataset": "fever",
+  "retriever": "bm25",
+  "model": "castorini/rank_zephyr_7b_v1_full",
+  "corpus_load_s": 11.9782,
+  "model_load_s": 16.0867,
+  "config": {
+    "window_size": 20,
+    "docs_per_group": 19,
+    "n_groups": 5,
+    "n_processed": 95,
+    "pivot_tau": 2,
+    "budget": null,
+    "top_k": 100,
+    "stride": 10,
+    "tensor_parallel_size": 1,
+    "gpu_memory_util": 0.9,
+    "max_model_len": 4096,
+    "max_num_seqs": 56
+  }
+}

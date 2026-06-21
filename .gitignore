@@ -1,0 +1,26 @@
+# Index archives (too large for GitHub)
+*.tar.gz
+
+# Raw corpora — publicly downloadable, too large for GitHub
+1_Download_dataset/data/msmarco/collection.tsv
+1_Download_dataset/data/beir/dbpedia-entity/corpus.jsonl
+1_Download_dataset/data/beir/fever/corpus.jsonl
+1_Download_dataset/data/beir/trec-covid/corpus.jsonl
+1_Download_dataset/data/beir/webis-touche2020/corpus.jsonl
+
+# fever top-1000 retrieval files (>100 MB, blocked by GitHub)
+3_Initial_Retriever/bm25/fever.top1000.txt
+3_Initial_Retriever/splade/fever.top1000.txt
+
+# Checkpoint files (transient, created mid-run)
+*.ckpt.json
+
+# Logs
+*.log
+job_watch.log
+rankvicuna_logs/
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
