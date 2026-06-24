@@ -1,0 +1,24 @@
+{
+  "wall_clock_start": "2026-06-23T14:36:26",
+  "wall_clock_end": "2026-06-23T15:26:53",
+  "total_rerank_s": 3026.5609,
+  "avg_s_per_query": 60.5312,
+  "avg_ms_per_query": 60531.22,
+  "total_infer_s": 2869.6334,
+  "pct_time_in_infer": 94.81,
+  "n_queries": 50,
+  "n_pairs_scored": 122500,
+  "effective_batch_size": 64,
+  "dataset": "trec-covid",
+  "retriever": "bm25",
+  "monot5_model": "castorini/monot5-3b-msmarco-10k",
+  "duot5_model": "castorini/duot5-3b-msmarco",
+  "corpus_load_s": 1.4629,
+  "duot5_load_s": 10.5167,
+  "config": {
+    "monot5_top_k": 100,
+    "duot5_top_k": 50,
+    "batch_size": 64,
+    "max_input_len": 512
+  }
+}

@@ -1,0 +1,448 @@
+{
+  "dataset": "msmarco-dl19",
+  "pivot_type": "single",
+  "index": "/DATA/cs26int00020/DynamicRLT/BM25_indexes/msmarco",
+  "retriever": "bm25",
+  "bm25": {
+    "k1": 0.9,
+    "b": 0.4
+  },
+  "N": 8841823,
+  "avgdl": 39.846538,
+  "tau_levels": [
+    "single"
+  ],
+  "n_queries": 43,
+  "queries": [
+    {
+      "qid": "1037798",
+      "query": "who is robert gray",
+      "scores": {
+        "single": 8.716227
+      },
+      "pivot_doc_len": {
+        "single": 80
+      }
+    },
+    {
+      "qid": "104861",
+      "query": "cost of interior concrete flooring",
+      "scores": {
+        "single": 14.721527
+      },
+      "pivot_doc_len": {
+        "single": 168
+      }
+    },
+    {
+      "qid": "1063750",
+      "query": "why did the us volunterilay enter ww1",
+      "scores": {
+        "single": 2.919586
+      },
+      "pivot_doc_len": {
+        "single": 152
+      }
+    },
+    {
+      "qid": "1103812",
+      "query": "who formed the commonwealth of independent states",
+      "scores": {
+        "single": 13.593975
+      },
+      "pivot_doc_len": {
+        "single": 88
+      }
+    },
+    {
+      "qid": "1106007",
+      "query": "define visceral?",
+      "scores": {
+        "single": 6.341476
+      },
+      "pivot_doc_len": {
+        "single": 68
+      }
+    },
+    {
+      "qid": "1110199",
+      "query": "what is wifi vs bluetooth",
+      "scores": {
+        "single": 12.06465
+      },
+      "pivot_doc_len": {
+        "single": 152
+      }
+    },
+    {
+      "qid": "1112341",
+      "query": "what is the daily life of thai people",
+      "scores": {
+        "single": 10.933534
+      },
+      "pivot_doc_len": {
+        "single": 152
+      }
+    },
+    {
+      "qid": "1113437",
+      "query": "what is physical description of spruce",
+      "scores": {
+        "single": 6.440855
+      },
+      "pivot_doc_len": {
+        "single": 144
+      }
+    },
+    {
+      "qid": "1114646",
+      "query": "what is famvir prescribed for",
+      "scores": {
+        "single": 12.772564
+      },
+      "pivot_doc_len": {
+        "single": 112
+      }
+    },
+    {
+      "qid": "1114819",
+      "query": "what is durable medical equipment consist of",
+      "scores": {
+        "single": 11.986218
+      },
+      "pivot_doc_len": {
+        "single": 152
+      }
+    },
+    {
+      "qid": "1115776",
+      "query": "what is an aml surveillance analyst",
+      "scores": {
+        "single": 17.222502
+      },
+      "pivot_doc_len": {
+        "single": 168
+      }
+    },
+    {
+      "qid": "1117099",
+      "query": "what is a active margin",
+      "scores": {
+        "single": 8.126757
+      },
+      "pivot_doc_len": {
+        "single": 152
+      }
+    },
+    {
+      "qid": "1121402",
+      "query": "what can contour plowing reduce",
+      "scores": {
+        "single": 17.380556
+      },
+      "pivot_doc_len": {
+        "single": 168
+      }
+    },
+    {
+      "qid": "1121709",
+      "query": "what are the three percenters?",
+      "scores": {
+        "single": 5.32528
+      },
+      "pivot_doc_len": {
+        "single": 152
+      }
+    },
+    {
+      "qid": "1124210",
+      "query": "tracheids are part of _____.",
+      "scores": {
+        "single": 9.486646
+      },
+      "pivot_doc_len": {
+        "single": 52
+      }
+    },
+    {
+      "qid": "1129237",
+      "query": "hydrogen is a liquid below what temperature",
+      "scores": {
+        "single": 14.337222
+      },
+      "pivot_doc_len": {
+        "single": 34
+      }
+    },
+    {
+      "qid": "1133167",
+      "query": "how is the weather in jamaica",
+      "scores": {
+        "single": 8.408481
+      },
+      "pivot_doc_len": {
+        "single": 152
+      }
+    },
+    {
+      "qid": "130510",
+      "query": "definition declaratory judgment",
+      "scores": {
+        "single": 13.354038
+      },
+      "pivot_doc_len": {
+        "single": 152
+      }
+    },
+    {
+      "qid": "131843",
+      "query": "definition of a sigmet",
+      "scores": {
+        "single": 10.402473
+      },
+      "pivot_doc_len": {
+        "single": 144
+      }
+    },
+    {
+      "qid": "146187",
+      "query": "difference between a mcdouble and a double cheeseburger",
+      "scores": {
+        "single": 23.275214
+      },
+      "pivot_doc_len": {
+        "single": 56
+      }
+    },
+    {
+      "qid": "148538",
+      "query": "difference between rn and bsn",
+      "scores": {
+        "single": 15.301784
+      },
+      "pivot_doc_len": {
+        "single": 152
+      }
+    },
+    {
+      "qid": "156493",
+      "query": "do goldfish grow",
+      "scores": {
+        "single": 11.57134
+      },
+      "pivot_doc_len": {
+        "single": 152
+      }
+    },
+    {
+      "qid": "168216",
+      "query": "does legionella pneumophila cause pneumonia",
+      "scores": {
+        "single": 15.893617
+      },
+      "pivot_doc_len": {
+        "single": 152
+      }
+    },
+    {
+      "qid": "182539",
+      "query": "example of monotonic function",
+      "scores": {
+        "single": 13.747024
+      },
+      "pivot_doc_len": {
+        "single": 128
+      }
+    },
+    {
+      "qid": "183378",
+      "query": "exons definition biology",
+      "scores": {
+        "single": 10.739678
+      },
+      "pivot_doc_len": {
+        "single": 152
+      }
+    },
+    {
+      "qid": "19335",
+      "query": "anthropological definition of environment",
+      "scores": {
+        "single": 11.623529
+      },
+      "pivot_doc_len": {
+        "single": 144
+      }
+    },
+    {
+      "qid": "207786",
+      "query": "how are some sharks warm blooded",
+      "scores": {
+        "single": 13.730459
+      },
+      "pivot_doc_len": {
+        "single": 152
+      }
+    },
+    {
+      "qid": "264014",
+      "query": "how long is life cycle of flea",
+      "scores": {
+        "single": 9.536435
+      },
+      "pivot_doc_len": {
+        "single": 152
+      }
+    },
+    {
+      "qid": "359349",
+      "query": "how to find the midsegment of a trapezoid",
+      "scores": {
+        "single": 20.779612
+      },
+      "pivot_doc_len": {
+        "single": 104
+      }
+    },
+    {
+      "qid": "405717",
+      "query": "is cdg airport in main paris",
+      "scores": {
+        "single": 15.7891
+      },
+      "pivot_doc_len": {
+        "single": 84
+      }
+    },
+    {
+      "qid": "443396",
+      "query": "lps laws definition",
+      "scores": {
+        "single": 5.853913
+      },
+      "pivot_doc_len": {
+        "single": 144
+      }
+    },
+    {
+      "qid": "451602",
+      "query": "medicare's definition of mechanical ventilation",
+      "scores": {
+        "single": 14.38761
+      },
+      "pivot_doc_len": {
+        "single": 152
+      }
+    },
+    {
+      "qid": "47923",
+      "query": "axon terminals or synaptic knob definition",
+      "scores": {
+        "single": 17.370565
+      },
+      "pivot_doc_len": {
+        "single": 136
+      }
+    },
+    {
+      "qid": "489204",
+      "query": "right pelvic pain causes",
+      "scores": {
+        "single": 14.689642
+      },
+      "pivot_doc_len": {
+        "single": 152
+      }
+    },
+    {
+      "qid": "490595",
+      "query": "rsa definition key",
+      "scores": {
+        "single": 9.679455
+      },
+      "pivot_doc_len": {
+        "single": 152
+      }
+    },
+    {
+      "qid": "527433",
+      "query": "types of dysarthria from cerebral palsy",
+      "scores": {
+        "single": 23.527869
+      },
+      "pivot_doc_len": {
+        "single": 144
+      }
+    },
+    {
+      "qid": "573724",
+      "query": "what are the social determinants of health",
+      "scores": {
+        "single": 9.630208
+      },
+      "pivot_doc_len": {
+        "single": 184
+      }
+    },
+    {
+      "qid": "833860",
+      "query": "what is the most popular food in switzerland",
+      "scores": {
+        "single": 9.450765
+      },
+      "pivot_doc_len": {
+        "single": 144
+      }
+    },
+    {
+      "qid": "855410",
+      "query": "what is theraderm used for",
+      "scores": {
+        "single": 11.181978
+      },
+      "pivot_doc_len": {
+        "single": 84
+      }
+    },
+    {
+      "qid": "87181",
+      "query": "causes of left ventricular hypertrophy",
+      "scores": {
+        "single": 19.024276
+      },
+      "pivot_doc_len": {
+        "single": 144
+      }
+    },
+    {
+      "qid": "87452",
+      "query": "causes of military suicide",
+      "scores": {
+        "single": 10.425825
+      },
+      "pivot_doc_len": {
+        "single": 152
+      }
+    },
+    {
+      "qid": "915593",
+      "query": "what types of food can you cook sous vide",
+      "scores": {
+        "single": 23.249735
+      },
+      "pivot_doc_len": {
+        "single": 152
+      }
+    },
+    {
+      "qid": "962179",
+      "query": "when was the salvation army founded",
+      "scores": {
+        "single": 11.69565
+      },
+      "pivot_doc_len": {
+        "single": 152
+      }
+    }
+  ]
+}

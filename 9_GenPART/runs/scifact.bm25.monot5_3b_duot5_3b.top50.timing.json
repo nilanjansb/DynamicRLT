@@ -1,0 +1,24 @@
+{
+  "wall_clock_start": "2026-06-23T09:28:57",
+  "wall_clock_end": "2026-06-23T14:36:25",
+  "total_rerank_s": 18448.0713,
+  "avg_s_per_query": 61.4936,
+  "avg_ms_per_query": 61493.57,
+  "total_infer_s": 17383.7646,
+  "pct_time_in_infer": 94.23,
+  "n_queries": 300,
+  "n_pairs_scored": 735000,
+  "effective_batch_size": 64,
+  "dataset": "scifact",
+  "retriever": "bm25",
+  "monot5_model": "castorini/monot5-3b-msmarco-10k",
+  "duot5_model": "castorini/duot5-3b-msmarco",
+  "corpus_load_s": 0.0221,
+  "duot5_load_s": 10.5167,
+  "config": {
+    "monot5_top_k": 100,
+    "duot5_top_k": 50,
+    "batch_size": 64,
+    "max_input_len": 512
+  }
+}

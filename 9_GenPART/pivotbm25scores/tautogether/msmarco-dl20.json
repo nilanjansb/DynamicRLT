@@ -1,0 +1,885 @@
+{
+  "dataset": "msmarco-dl20",
+  "pivot_type": "tautogether",
+  "index": "/DATA/cs26int00020/DynamicRLT/BM25_indexes/msmarco",
+  "retriever": "bm25",
+  "bm25": {
+    "k1": 0.9,
+    "b": 0.4
+  },
+  "N": 8841823,
+  "avgdl": 39.846538,
+  "tau_levels": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "n_queries": 54,
+  "queries": [
+    {
+      "qid": "1030303",
+      "query": "who is aziz hashim",
+      "scores": {
+        "0": 0.0,
+        "1": 14.198099,
+        "2": 17.724852,
+        "3": 15.154748
+      },
+      "pivot_doc_len": {
+        "0": 23,
+        "1": 30,
+        "2": 40,
+        "3": 46
+      }
+    },
+    {
+      "qid": "1037496",
+      "query": "who is rep scalise?",
+      "scores": {
+        "0": 0.0,
+        "1": 0.0,
+        "2": 1.540065,
+        "3": 0.0
+      },
+      "pivot_doc_len": {
+        "0": 23,
+        "1": 39,
+        "2": 39,
+        "3": 40
+      }
+    },
+    {
+      "qid": "1043135",
+      "query": "who killed nicholas ii of russia",
+      "scores": {
+        "0": 0.0,
+        "1": 10.355146,
+        "2": 13.119379,
+        "3": 14.410586
+      },
+      "pivot_doc_len": {
+        "0": 30,
+        "1": 42,
+        "2": 56,
+        "3": 88
+      }
+    },
+    {
+      "qid": "1051399",
+      "query": "who sings monk theme song",
+      "scores": {
+        "0": 0.0,
+        "1": 5.901769,
+        "2": 14.135193,
+        "3": 13.815089
+      },
+      "pivot_doc_len": {
+        "0": 21,
+        "1": 33,
+        "2": 40,
+        "3": 42
+      }
+    },
+    {
+      "qid": "1064670",
+      "query": "why do hunters pattern their shotguns?",
+      "scores": {
+        "0": 0.0,
+        "1": 10.85865,
+        "2": 16.952985,
+        "3": 15.85011
+      },
+      "pivot_doc_len": {
+        "0": 37,
+        "1": 44,
+        "2": 50,
+        "3": 56
+      }
+    },
+    {
+      "qid": "1071750",
+      "query": "why is pete rose banned from hall of fame",
+      "scores": {
+        "0": 0.0,
+        "1": 8.375984,
+        "2": 13.512845,
+        "3": 18.787043
+      },
+      "pivot_doc_len": {
+        "0": 42,
+        "1": 44,
+        "2": 64,
+        "3": 96
+      }
+    },
+    {
+      "qid": "1105792",
+      "query": "define: geon",
+      "scores": {
+        "0": 0.0,
+        "1": 7.283195,
+        "2": 6.93042,
+        "3": 9.080534
+      },
+      "pivot_doc_len": {
+        "0": 24,
+        "1": 26,
+        "2": 36,
+        "3": 34
+      }
+    },
+    {
+      "qid": "1106979",
+      "query": "define pareto chart in statistics",
+      "scores": {
+        "0": 0.0,
+        "1": 11.930905,
+        "2": 12.42218,
+        "3": 14.857233
+      },
+      "pivot_doc_len": {
+        "0": 20,
+        "1": 34,
+        "2": 36,
+        "3": 64
+      }
+    },
+    {
+      "qid": "1108651",
+      "query": "what the best way to get clothes white",
+      "scores": {
+        "0": 5.858661,
+        "1": 8.028128,
+        "2": 8.001743,
+        "3": 11.618916
+      },
+      "pivot_doc_len": {
+        "0": 26,
+        "1": 36,
+        "2": 46,
+        "3": 52
+      }
+    },
+    {
+      "qid": "1109707",
+      "query": "what medium do radio waves travel through",
+      "scores": {
+        "0": 0.0,
+        "1": 16.451002,
+        "2": 17.109204,
+        "3": 13.855778
+      },
+      "pivot_doc_len": {
+        "0": 36,
+        "1": 44,
+        "2": 52,
+        "3": 52
+      }
+    },
+    {
+      "qid": "1110678",
+      "query": "what is the un fao",
+      "scores": {
+        "0": 0.0,
+        "1": 7.690179,
+        "2": 7.498719,
+        "3": 11.322554
+      },
+      "pivot_doc_len": {
+        "0": 31,
+        "1": 39,
+        "2": 50,
+        "3": 56
+      }
+    },
+    {
+      "qid": "1113256",
+      "query": "what is reba mcentire's net worth",
+      "scores": {
+        "0": 0.0,
+        "1": 11.480718,
+        "2": 16.216696,
+        "3": 15.494203
+      },
+      "pivot_doc_len": {
+        "0": 15,
+        "1": 32,
+        "2": 44,
+        "3": 54
+      }
+    },
+    {
+      "qid": "1115210",
+      "query": "what is chaff and flare",
+      "scores": {
+        "0": 0.0,
+        "1": 12.737561,
+        "2": 12.825137,
+        "3": 13.776174
+      },
+      "pivot_doc_len": {
+        "0": 21,
+        "1": 31,
+        "2": 42,
+        "3": 54
+      }
+    },
+    {
+      "qid": "1116380",
+      "query": "what is a nonconformity? earth science",
+      "scores": {
+        "0": 0.0,
+        "1": 13.053428,
+        "2": 12.60014,
+        "3": 12.914581
+      },
+      "pivot_doc_len": {
+        "0": 24,
+        "1": 27,
+        "2": 36,
+        "3": 46
+      }
+    },
+    {
+      "qid": "1121353",
+      "query": "what can you do about discrimination in the workplace in oklahoma city",
+      "scores": {
+        "0": 8.267394,
+        "1": 18.934214,
+        "2": 17.880014,
+        "3": 18.932932
+      },
+      "pivot_doc_len": {
+        "0": 39,
+        "1": 46,
+        "2": 50,
+        "3": 64
+      }
+    },
+    {
+      "qid": "1122767",
+      "query": "what amino produces carnitine",
+      "scores": {
+        "0": 0.0,
+        "1": 12.381573,
+        "2": 15.325668,
+        "3": 14.268402
+      },
+      "pivot_doc_len": {
+        "0": 38,
+        "1": 37,
+        "2": 40,
+        "3": 35
+      }
+    },
+    {
+      "qid": "1127540",
+      "query": "meaning of shebang",
+      "scores": {
+        "0": 1.804041,
+        "1": 10.831522,
+        "2": 9.505915,
+        "3": 9.347328
+      },
+      "pivot_doc_len": {
+        "0": 21,
+        "1": 38,
+        "2": 50,
+        "3": 60
+      }
+    },
+    {
+      "qid": "1131069",
+      "query": "how many sons robert kraft has",
+      "scores": {
+        "0": 0.0,
+        "1": 11.249322,
+        "2": 14.231395,
+        "3": 15.03335
+      },
+      "pivot_doc_len": {
+        "0": 31,
+        "1": 48,
+        "2": 56,
+        "3": 23
+      }
+    },
+    {
+      "qid": "1132532",
+      "query": "average annual income data analyst",
+      "scores": {
+        "0": 9.87968,
+        "1": 15.595035,
+        "2": 10.25753,
+        "3": 14.051112
+      },
+      "pivot_doc_len": {
+        "0": 24,
+        "1": 42,
+        "2": 52,
+        "3": 60
+      }
+    },
+    {
+      "qid": "1133579",
+      "query": "how does granulation tissue start",
+      "scores": {
+        "0": 0.0,
+        "1": 10.219185,
+        "2": 15.270793,
+        "3": 10.10446
+      },
+      "pivot_doc_len": {
+        "0": 24,
+        "1": 30,
+        "2": 37,
+        "3": 60
+      }
+    },
+    {
+      "qid": "1136043",
+      "query": "difference between a hotel and motel",
+      "scores": {
+        "0": 0.0,
+        "1": 0.0,
+        "2": 10.21123,
+        "3": 11.004747
+      },
+      "pivot_doc_len": {
+        "0": 25,
+        "1": 33,
+        "2": 42,
+        "3": 48
+      }
+    },
+    {
+      "qid": "1136047",
+      "query": "difference between a company's strategy and business model is",
+      "scores": {
+        "0": 2.641074,
+        "1": 13.698324,
+        "2": 14.933355,
+        "3": 16.841296
+      },
+      "pivot_doc_len": {
+        "0": 31,
+        "1": 52,
+        "2": 60,
+        "3": 76
+      }
+    },
+    {
+      "qid": "1136962",
+      "query": "why did the ancient egyptians call their land kemet, or black land?",
+      "scores": {
+        "0": 7.880289,
+        "1": 7.754155,
+        "2": 25.012844,
+        "3": 25.46966
+      },
+      "pivot_doc_len": {
+        "0": 26,
+        "1": 38,
+        "2": 46,
+        "3": 60
+      }
+    },
+    {
+      "qid": "118440",
+      "query": "define bmt medical",
+      "scores": {
+        "0": 6.168929,
+        "1": 7.876878,
+        "2": 7.36266,
+        "3": 8.415276
+      },
+      "pivot_doc_len": {
+        "0": 19,
+        "1": 30,
+        "2": 44,
+        "3": 68
+      }
+    },
+    {
+      "qid": "121171",
+      "query": "define etruscans",
+      "scores": {
+        "0": 6.761017,
+        "1": 7.41378,
+        "2": 9.941526,
+        "3": 7.623647
+      },
+      "pivot_doc_len": {
+        "0": 36,
+        "1": 42,
+        "2": 52,
+        "3": 60
+      }
+    },
+    {
+      "qid": "135802",
+      "query": "definition of laudable",
+      "scores": {
+        "0": 0.0,
+        "1": 8.07298,
+        "2": 7.735742,
+        "3": 10.403953
+      },
+      "pivot_doc_len": {
+        "0": 20,
+        "1": 40,
+        "2": 54,
+        "3": 60
+      }
+    },
+    {
+      "qid": "141630",
+      "query": "describe how muscles and bones work together to produce movement",
+      "scores": {
+        "0": 0.0,
+        "1": 17.028344,
+        "2": 15.026809,
+        "3": 16.923324
+      },
+      "pivot_doc_len": {
+        "0": 16,
+        "1": 40,
+        "2": 50,
+        "3": 68
+      }
+    },
+    {
+      "qid": "156498",
+      "query": "do google docs auto save",
+      "scores": {
+        "0": 0.0,
+        "1": 12.272045,
+        "2": 13.009249,
+        "3": 13.018122
+      },
+      "pivot_doc_len": {
+        "0": 40,
+        "1": 46,
+        "2": 52,
+        "3": 68
+      }
+    },
+    {
+      "qid": "169208",
+      "query": "does mississippi have an income tax",
+      "scores": {
+        "0": 5.124955,
+        "1": 4.605803,
+        "2": 13.058996,
+        "3": 14.274562
+      },
+      "pivot_doc_len": {
+        "0": 33,
+        "1": 34,
+        "2": 42,
+        "3": 52
+      }
+    },
+    {
+      "qid": "174463",
+      "query": "dog day afternoon meaning",
+      "scores": {
+        "0": 0.0,
+        "1": 8.916826,
+        "2": 9.209741,
+        "3": 11.066374
+      },
+      "pivot_doc_len": {
+        "0": 32,
+        "1": 35,
+        "2": 50,
+        "3": 68
+      }
+    },
+    {
+      "qid": "23849",
+      "query": "are naturalization records public information",
+      "scores": {
+        "0": 0.0,
+        "1": 8.327869,
+        "2": 9.711889,
+        "3": 10.856016
+      },
+      "pivot_doc_len": {
+        "0": 50,
+        "1": 60,
+        "2": 68,
+        "3": 68
+      }
+    },
+    {
+      "qid": "258062",
+      "query": "how long does it take to remove wisdom tooth",
+      "scores": {
+        "0": 0.0,
+        "1": 5.619538,
+        "2": 14.558158,
+        "3": 13.804708
+      },
+      "pivot_doc_len": {
+        "0": 14,
+        "1": 32,
+        "2": 52,
+        "3": 68
+      }
+    },
+    {
+      "qid": "324585",
+      "query": "how much money do motivational speakers make",
+      "scores": {
+        "0": 0.0,
+        "1": 10.082313,
+        "2": 9.706435,
+        "3": 9.709331
+      },
+      "pivot_doc_len": {
+        "0": 31,
+        "1": 44,
+        "2": 60,
+        "3": 72
+      }
+    },
+    {
+      "qid": "330975",
+      "query": "how much would it cost to install my own wind turbine",
+      "scores": {
+        "0": 5.836249,
+        "1": 14.123142,
+        "2": 16.325824,
+        "3": 16.155514
+      },
+      "pivot_doc_len": {
+        "0": 44,
+        "1": 54,
+        "2": 64,
+        "3": 56
+      }
+    },
+    {
+      "qid": "332593",
+      "query": "how often to button quail lay eggs",
+      "scores": {
+        "0": 17.981934,
+        "1": 15.673139,
+        "2": 20.214299,
+        "3": 19.099377
+      },
+      "pivot_doc_len": {
+        "0": 29,
+        "1": 30,
+        "2": 46,
+        "3": 54
+      }
+    },
+    {
+      "qid": "336901",
+      "query": "how old is vanessa redgrave",
+      "scores": {
+        "0": 0.0,
+        "1": 13.496207,
+        "2": 12.551295,
+        "3": 12.108892
+      },
+      "pivot_doc_len": {
+        "0": 30,
+        "1": 44,
+        "2": 44,
+        "3": 54
+      }
+    },
+    {
+      "qid": "390360",
+      "query": "ia suffix meaning",
+      "scores": {
+        "0": 0.0,
+        "1": 11.866044,
+        "2": 12.635558,
+        "3": 11.276478
+      },
+      "pivot_doc_len": {
+        "0": 13,
+        "1": 29,
+        "2": 27,
+        "3": 32
+      }
+    },
+    {
+      "qid": "405163",
+      "query": "is caffeine an narcotic",
+      "scores": {
+        "0": 0.0,
+        "1": 4.635336,
+        "2": 8.536707,
+        "3": 9.614003
+      },
+      "pivot_doc_len": {
+        "0": 26,
+        "1": 36,
+        "2": 42,
+        "3": 48
+      }
+    },
+    {
+      "qid": "42255",
+      "query": "average salary for dental hygienist in nebraska",
+      "scores": {
+        "0": 10.654515,
+        "1": 13.704147,
+        "2": 18.162938,
+        "3": 20.857428
+      },
+      "pivot_doc_len": {
+        "0": 44,
+        "1": 52,
+        "2": 60,
+        "3": 72
+      }
+    },
+    {
+      "qid": "47210",
+      "query": "average wedding dress alteration cost",
+      "scores": {
+        "0": 0.0,
+        "1": 12.142363,
+        "2": 15.803601,
+        "3": 18.108123
+      },
+      "pivot_doc_len": {
+        "0": 42,
+        "1": 44,
+        "2": 50,
+        "3": 52
+      }
+    },
+    {
+      "qid": "555530",
+      "query": "what are best foods to lower cholesterol",
+      "scores": {
+        "0": 0.0,
+        "1": 7.991754,
+        "2": 9.463101,
+        "3": 10.273958
+      },
+      "pivot_doc_len": {
+        "0": 24,
+        "1": 37,
+        "2": 40,
+        "3": 52
+      }
+    },
+    {
+      "qid": "583468",
+      "query": "what carvedilol used for",
+      "scores": {
+        "0": 8.663005,
+        "1": 8.542617,
+        "2": 9.349258,
+        "3": 9.035879
+      },
+      "pivot_doc_len": {
+        "0": 38,
+        "1": 48,
+        "2": 56,
+        "3": 72
+      }
+    },
+    {
+      "qid": "640502",
+      "query": "what does it mean if your tsh is low",
+      "scores": {
+        "0": 0.0,
+        "1": 14.651973,
+        "2": 9.577039,
+        "3": 9.468411
+      },
+      "pivot_doc_len": {
+        "0": 29,
+        "1": 44,
+        "2": 52,
+        "3": 80
+      }
+    },
+    {
+      "qid": "67316",
+      "query": "can fever cause miscarriage early pregnancy",
+      "scores": {
+        "0": 0.0,
+        "1": 17.454071,
+        "2": 19.003703,
+        "3": 18.935613
+      },
+      "pivot_doc_len": {
+        "0": 16,
+        "1": 46,
+        "2": 60,
+        "3": 72
+      }
+    },
+    {
+      "qid": "673670",
+      "query": "what is a alm",
+      "scores": {
+        "0": 0.0,
+        "1": 7.336168,
+        "2": 7.130571,
+        "3": 6.957256
+      },
+      "pivot_doc_len": {
+        "0": 21,
+        "1": 31,
+        "2": 40,
+        "3": 48
+      }
+    },
+    {
+      "qid": "701453",
+      "query": "what is a statutory deed",
+      "scores": {
+        "0": 0.0,
+        "1": 12.839368,
+        "2": 11.428998,
+        "3": 10.194335
+      },
+      "pivot_doc_len": {
+        "0": 25,
+        "1": 39,
+        "2": 46,
+        "3": 56
+      }
+    },
+    {
+      "qid": "730539",
+      "query": "what is chronometer who invented it",
+      "scores": {
+        "0": 9.562171,
+        "1": 14.018464,
+        "2": 12.973202,
+        "3": 13.611213
+      },
+      "pivot_doc_len": {
+        "0": 32,
+        "1": 29,
+        "2": 40,
+        "3": 54
+      }
+    },
+    {
+      "qid": "768208",
+      "query": "what is mamey",
+      "scores": {
+        "0": 7.234878,
+        "1": 10.252467,
+        "2": 8.504727,
+        "3": 8.205563
+      },
+      "pivot_doc_len": {
+        "0": 23,
+        "1": 38,
+        "2": 48,
+        "3": 60
+      }
+    },
+    {
+      "qid": "877809",
+      "query": "what metal are hip replacements made of",
+      "scores": {
+        "0": 0.0,
+        "1": 8.253451,
+        "2": 13.048853,
+        "3": 13.002617
+      },
+      "pivot_doc_len": {
+        "0": 15,
+        "1": 38,
+        "2": 54,
+        "3": 68
+      }
+    },
+    {
+      "qid": "911232",
+      "query": "what type of conflict does della face in o, henry the gift of the magi",
+      "scores": {
+        "0": 20.205706,
+        "1": 32.453708,
+        "2": 29.711438,
+        "3": 28.524613
+      },
+      "pivot_doc_len": {
+        "0": 72,
+        "1": 72,
+        "2": 60,
+        "3": 64
+      }
+    },
+    {
+      "qid": "914916",
+      "query": "what type of tissue are bronchioles",
+      "scores": {
+        "0": 0.0,
+        "1": 6.498709,
+        "2": 6.137533,
+        "3": 7.782488
+      },
+      "pivot_doc_len": {
+        "0": 20,
+        "1": 36,
+        "2": 40,
+        "3": 39
+      }
+    },
+    {
+      "qid": "938400",
+      "query": "when did family feud come out?",
+      "scores": {
+        "0": 0.0,
+        "1": 6.878098,
+        "2": 6.52856,
+        "3": 6.877452
+      },
+      "pivot_doc_len": {
+        "0": 18,
+        "1": 35,
+        "2": 46,
+        "3": 56
+      }
+    },
+    {
+      "qid": "940547",
+      "query": "when did rock n roll begin?",
+      "scores": {
+        "0": 0.0,
+        "1": 12.110774,
+        "2": 6.025236,
+        "3": 7.869407
+      },
+      "pivot_doc_len": {
+        "0": 42,
+        "1": 42,
+        "2": 52,
+        "3": 64
+      }
+    },
+    {
+      "qid": "997622",
+      "query": "where is the show shameless filmed",
+      "scores": {
+        "0": 0.0,
+        "1": 8.320056,
+        "2": 8.028533,
+        "3": 11.433633
+      },
+      "pivot_doc_len": {
+        "0": 28,
+        "1": 33,
+        "2": 37,
+        "3": 40
+      }
+    }
+  ]
+}

@@ -1,0 +1,709 @@
+{
+  "dataset": "msmarco-dl19",
+  "pivot_type": "tautogether",
+  "index": "/DATA/cs26int00020/DynamicRLT/BM25_indexes/msmarco",
+  "retriever": "bm25",
+  "bm25": {
+    "k1": 0.9,
+    "b": 0.4
+  },
+  "N": 8841823,
+  "avgdl": 39.846538,
+  "tau_levels": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "n_queries": 43,
+  "queries": [
+    {
+      "qid": "1037798",
+      "query": "who is robert gray",
+      "scores": {
+        "0": 0.0,
+        "1": 3.048761,
+        "2": 10.834168,
+        "3": 8.601199
+      },
+      "pivot_doc_len": {
+        "0": 31,
+        "1": 44,
+        "2": 44,
+        "3": 52
+      }
+    },
+    {
+      "qid": "104861",
+      "query": "cost of interior concrete flooring",
+      "scores": {
+        "0": 0.0,
+        "1": 9.645066,
+        "2": 8.162353,
+        "3": 15.333163
+      },
+      "pivot_doc_len": {
+        "0": 24,
+        "1": 33,
+        "2": 46,
+        "3": 54
+      }
+    },
+    {
+      "qid": "1063750",
+      "query": "why did the us volunterilay enter ww1",
+      "scores": {
+        "0": 0.0,
+        "1": 5.441136,
+        "2": 3.352099,
+        "3": 3.111461
+      },
+      "pivot_doc_len": {
+        "0": 20,
+        "1": 76,
+        "2": 84,
+        "3": 120
+      }
+    },
+    {
+      "qid": "1103812",
+      "query": "who formed the commonwealth of independent states",
+      "scores": {
+        "0": 0.0,
+        "1": 11.702249,
+        "2": 13.329131,
+        "3": 13.361427
+      },
+      "pivot_doc_len": {
+        "0": 21,
+        "1": 32,
+        "2": 46,
+        "3": 56
+      }
+    },
+    {
+      "qid": "1106007",
+      "query": "define visceral?",
+      "scores": {
+        "0": 0.0,
+        "1": 5.70391,
+        "2": 5.563566,
+        "3": 6.005437
+      },
+      "pivot_doc_len": {
+        "0": 29,
+        "1": 36,
+        "2": 44,
+        "3": 60
+      }
+    },
+    {
+      "qid": "1110199",
+      "query": "what is wifi vs bluetooth",
+      "scores": {
+        "0": 0.0,
+        "1": 3.997327,
+        "2": 5.415361,
+        "3": 4.440048
+      },
+      "pivot_doc_len": {
+        "0": 15,
+        "1": 39,
+        "2": 72,
+        "3": 96
+      }
+    },
+    {
+      "qid": "1112341",
+      "query": "what is the daily life of thai people",
+      "scores": {
+        "0": 0.0,
+        "1": 0.0,
+        "2": 10.193142,
+        "3": 10.721343
+      },
+      "pivot_doc_len": {
+        "0": 48,
+        "1": 54,
+        "2": 52,
+        "3": 60
+      }
+    },
+    {
+      "qid": "1113437",
+      "query": "what is physical description of spruce",
+      "scores": {
+        "0": 0.0,
+        "1": 11.197714,
+        "2": 12.921552,
+        "3": 10.712513
+      },
+      "pivot_doc_len": {
+        "0": 50,
+        "1": 50,
+        "2": 60,
+        "3": 64
+      }
+    },
+    {
+      "qid": "1114646",
+      "query": "what is famvir prescribed for",
+      "scores": {
+        "0": 0.0,
+        "1": 9.243154,
+        "2": 9.115317,
+        "3": 12.691081
+      },
+      "pivot_doc_len": {
+        "0": 34,
+        "1": 36,
+        "2": 42,
+        "3": 56
+      }
+    },
+    {
+      "qid": "1114819",
+      "query": "what is durable medical equipment consist of",
+      "scores": {
+        "0": 0.0,
+        "1": 15.959275,
+        "2": 15.708439,
+        "3": 11.650923
+      },
+      "pivot_doc_len": {
+        "0": 39,
+        "1": 50,
+        "2": 52,
+        "3": 76
+      }
+    },
+    {
+      "qid": "1115776",
+      "query": "what is an aml surveillance analyst",
+      "scores": {
+        "0": 0.0,
+        "1": 14.346964,
+        "2": 16.154332,
+        "3": 15.962669
+      },
+      "pivot_doc_len": {
+        "0": 20,
+        "1": 40,
+        "2": 52,
+        "3": 56
+      }
+    },
+    {
+      "qid": "1117099",
+      "query": "what is a active margin",
+      "scores": {
+        "0": 0.0,
+        "1": 7.407891,
+        "2": 7.356115,
+        "3": 7.792601
+      },
+      "pivot_doc_len": {
+        "0": 23,
+        "1": 31,
+        "2": 44,
+        "3": 56
+      }
+    },
+    {
+      "qid": "1121402",
+      "query": "what can contour plowing reduce",
+      "scores": {
+        "0": 4.985626,
+        "1": 17.199043,
+        "2": 16.409667,
+        "3": 17.249829
+      },
+      "pivot_doc_len": {
+        "0": 25,
+        "1": 33,
+        "2": 35,
+        "3": 50
+      }
+    },
+    {
+      "qid": "1121709",
+      "query": "what are the three percenters?",
+      "scores": {
+        "0": 5.583152,
+        "1": 5.443634,
+        "2": 5.199991,
+        "3": 5.049328
+      },
+      "pivot_doc_len": {
+        "0": 31,
+        "1": 39,
+        "2": 54,
+        "3": 64
+      }
+    },
+    {
+      "qid": "1124210",
+      "query": "tracheids are part of _____.",
+      "scores": {
+        "0": 0.0,
+        "1": 8.117532,
+        "2": 9.653927,
+        "3": 9.619927
+      },
+      "pivot_doc_len": {
+        "0": 21,
+        "1": 22,
+        "2": 30,
+        "3": 31
+      }
+    },
+    {
+      "qid": "1129237",
+      "query": "hydrogen is a liquid below what temperature",
+      "scores": {
+        "0": 2.329422,
+        "1": 7.030954,
+        "2": 12.97078,
+        "3": 14.19325
+      },
+      "pivot_doc_len": {
+        "0": 23,
+        "1": 28,
+        "2": 32,
+        "3": 26
+      }
+    },
+    {
+      "qid": "1133167",
+      "query": "how is the weather in jamaica",
+      "scores": {
+        "0": 0.0,
+        "1": 5.882956,
+        "2": 5.185532,
+        "3": 8.401677
+      },
+      "pivot_doc_len": {
+        "0": 44,
+        "1": 46,
+        "2": 50,
+        "3": 60
+      }
+    },
+    {
+      "qid": "130510",
+      "query": "definition declaratory judgment",
+      "scores": {
+        "0": 0.0,
+        "1": 10.308586,
+        "2": 12.301095,
+        "3": 13.963862
+      },
+      "pivot_doc_len": {
+        "0": 27,
+        "1": 38,
+        "2": 46,
+        "3": 52
+      }
+    },
+    {
+      "qid": "131843",
+      "query": "definition of a sigmet",
+      "scores": {
+        "0": 7.246488,
+        "1": 7.283754,
+        "2": 11.872276,
+        "3": 9.404273
+      },
+      "pivot_doc_len": {
+        "0": 25,
+        "1": 24,
+        "2": 38,
+        "3": 60
+      }
+    },
+    {
+      "qid": "146187",
+      "query": "difference between a mcdouble and a double cheeseburger",
+      "scores": {
+        "0": 0.0,
+        "1": 1.647353,
+        "2": 13.96589,
+        "3": 21.749793
+      },
+      "pivot_doc_len": {
+        "0": 25,
+        "1": 40,
+        "2": 46,
+        "3": 52
+      }
+    },
+    {
+      "qid": "148538",
+      "query": "difference between rn and bsn",
+      "scores": {
+        "0": 1.687443,
+        "1": 3.349493,
+        "2": 9.685027,
+        "3": 12.816351
+      },
+      "pivot_doc_len": {
+        "0": 35,
+        "1": 34,
+        "2": 42,
+        "3": 72
+      }
+    },
+    {
+      "qid": "156493",
+      "query": "do goldfish grow",
+      "scores": {
+        "0": 0.0,
+        "1": 10.129464,
+        "2": 8.417077,
+        "3": 8.889684
+      },
+      "pivot_doc_len": {
+        "0": 24,
+        "1": 31,
+        "2": 36,
+        "3": 44
+      }
+    },
+    {
+      "qid": "168216",
+      "query": "does legionella pneumophila cause pneumonia",
+      "scores": {
+        "0": 0.0,
+        "1": 13.472471,
+        "2": 21.567959,
+        "3": 15.836645
+      },
+      "pivot_doc_len": {
+        "0": 20,
+        "1": 28,
+        "2": 33,
+        "3": 54
+      }
+    },
+    {
+      "qid": "182539",
+      "query": "example of monotonic function",
+      "scores": {
+        "0": 7.47683,
+        "1": 13.233898,
+        "2": 14.480838,
+        "3": 14.435952
+      },
+      "pivot_doc_len": {
+        "0": 37,
+        "1": 40,
+        "2": 48,
+        "3": 56
+      }
+    },
+    {
+      "qid": "183378",
+      "query": "exons definition biology",
+      "scores": {
+        "0": 0.0,
+        "1": 11.307155,
+        "2": 13.06519,
+        "3": 11.033679
+      },
+      "pivot_doc_len": {
+        "0": 24,
+        "1": 42,
+        "2": 56,
+        "3": 64
+      }
+    },
+    {
+      "qid": "19335",
+      "query": "anthropological definition of environment",
+      "scores": {
+        "0": 0.0,
+        "1": 7.768623,
+        "2": 9.562179,
+        "3": 10.830568
+      },
+      "pivot_doc_len": {
+        "0": 31,
+        "1": 44,
+        "2": 54,
+        "3": 64
+      }
+    },
+    {
+      "qid": "207786",
+      "query": "how are some sharks warm blooded",
+      "scores": {
+        "0": 0.0,
+        "1": 13.976751,
+        "2": 7.608342,
+        "3": 11.901589
+      },
+      "pivot_doc_len": {
+        "0": 40,
+        "1": 50,
+        "2": 64,
+        "3": 64
+      }
+    },
+    {
+      "qid": "264014",
+      "query": "how long is life cycle of flea",
+      "scores": {
+        "0": 4.600895,
+        "1": 10.281345,
+        "2": 11.866268,
+        "3": 10.975608
+      },
+      "pivot_doc_len": {
+        "0": 44,
+        "1": 54,
+        "2": 60,
+        "3": 60
+      }
+    },
+    {
+      "qid": "359349",
+      "query": "how to find the midsegment of a trapezoid",
+      "scores": {
+        "0": 0.0,
+        "1": 14.780066,
+        "2": 19.328756,
+        "3": 18.541151
+      },
+      "pivot_doc_len": {
+        "0": 40,
+        "1": 39,
+        "2": 44,
+        "3": 52
+      }
+    },
+    {
+      "qid": "405717",
+      "query": "is cdg airport in main paris",
+      "scores": {
+        "0": 3.714194,
+        "1": 10.156955,
+        "2": 8.107016,
+        "3": 7.678632
+      },
+      "pivot_doc_len": {
+        "0": 23,
+        "1": 36,
+        "2": 40,
+        "3": 54
+      }
+    },
+    {
+      "qid": "443396",
+      "query": "lps laws definition",
+      "scores": {
+        "0": 0.0,
+        "1": 8.729763,
+        "2": 8.731001,
+        "3": 6.644013
+      },
+      "pivot_doc_len": {
+        "0": 31,
+        "1": 40,
+        "2": 48,
+        "3": 56
+      }
+    },
+    {
+      "qid": "451602",
+      "query": "medicare's definition of mechanical ventilation",
+      "scores": {
+        "0": 3.412368,
+        "1": 11.095795,
+        "2": 15.273284,
+        "3": 15.38214
+      },
+      "pivot_doc_len": {
+        "0": 24,
+        "1": 42,
+        "2": 50,
+        "3": 60
+      }
+    },
+    {
+      "qid": "47923",
+      "query": "axon terminals or synaptic knob definition",
+      "scores": {
+        "0": 0.0,
+        "1": 0.0,
+        "2": 3.704441,
+        "3": 18.112535
+      },
+      "pivot_doc_len": {
+        "0": 48,
+        "1": 60,
+        "2": 56,
+        "3": 64
+      }
+    },
+    {
+      "qid": "489204",
+      "query": "right pelvic pain causes",
+      "scores": {
+        "0": 0.0,
+        "1": 0.0,
+        "2": 7.10338,
+        "3": 11.633912
+      },
+      "pivot_doc_len": {
+        "0": 36,
+        "1": 46,
+        "2": 44,
+        "3": 60
+      }
+    },
+    {
+      "qid": "490595",
+      "query": "rsa definition key",
+      "scores": {
+        "0": 0.0,
+        "1": 11.714908,
+        "2": 11.384285,
+        "3": 9.841488
+      },
+      "pivot_doc_len": {
+        "0": 31,
+        "1": 42,
+        "2": 50,
+        "3": 88
+      }
+    },
+    {
+      "qid": "527433",
+      "query": "types of dysarthria from cerebral palsy",
+      "scores": {
+        "0": 0.0,
+        "1": 19.831422,
+        "2": 22.944737,
+        "3": 22.532087
+      },
+      "pivot_doc_len": {
+        "0": 21,
+        "1": 33,
+        "2": 46,
+        "3": 64
+      }
+    },
+    {
+      "qid": "573724",
+      "query": "what are the social determinants of health",
+      "scores": {
+        "0": 0.0,
+        "1": 0.0,
+        "2": 7.533802,
+        "3": 9.4326
+      },
+      "pivot_doc_len": {
+        "0": 34,
+        "1": 46,
+        "2": 50,
+        "3": 104
+      }
+    },
+    {
+      "qid": "833860",
+      "query": "what is the most popular food in switzerland",
+      "scores": {
+        "0": 6.553109,
+        "1": 7.492296,
+        "2": 6.203956,
+        "3": 9.781772
+      },
+      "pivot_doc_len": {
+        "0": 25,
+        "1": 32,
+        "2": 36,
+        "3": 44
+      }
+    },
+    {
+      "qid": "855410",
+      "query": "what is theraderm used for",
+      "scores": {
+        "0": 0.966658,
+        "1": 0.93829,
+        "2": 8.871118,
+        "3": 10.54688
+      },
+      "pivot_doc_len": {
+        "0": 28,
+        "1": 34,
+        "2": 36,
+        "3": 60
+      }
+    },
+    {
+      "qid": "87181",
+      "query": "causes of left ventricular hypertrophy",
+      "scores": {
+        "0": 0.0,
+        "1": 17.262949,
+        "2": 16.71852,
+        "3": 18.705252
+      },
+      "pivot_doc_len": {
+        "0": 20,
+        "1": 34,
+        "2": 50,
+        "3": 84
+      }
+    },
+    {
+      "qid": "87452",
+      "query": "causes of military suicide",
+      "scores": {
+        "0": 0.0,
+        "1": 8.804811,
+        "2": 11.582626,
+        "3": 11.130432
+      },
+      "pivot_doc_len": {
+        "0": 20,
+        "1": 34,
+        "2": 40,
+        "3": 96
+      }
+    },
+    {
+      "qid": "915593",
+      "query": "what types of food can you cook sous vide",
+      "scores": {
+        "0": 0.0,
+        "1": 22.131891,
+        "2": 19.449385,
+        "3": 23.669181
+      },
+      "pivot_doc_len": {
+        "0": 34,
+        "1": 42,
+        "2": 48,
+        "3": 64
+      }
+    },
+    {
+      "qid": "962179",
+      "query": "when was the salvation army founded",
+      "scores": {
+        "0": 9.44807,
+        "1": 11.644076,
+        "2": 12.579438,
+        "3": 12.717996
+      },
+      "pivot_doc_len": {
+        "0": 37,
+        "1": 40,
+        "2": 46,
+        "3": 60
+      }
+    }
+  ]
+}
