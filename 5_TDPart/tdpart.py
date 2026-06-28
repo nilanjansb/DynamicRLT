@@ -8,7 +8,7 @@ Algorithm  : Top-down pivot-based partitioning (Algorithm 1 from the paper).
 Inference  : vLLM offline mode, TP=1 per process (or TP=N via --gpus N).
 Input      : TREC top-100 run files from BM25 or SPLADE.
 Output     : Reranked TREC run files in TDPart/runs/.
-Resumeable : Checkpoint saved after each phase; safe to kill and restart.
+Resumable  : Checkpoint saved after each phase; safe to kill and restart.
 
 File naming: {dataset}.{retriever}.{model_tag}.tdpart_w{W}k{K}.top{N}.txt
    e.g.    : dbpedia-entity.bm25.rankzephyr_7b.tdpart_w20k10.top100.txt
@@ -152,6 +152,7 @@ DATASETS: Dict[str, dict] = {
 # ─────────────────────────────────────────────────────────────────────────────
 
 def load_qrel_qids(qrels_file: Path, fmt: str) -> set:
+    """Return set of query IDs that have at least one relevance judgment."""
     qids: set = set()
     with open(qrels_file) as f:
         for i, line in enumerate(f):
@@ -170,6 +171,7 @@ def load_queries(
     fmt: str,
     valid_qids: Optional[set] = None,
 ) -> Dict[str, str]:
+    """Load queries as {qid: text}, optionally filtered to valid_qids."""
     queries: Dict[str, str] = {}
     if fmt == "tsv":
         with open(query_file) as f:
@@ -188,6 +190,10 @@ def load_queries(
 
 
 def load_run(run_file: Path) -> Dict[str, List[str]]:
+    """Parse a TREC run file into {qid: [docid_rank1, docid_rank2, ...]}.
+
+    Documents are returned in ascending rank order (rank 1 first).
+    """
     run: Dict[str, Dict[int, str]] = {}
     with open(run_file) as f:
         for line in f:
@@ -208,6 +214,10 @@ def load_corpus_selective(
     fmt: str,
     needed_ids: set,
 ) -> Dict[str, str]:
+    """Scan the corpus file and load only documents whose IDs are in needed_ids.
+
+    Returns {docid: text_for_prompt}.
+    """
     corpus: Dict[str, str] = {}
     total_needed = len(needed_ids)
     log.info(f"  Loading {total_needed:,} docs from {corpus_file.name} …")
@@ -279,6 +289,7 @@ VICUNA_CHAT_TEMPLATE = (
 
 
 def truncate_text(text: str, max_words: int = MAX_DOC_WORDS) -> str:
+    """Truncate to max_words words to keep prompt within model context."""
     words = text.split()
     return " ".join(words[:max_words]) if len(words) > max_words else text
 
@@ -287,6 +298,11 @@ def build_ranking_prompt(
     query: str,
     window_docs: List[Tuple[str, str]],
 ) -> str:
+    """Build the RankLLM listwise ranking prompt.
+
+    Format: prefix (I will provide…) + body ([rank] text per doc) +
+    suffix (Search Query… Rank… Only respond…).
+    """
     num = len(window_docs)
     prompt = (
         f"I will provide you with {num} passages, each indicated by a numerical "
@@ -310,6 +326,7 @@ def build_chat_messages(
     query: str,
     window_docs: List[Tuple[str, str]],
 ) -> List[Dict]:
+    """Wrap the ranking prompt in a Zephyr-style chat message list."""
     return [
         {"role": "system", "content": SYSTEM_MSG},
         {"role": "user",   "content": build_ranking_prompt(query, window_docs)},
@@ -325,6 +342,11 @@ _VALID_RE = re.compile(r"^\[\d+\]( > \[\d+\])*$")
 
 
 def parse_permutation(output: str, window_size: int) -> List[int]:
+    """Parse model output '[3] > [1] > [7] > …' into a 1-indexed permutation list.
+
+    Returns a list of length == window_size. Duplicates are dropped (first
+    occurrence wins); missing indices are appended in original order.
+    """
     if not _VALID_RE.match(output.strip()):
         log.debug(f"Non-standard model output: {output[:80]!r}")
     found = [int(x) for x in _RANK_RE.findall(output)]
@@ -341,6 +363,7 @@ def parse_permutation(output: str, window_size: int) -> List[int]:
 
 
 def apply_permutation(window_docids: List[str], perm: List[int]) -> List[str]:
+    """Reorder a docid list by a 1-indexed permutation."""
     return [window_docids[i - 1] for i in perm]
 
 
@@ -870,6 +893,7 @@ def write_trec_run(
     output_file : Path,
     tag         : str = "TDPart",
 ) -> None:
+    """Write reranked results in standard TREC run format."""
     output_file.parent.mkdir(parents=True, exist_ok=True)
 
     def sort_key(qid: str):
@@ -886,6 +910,7 @@ def write_trec_run(
 
 
 def write_timing(timing: dict, output_file: Path) -> None:
+    """Write timing dict as a JSON file alongside the TREC run."""
     with open(output_file, "w") as f:
         json.dump(timing, f, indent=2)
     log.info(f"  Timing  → {output_file.name}")

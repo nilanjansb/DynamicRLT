@@ -1,0 +1,22 @@
+{
+  "wall_clock_start": "2026-06-23T08:29:14",
+  "wall_clock_end": "2026-06-23T08:34:30",
+  "total_rerank_s": 316.4208,
+  "avg_s_per_query": 0.7911,
+  "avg_ms_per_query": 791.05,
+  "total_infer_s": 309.9561,
+  "pct_time_in_infer": 97.96,
+  "n_queries": 400,
+  "n_pairs_scored": 39905,
+  "effective_batch_size": 64,
+  "dataset": "dbpedia-entity",
+  "retriever": "bm25",
+  "model": "castorini/monot5-3b-msmarco-10k",
+  "corpus_load_s": 13.0633,
+  "model_load_s": 10.6211,
+  "config": {
+    "top_k": 100,
+    "batch_size": 64,
+    "max_input_len": 512
+  }
+}

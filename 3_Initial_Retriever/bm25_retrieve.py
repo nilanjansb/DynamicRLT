@@ -110,6 +110,11 @@ def load_qrel_qids(qrels_file, fmt):
 
 
 def retrieve(dataset_name, cfg, top_k):
+    """Run BM25 retrieval for dataset_name and write a TREC run file.
+
+    Retrieves top_k documents per query and writes one line per hit in
+    standard TREC format: qid Q0 docid rank score BM25.
+    """
     index_path = str(cfg["index"])
     print(f"  Loading index: {index_path}")
     searcher = LuceneSearcher(index_path)

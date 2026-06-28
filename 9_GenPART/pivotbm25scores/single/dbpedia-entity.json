@@ -1,0 +1,4018 @@
+{
+  "dataset": "dbpedia-entity",
+  "pivot_type": "single",
+  "index": "/DATA/cs26int00020/DynamicRLT/BM25_indexes/dbpedia-entity",
+  "retriever": "bm25",
+  "bm25": {
+    "k1": 0.9,
+    "b": 0.4
+  },
+  "N": 4635922,
+  "avgdl": 35.547402,
+  "tau_levels": [
+    "single"
+  ],
+  "n_queries": 400,
+  "queries": [
+    {
+      "qid": "INEX_LD-2009022",
+      "query": "Szechwan dish food cuisine",
+      "scores": {
+        "single": 20.555822
+      },
+      "pivot_doc_len": {
+        "single": 144
+      }
+    },
+    {
+      "qid": "INEX_LD-2009039",
+      "query": "roman architecture",
+      "scores": {
+        "single": 7.310897
+      },
+      "pivot_doc_len": {
+        "single": 152
+      }
+    },
+    {
+      "qid": "INEX_LD-2009053",
+      "query": "finland car industry manufacturer saab sisu",
+      "scores": {
+        "single": 15.55814
+      },
+      "pivot_doc_len": {
+        "single": 144
+      }
+    },
+    {
+      "qid": "INEX_LD-2009061",
+      "query": "france second world war normandy",
+      "scores": {
+        "single": 9.070989
+      },
+      "pivot_doc_len": {
+        "single": 152
+      }
+    },
+    {
+      "qid": "INEX_LD-2009062",
+      "query": "social network group selection",
+      "scores": {
+        "single": 13.618209
+      },
+      "pivot_doc_len": {
+        "single": 152
+      }
+    },
+    {
+      "qid": "INEX_LD-2009063",
+      "query": "D-Day normandy invasion",
+      "scores": {
+        "single": 12.897154
+      },
+      "pivot_doc_len": {
+        "single": 152
+      }
+    },
+    {
+      "qid": "INEX_LD-2009074",
+      "query": "web ranking scoring algorithm",
+      "scores": {
+        "single": 17.98754
+      },
+      "pivot_doc_len": {
+        "single": 152
+      }
+    },
+    {
+      "qid": "INEX_LD-2009115",
+      "query": "virtual museums",
+      "scores": {
+        "single": 9.521253
+      },
+      "pivot_doc_len": {
+        "single": 168
+      }
+    },
+    {
+      "qid": "INEX_LD-2010004",
+      "query": "Indian food",
+      "scores": {
+        "single": 6.595115
+      },
+      "pivot_doc_len": {
+        "single": 152
+      }
+    },
+    {
+      "qid": "INEX_LD-2010014",
+      "query": "composer museum",
+      "scores": {
+        "single": 7.430063
+      },
+      "pivot_doc_len": {
+        "single": 152
+      }
+    },
+    {
+      "qid": "INEX_LD-2010019",
+      "query": "gallo roman architecture in paris",
+      "scores": {
+        "single": 17.467984
+      },
+      "pivot_doc_len": {
+        "single": 144
+      }
+    },
+    {
+      "qid": "INEX_LD-2010020",
+      "query": "electricity source in France",
+      "scores": {
+        "single": 10.666294
+      },
+      "pivot_doc_len": {
+        "single": 168
+      }
+    },
+    {
+      "qid": "INEX_LD-2010037",
+      "query": "social network API",
+      "scores": {
+        "single": 14.338646
+      },
+      "pivot_doc_len": {
+        "single": 184
+      }
+    },
+    {
+      "qid": "INEX_LD-2010043",
+      "query": "List of films from the surrealist category",
+      "scores": {
+        "single": 9.587388
+      },
+      "pivot_doc_len": {
+        "single": 136
+      }
+    },
+    {
+      "qid": "INEX_LD-2010057",
+      "query": "Einstein Relativity theory",
+      "scores": {
+        "single": 13.253456
+      },
+      "pivot_doc_len": {
+        "single": 152
+      }
+    },
+    {
+      "qid": "INEX_LD-2010069",
+      "query": "summer flowers",
+      "scores": {
+        "single": 6.986281
+      },
+      "pivot_doc_len": {
+        "single": 152
+      }
+    },
+    {
+      "qid": "INEX_LD-2010100",
+      "query": "house concrete wood",
+      "scores": {
+        "single": 12.81258
+      },
+      "pivot_doc_len": {
+        "single": 168
+      }
+    },
+    {
+      "qid": "INEX_LD-2010106",
+      "query": "organic food advantages disadvantages",
+      "scores": {
+        "single": 10.618724
+      },
+      "pivot_doc_len": {
+        "single": 168
+      }
+    },
+    {
+      "qid": "INEX_LD-20120111",
+      "query": "vietnam war movie",
+      "scores": {
+        "single": 10.340508
+      },
+      "pivot_doc_len": {
+        "single": 152
+      }
+    },
+    {
+      "qid": "INEX_LD-20120121",
+      "query": "vietnam food recipes",
+      "scores": {
+        "single": 0.0
+      },
+      "pivot_doc_len": {
+        "single": 144
+      }
+    },
+    {
+      "qid": "INEX_LD-20120122",
+      "query": "vietnamese food blog",
+      "scores": {
+        "single": 8.19043
+      },
+      "pivot_doc_len": {
+        "single": 152
+      }
+    },
+    {
+      "qid": "INEX_LD-20120131",
+      "query": "vietnam travel national park",
+      "scores": {
+        "single": 10.134198
+      },
+      "pivot_doc_len": {
+        "single": 152
+      }
+    },
+    {
+      "qid": "INEX_LD-20120211",
+      "query": "guitar chord tuning",
+      "scores": {
+        "single": 12.52169
+      },
+      "pivot_doc_len": {
+        "single": 168
+      }
+    },
+    {
+      "qid": "INEX_LD-20120221",
+      "query": "guitar classical flamenco",
+      "scores": {
+        "single": 14.402645
+      },
+      "pivot_doc_len": {
+        "single": 144
+      }
+    },
+    {
+      "qid": "INEX_LD-20120231",
+      "query": "guitar origin Russia",
+      "scores": {
+        "single": 10.41182
+      },
+      "pivot_doc_len": {
+        "single": 152
+      }
+    },
+    {
+      "qid": "INEX_LD-20120232",
+      "query": "guitar origin blues",
+      "scores": {
+        "single": 9.50224
+      },
+      "pivot_doc_len": {
+        "single": 152
+      }
+    },
+    {
+      "qid": "INEX_LD-20120311",
+      "query": "tango culture movies",
+      "scores": {
+        "single": 13.105024
+      },
+      "pivot_doc_len": {
+        "single": 144
+      }
+    },
+    {
+      "qid": "INEX_LD-20120312",
+      "query": "tango culture countries",
+      "scores": {
+        "single": 12.99418
+      },
+      "pivot_doc_len": {
+        "single": 144
+      }
+    },
+    {
+      "qid": "INEX_LD-20120321",
+      "query": "tango music  composers",
+      "scores": {
+        "single": 12.933671
+      },
+      "pivot_doc_len": {
+        "single": 144
+      }
+    },
+    {
+      "qid": "INEX_LD-20120331",
+      "query": "tango dance styles",
+      "scores": {
+        "single": 15.028091
+      },
+      "pivot_doc_len": {
+        "single": 152
+      }
+    },
+    {
+      "qid": "INEX_LD-20120332",
+      "query": "tango dance history",
+      "scores": {
+        "single": 12.843811
+      },
+      "pivot_doc_len": {
+        "single": 152
+      }
+    },
+    {
+      "qid": "INEX_LD-20120411",
+      "query": "bicycle sport races",
+      "scores": {
+        "single": 9.259969
+      },
+      "pivot_doc_len": {
+        "single": 168
+      }
+    },
+    {
+      "qid": "INEX_LD-20120412",
+      "query": "bicycle sport disciplines",
+      "scores": {
+        "single": 11.422302
+      },
+      "pivot_doc_len": {
+        "single": 168
+      }
+    },
+    {
+      "qid": "INEX_LD-20120421",
+      "query": "bicycle holiday towns",
+      "scores": {
+        "single": 10.407296
+      },
+      "pivot_doc_len": {
+        "single": 168
+      }
+    },
+    {
+      "qid": "INEX_LD-20120422",
+      "query": "bicycle holiday nature",
+      "scores": {
+        "single": 12.811117
+      },
+      "pivot_doc_len": {
+        "single": 168
+      }
+    },
+    {
+      "qid": "INEX_LD-20120431",
+      "query": "bicycle benefits health",
+      "scores": {
+        "single": 7.168352
+      },
+      "pivot_doc_len": {
+        "single": 184
+      }
+    },
+    {
+      "qid": "INEX_LD-20120511",
+      "query": "female rock singers",
+      "scores": {
+        "single": 9.946425
+      },
+      "pivot_doc_len": {
+        "single": 168
+      }
+    },
+    {
+      "qid": "INEX_LD-20120512",
+      "query": "south korean girl groups",
+      "scores": {
+        "single": 10.083829
+      },
+      "pivot_doc_len": {
+        "single": 152
+      }
+    },
+    {
+      "qid": "INEX_LD-20120521",
+      "query": "electronic music genres",
+      "scores": {
+        "single": 10.818095
+      },
+      "pivot_doc_len": {
+        "single": 152
+      }
+    },
+    {
+      "qid": "INEX_LD-20120522",
+      "query": "digital music notation formats",
+      "scores": {
+        "single": 16.822361
+      },
+      "pivot_doc_len": {
+        "single": 168
+      }
+    },
+    {
+      "qid": "INEX_LD-20120531",
+      "query": "music conferences",
+      "scores": {
+        "single": 7.049358
+      },
+      "pivot_doc_len": {
+        "single": 168
+      }
+    },
+    {
+      "qid": "INEX_LD-20120532",
+      "query": "intellectual property rights lobby",
+      "scores": {
+        "single": 19.60201
+      },
+      "pivot_doc_len": {
+        "single": 152
+      }
+    },
+    {
+      "qid": "INEX_LD-2012301",
+      "query": "Niagara falls origin lake",
+      "scores": {
+        "single": 14.786529
+      },
+      "pivot_doc_len": {
+        "single": 128
+      }
+    },
+    {
+      "qid": "INEX_LD-2012303",
+      "query": "Valley fever fungal infection San Joaquin",
+      "scores": {
+        "single": 23.181397
+      },
+      "pivot_doc_len": {
+        "single": 152
+      }
+    },
+    {
+      "qid": "INEX_LD-2012305",
+      "query": "North Dakota's lowest river of another colour",
+      "scores": {
+        "single": 14.211347
+      },
+      "pivot_doc_len": {
+        "single": 48
+      }
+    },
+    {
+      "qid": "INEX_LD-2012309",
+      "query": "residents small island city-state  Malay Peninsula Chinese",
+      "scores": {
+        "single": 17.511079
+      },
+      "pivot_doc_len": {
+        "single": 88
+      }
+    },
+    {
+      "qid": "INEX_LD-2012311",
+      "query": "John Lennon Yoko Ono album Starting Over",
+      "scores": {
+        "single": 22.557479
+      },
+      "pivot_doc_len": {
+        "single": 96
+      }
+    },
+    {
+      "qid": "INEX_LD-2012313",
+      "query": "John Turturro 1991 Coen Brothers film",
+      "scores": {
+        "single": 22.923843
+      },
+      "pivot_doc_len": {
+        "single": 68
+      }
+    },
+    {
+      "qid": "INEX_LD-2012315",
+      "query": "Baguio Quezon City  Manila official independence 1945",
+      "scores": {
+        "single": 8.454388
+      },
+      "pivot_doc_len": {
+        "single": 144
+      }
+    },
+    {
+      "qid": "INEX_LD-2012317",
+      "query": "daggeroso inclined to use a dagger novel Sons and Lovers",
+      "scores": {
+        "single": 7.868901
+      },
+      "pivot_doc_len": {
+        "single": 152
+      }
+    },
+    {
+      "qid": "INEX_LD-2012318",
+      "query": "Directed Bela Glen Glenda Bride Monster Plan 9 Outer Space",
+      "scores": {
+        "single": 14.216058
+      },
+      "pivot_doc_len": {
+        "single": 96
+      }
+    },
+    {
+      "qid": "INEX_LD-2012319",
+      "query": "1994 short story collection Alice Munro is Open",
+      "scores": {
+        "single": 17.59643
+      },
+      "pivot_doc_len": {
+        "single": 50
+      }
+    },
+    {
+      "qid": "INEX_LD-2012321",
+      "query": "Asian port state-city Sir Stamford Raffles",
+      "scores": {
+        "single": 15.567476
+      },
+      "pivot_doc_len": {
+        "single": 144
+      }
+    },
+    {
+      "qid": "INEX_LD-2012323",
+      "query": "Large glaciers island nation Langjokull Hofsjokull Vatnajokull",
+      "scores": {
+        "single": 37.235764
+      },
+      "pivot_doc_len": {
+        "single": 144
+      }
+    },
+    {
+      "qid": "INEX_LD-2012325",
+      "query": "successor James G. Blaine studied law",
+      "scores": {
+        "single": 20.372781
+      },
+      "pivot_doc_len": {
+        "single": 152
+      }
+    },
+    {
+      "qid": "INEX_LD-2012327",
+      "query": "Beloved author African-American Nobel Prize Literature",
+      "scores": {
+        "single": 17.453844
+      },
+      "pivot_doc_len": {
+        "single": 136
+      }
+    },
+    {
+      "qid": "INEX_LD-2012329",
+      "query": "Sweden Iceland currency",
+      "scores": {
+        "single": 13.825855
+      },
+      "pivot_doc_len": {
+        "single": 54
+      }
+    },
+    {
+      "qid": "INEX_LD-2012331",
+      "query": "Seoul Korea river name ethnic group China",
+      "scores": {
+        "single": 10.424196
+      },
+      "pivot_doc_len": {
+        "single": 128
+      }
+    },
+    {
+      "qid": "INEX_LD-2012333",
+      "query": "Prime minister Canada nicknamed Silver-Tongued Laurier longest unbroken term",
+      "scores": {
+        "single": 29.722649
+      },
+      "pivot_doc_len": {
+        "single": 104
+      }
+    },
+    {
+      "qid": "INEX_LD-2012335",
+      "query": "U.S. president authorise nuclear weapons against Japan",
+      "scores": {
+        "single": 10.042845
+      },
+      "pivot_doc_len": {
+        "single": 144
+      }
+    },
+    {
+      "qid": "INEX_LD-2012337",
+      "query": "Texas city Baylor University tornado 1953",
+      "scores": {
+        "single": 19.312611
+      },
+      "pivot_doc_len": {
+        "single": 144
+      }
+    },
+    {
+      "qid": "INEX_LD-2012339",
+      "query": "Nelson Mandela John Dube",
+      "scores": {
+        "single": 16.053106
+      },
+      "pivot_doc_len": {
+        "single": 96
+      }
+    },
+    {
+      "qid": "INEX_LD-2012341",
+      "query": "1997  Houston airport president",
+      "scores": {
+        "single": 14.814117
+      },
+      "pivot_doc_len": {
+        "single": 60
+      }
+    },
+    {
+      "qid": "INEX_LD-2012345",
+      "query": "Kennedy assassination governor of Texas seriously injured",
+      "scores": {
+        "single": 18.205275
+      },
+      "pivot_doc_len": {
+        "single": 88
+      }
+    },
+    {
+      "qid": "INEX_LD-2012349",
+      "query": "Alexander Nevsky Cathedral Bulgarian city liberation Turks",
+      "scores": {
+        "single": 25.433641
+      },
+      "pivot_doc_len": {
+        "single": 112
+      }
+    },
+    {
+      "qid": "INEX_LD-2012353",
+      "query": "country German language",
+      "scores": {
+        "single": 8.603842
+      },
+      "pivot_doc_len": {
+        "single": 152
+      }
+    },
+    {
+      "qid": "INEX_LD-2012354",
+      "query": "greatest guitarist",
+      "scores": {
+        "single": 7.757664
+      },
+      "pivot_doc_len": {
+        "single": 168
+      }
+    },
+    {
+      "qid": "INEX_LD-2012355",
+      "query": "England football player highest paid",
+      "scores": {
+        "single": 15.51961
+      },
+      "pivot_doc_len": {
+        "single": 152
+      }
+    },
+    {
+      "qid": "INEX_LD-2012357",
+      "query": "prima ballerina Bolshoi Theatre 1960",
+      "scores": {
+        "single": 21.438851
+      },
+      "pivot_doc_len": {
+        "single": 136
+      }
+    },
+    {
+      "qid": "INEX_LD-2012359",
+      "query": "Bob Ricker Executive Director the latest front group for the anti-gun movement",
+      "scores": {
+        "single": 29.370212
+      },
+      "pivot_doc_len": {
+        "single": 128
+      }
+    },
+    {
+      "qid": "INEX_LD-2012361",
+      "query": "most famous award winning actor singer",
+      "scores": {
+        "single": 7.725398
+      },
+      "pivot_doc_len": {
+        "single": 64
+      }
+    },
+    {
+      "qid": "INEX_LD-2012365",
+      "query": "mathematician computer scientist MIT's six inaugural MacVicar Faculty Fellows",
+      "scores": {
+        "single": 31.710275
+      },
+      "pivot_doc_len": {
+        "single": 152
+      }
+    },
+    {
+      "qid": "INEX_LD-2012367",
+      "query": "invented telescope",
+      "scores": {
+        "single": 10.136881
+      },
+      "pivot_doc_len": {
+        "single": 96
+      }
+    },
+    {
+      "qid": "INEX_LD-2012369",
+      "query": "most famous civic-military airports",
+      "scores": {
+        "single": 12.893156
+      },
+      "pivot_doc_len": {
+        "single": 152
+      }
+    },
+    {
+      "qid": "INEX_LD-2012371",
+      "query": "most beautiful railway stations world cities located",
+      "scores": {
+        "single": 13.316591
+      },
+      "pivot_doc_len": {
+        "single": 152
+      }
+    },
+    {
+      "qid": "INEX_LD-2012372",
+      "query": "famous historical battlefields opponents fought",
+      "scores": {
+        "single": 14.25129
+      },
+      "pivot_doc_len": {
+        "single": 152
+      }
+    },
+    {
+      "qid": "INEX_LD-2012373",
+      "query": "birds cannot fly",
+      "scores": {
+        "single": 8.536123
+      },
+      "pivot_doc_len": {
+        "single": 128
+      }
+    },
+    {
+      "qid": "INEX_LD-2012377",
+      "query": "allegedly caused World War I",
+      "scores": {
+        "single": 9.448218
+      },
+      "pivot_doc_len": {
+        "single": 152
+      }
+    },
+    {
+      "qid": "INEX_LD-2012381",
+      "query": "movie directors directed a block buster",
+      "scores": {
+        "single": 5.867679
+      },
+      "pivot_doc_len": {
+        "single": 168
+      }
+    },
+    {
+      "qid": "INEX_LD-2012383",
+      "query": "famous computer scientists disappeared at sea",
+      "scores": {
+        "single": 11.720736
+      },
+      "pivot_doc_len": {
+        "single": 144
+      }
+    },
+    {
+      "qid": "INEX_LD-2012385",
+      "query": "famous politicians vegetarians",
+      "scores": {
+        "single": 11.117752
+      },
+      "pivot_doc_len": {
+        "single": 152
+      }
+    },
+    {
+      "qid": "INEX_LD-2012387",
+      "query": "famous river confluence dam constructed",
+      "scores": {
+        "single": 15.981486
+      },
+      "pivot_doc_len": {
+        "single": 72
+      }
+    },
+    {
+      "qid": "INEX_LD-2012389",
+      "query": "frequently visited sharks gulf Indian Ocean",
+      "scores": {
+        "single": 18.133787
+      },
+      "pivot_doc_len": {
+        "single": 152
+      }
+    },
+    {
+      "qid": "INEX_LD-2012390",
+      "query": "baseball player most homeruns national league",
+      "scores": {
+        "single": 8.943538
+      },
+      "pivot_doc_len": {
+        "single": 56
+      }
+    },
+    {
+      "qid": "INEX_XER-106",
+      "query": "Noble english person from the Hundred Years' War",
+      "scores": {
+        "single": 8.869481
+      },
+      "pivot_doc_len": {
+        "single": 152
+      }
+    },
+    {
+      "qid": "INEX_XER-108",
+      "query": "State capitals of the United States of America",
+      "scores": {
+        "single": 8.632223
+      },
+      "pivot_doc_len": {
+        "single": 128
+      }
+    },
+    {
+      "qid": "INEX_XER-109",
+      "query": "National capitals situated on islands",
+      "scores": {
+        "single": 11.677154
+      },
+      "pivot_doc_len": {
+        "single": 88
+      }
+    },
+    {
+      "qid": "INEX_XER-110",
+      "query": "Nobel Prize in Literature winners who were also poets",
+      "scores": {
+        "single": 19.799597
+      },
+      "pivot_doc_len": {
+        "single": 136
+      }
+    },
+    {
+      "qid": "INEX_XER-113",
+      "query": "Formula 1 drivers that won the Monaco Grand Prix",
+      "scores": {
+        "single": 22.883063
+      },
+      "pivot_doc_len": {
+        "single": 152
+      }
+    },
+    {
+      "qid": "INEX_XER-114",
+      "query": "Formula one races in Europe",
+      "scores": {
+        "single": 9.613158
+      },
+      "pivot_doc_len": {
+        "single": 136
+      }
+    },
+    {
+      "qid": "INEX_XER-115",
+      "query": "Formula One World Constructors' Champions",
+      "scores": {
+        "single": 17.358881
+      },
+      "pivot_doc_len": {
+        "single": 168
+      }
+    },
+    {
+      "qid": "INEX_XER-116",
+      "query": "Italian nobel prize winners",
+      "scores": {
+        "single": 13.083341
+      },
+      "pivot_doc_len": {
+        "single": 152
+      }
+    },
+    {
+      "qid": "INEX_XER-117",
+      "query": "Musicians who appeared in the Blues Brothers movies",
+      "scores": {
+        "single": 17.244219
+      },
+      "pivot_doc_len": {
+        "single": 144
+      }
+    },
+    {
+      "qid": "INEX_XER-118",
+      "query": "French car models in 1960's",
+      "scores": {
+        "single": 11.982698
+      },
+      "pivot_doc_len": {
+        "single": 128
+      }
+    },
+    {
+      "qid": "INEX_XER-119",
+      "query": "Swiss cantons where they speak German",
+      "scores": {
+        "single": 13.567095
+      },
+      "pivot_doc_len": {
+        "single": 84
+      }
+    },
+    {
+      "qid": "INEX_XER-121",
+      "query": "US presidents since 1960",
+      "scores": {
+        "single": 4.982254
+      },
+      "pivot_doc_len": {
+        "single": 104
+      }
+    },
+    {
+      "qid": "INEX_XER-122",
+      "query": "Movies with eight or more Academy Awards",
+      "scores": {
+        "single": 13.882416
+      },
+      "pivot_doc_len": {
+        "single": 152
+      }
+    },
+    {
+      "qid": "INEX_XER-123",
+      "query": "FIFA world cup national team winners since 1974",
+      "scores": {
+        "single": 17.68355
+      },
+      "pivot_doc_len": {
+        "single": 56
+      }
+    },
+    {
+      "qid": "INEX_XER-124",
+      "query": "Novels that won the Booker Prize",
+      "scores": {
+        "single": 13.48287
+      },
+      "pivot_doc_len": {
+        "single": 112
+      }
+    },
+    {
+      "qid": "INEX_XER-127",
+      "query": "german female politicians",
+      "scores": {
+        "single": 6.491544
+      },
+      "pivot_doc_len": {
+        "single": 152
+      }
+    },
+    {
+      "qid": "INEX_XER-128",
+      "query": "Bond girls",
+      "scores": {
+        "single": 9.689274
+      },
+      "pivot_doc_len": {
+        "single": 168
+      }
+    },
+    {
+      "qid": "INEX_XER-129",
+      "query": "Science fiction book written in the 1980",
+      "scores": {
+        "single": 8.728716
+      },
+      "pivot_doc_len": {
+        "single": 84
+      }
+    },
+    {
+      "qid": "INEX_XER-130",
+      "query": "Star Trek Captains",
+      "scores": {
+        "single": 12.605467
+      },
+      "pivot_doc_len": {
+        "single": 168
+      }
+    },
+    {
+      "qid": "INEX_XER-132",
+      "query": "living nordic classical composers",
+      "scores": {
+        "single": 10.812136
+      },
+      "pivot_doc_len": {
+        "single": 168
+      }
+    },
+    {
+      "qid": "INEX_XER-133",
+      "query": "EU countries",
+      "scores": {
+        "single": 9.011841
+      },
+      "pivot_doc_len": {
+        "single": 128
+      }
+    },
+    {
+      "qid": "INEX_XER-134",
+      "query": "record-breaking sprinters in male 100-meter sprints",
+      "scores": {
+        "single": 21.45015
+      },
+      "pivot_doc_len": {
+        "single": 144
+      }
+    },
+    {
+      "qid": "INEX_XER-135",
+      "query": "professional baseball team in Japan",
+      "scores": {
+        "single": 11.10822
+      },
+      "pivot_doc_len": {
+        "single": 152
+      }
+    },
+    {
+      "qid": "INEX_XER-136",
+      "query": "Japanese players in Major League Baseball",
+      "scores": {
+        "single": 11.729888
+      },
+      "pivot_doc_len": {
+        "single": 144
+      }
+    },
+    {
+      "qid": "INEX_XER-138",
+      "query": "National Parks East Coast Canada US",
+      "scores": {
+        "single": 12.529657
+      },
+      "pivot_doc_len": {
+        "single": 136
+      }
+    },
+    {
+      "qid": "INEX_XER-139",
+      "query": "Films directed by Akira Kurosawa",
+      "scores": {
+        "single": 12.984198
+      },
+      "pivot_doc_len": {
+        "single": 152
+      }
+    },
+    {
+      "qid": "INEX_XER-140",
+      "query": "Airports in Germany",
+      "scores": {
+        "single": 7.845552
+      },
+      "pivot_doc_len": {
+        "single": 152
+      }
+    },
+    {
+      "qid": "INEX_XER-141",
+      "query": "Universities in Catalunya",
+      "scores": {
+        "single": 7.31108
+      },
+      "pivot_doc_len": {
+        "single": 136
+      }
+    },
+    {
+      "qid": "INEX_XER-143",
+      "query": "Hanseatic league in Germany in the Netherlands Circle",
+      "scores": {
+        "single": 21.076975
+      },
+      "pivot_doc_len": {
+        "single": 152
+      }
+    },
+    {
+      "qid": "INEX_XER-144",
+      "query": "chess world champions",
+      "scores": {
+        "single": 10.288573
+      },
+      "pivot_doc_len": {
+        "single": 152
+      }
+    },
+    {
+      "qid": "INEX_XER-147",
+      "query": "Chemical elements that are named after people",
+      "scores": {
+        "single": 13.343363
+      },
+      "pivot_doc_len": {
+        "single": 152
+      }
+    },
+    {
+      "qid": "INEX_XER-60",
+      "query": "olympic classes dinghy sailing",
+      "scores": {
+        "single": 19.312295
+      },
+      "pivot_doc_len": {
+        "single": 144
+      }
+    },
+    {
+      "qid": "INEX_XER-62",
+      "query": "Neil Gaiman novels",
+      "scores": {
+        "single": 12.641376
+      },
+      "pivot_doc_len": {
+        "single": 112
+      }
+    },
+    {
+      "qid": "INEX_XER-63",
+      "query": "Hugo awarded best novels",
+      "scores": {
+        "single": 14.194362
+      },
+      "pivot_doc_len": {
+        "single": 152
+      }
+    },
+    {
+      "qid": "INEX_XER-64",
+      "query": "Alan Moore graphic novels adapted to film",
+      "scores": {
+        "single": 17.241139
+      },
+      "pivot_doc_len": {
+        "single": 152
+      }
+    },
+    {
+      "qid": "INEX_XER-65",
+      "query": "Pacific navigators Australia explorers",
+      "scores": {
+        "single": 16.521619
+      },
+      "pivot_doc_len": {
+        "single": 152
+      }
+    },
+    {
+      "qid": "INEX_XER-67",
+      "query": "Ferris and observation wheels",
+      "scores": {
+        "single": 14.811449
+      },
+      "pivot_doc_len": {
+        "single": 152
+      }
+    },
+    {
+      "qid": "INEX_XER-72",
+      "query": "films shot in Venice",
+      "scores": {
+        "single": 11.896701
+      },
+      "pivot_doc_len": {
+        "single": 96
+      }
+    },
+    {
+      "qid": "INEX_XER-74",
+      "query": "circus mammals",
+      "scores": {
+        "single": 9.733706
+      },
+      "pivot_doc_len": {
+        "single": 144
+      }
+    },
+    {
+      "qid": "INEX_XER-79",
+      "query": "Works by Charles Rennie Mackintosh",
+      "scores": {
+        "single": 13.612721
+      },
+      "pivot_doc_len": {
+        "single": 152
+      }
+    },
+    {
+      "qid": "INEX_XER-81",
+      "query": "Movies about English hooligans",
+      "scores": {
+        "single": 15.558623
+      },
+      "pivot_doc_len": {
+        "single": 144
+      }
+    },
+    {
+      "qid": "INEX_XER-86",
+      "query": "List of countries in World War Two",
+      "scores": {
+        "single": 7.895004
+      },
+      "pivot_doc_len": {
+        "single": 152
+      }
+    },
+    {
+      "qid": "INEX_XER-87",
+      "query": "Axis powers of World War II",
+      "scores": {
+        "single": 14.882495
+      },
+      "pivot_doc_len": {
+        "single": 152
+      }
+    },
+    {
+      "qid": "INEX_XER-88",
+      "query": "Nordic authors who are known for children's literature",
+      "scores": {
+        "single": 16.637175
+      },
+      "pivot_doc_len": {
+        "single": 168
+      }
+    },
+    {
+      "qid": "INEX_XER-91",
+      "query": "Paul Auster novels",
+      "scores": {
+        "single": 11.484619
+      },
+      "pivot_doc_len": {
+        "single": 152
+      }
+    },
+    {
+      "qid": "INEX_XER-94",
+      "query": "Hybrid cars sold in Europe",
+      "scores": {
+        "single": 14.215717
+      },
+      "pivot_doc_len": {
+        "single": 168
+      }
+    },
+    {
+      "qid": "INEX_XER-95",
+      "query": "Tom Hanks movies where he plays a leading role.",
+      "scores": {
+        "single": 19.891084
+      },
+      "pivot_doc_len": {
+        "single": 152
+      }
+    },
+    {
+      "qid": "INEX_XER-96",
+      "query": "Pure object-oriented programing languages",
+      "scores": {
+        "single": 22.279065
+      },
+      "pivot_doc_len": {
+        "single": 152
+      }
+    },
+    {
+      "qid": "INEX_XER-98",
+      "query": "Makers of lawn tennis rackets",
+      "scores": {
+        "single": 19.08869
+      },
+      "pivot_doc_len": {
+        "single": 152
+      }
+    },
+    {
+      "qid": "INEX_XER-99",
+      "query": "Computer systems that have a recursive acronym for the name",
+      "scores": {
+        "single": 22.407457
+      },
+      "pivot_doc_len": {
+        "single": 84
+      }
+    },
+    {
+      "qid": "QALD2_te-1",
+      "query": "Which German cities have more than 250000 inhabitants?",
+      "scores": {
+        "single": 5.037627
+      },
+      "pivot_doc_len": {
+        "single": 64
+      }
+    },
+    {
+      "qid": "QALD2_te-100",
+      "query": "Who produces Orangina?",
+      "scores": {
+        "single": 10.310002
+      },
+      "pivot_doc_len": {
+        "single": 44
+      }
+    },
+    {
+      "qid": "QALD2_te-11",
+      "query": "Who is the Formula 1 race driver with the most races?",
+      "scores": {
+        "single": 17.584904
+      },
+      "pivot_doc_len": {
+        "single": 56
+      }
+    },
+    {
+      "qid": "QALD2_te-12",
+      "query": "Give me all world heritage sites designated within the past five years.",
+      "scores": {
+        "single": 18.823875
+      },
+      "pivot_doc_len": {
+        "single": 128
+      }
+    },
+    {
+      "qid": "QALD2_te-13",
+      "query": "Who is the youngest player in the Premier League?",
+      "scores": {
+        "single": 12.638636
+      },
+      "pivot_doc_len": {
+        "single": 128
+      }
+    },
+    {
+      "qid": "QALD2_te-14",
+      "query": "Give me all members of Prodigy.",
+      "scores": {
+        "single": 6.160126
+      },
+      "pivot_doc_len": {
+        "single": 34
+      }
+    },
+    {
+      "qid": "QALD2_te-17",
+      "query": "Give me all cars that are produced in Germany.",
+      "scores": {
+        "single": 7.725422
+      },
+      "pivot_doc_len": {
+        "single": 152
+      }
+    },
+    {
+      "qid": "QALD2_te-2",
+      "query": "Who was the successor of John F. Kennedy?",
+      "scores": {
+        "single": 11.610141
+      },
+      "pivot_doc_len": {
+        "single": 60
+      }
+    },
+    {
+      "qid": "QALD2_te-21",
+      "query": "What is the capital of Canada?",
+      "scores": {
+        "single": 5.177709
+      },
+      "pivot_doc_len": {
+        "single": 3
+      }
+    },
+    {
+      "qid": "QALD2_te-22",
+      "query": "Who is the governor of Texas?",
+      "scores": {
+        "single": 6.993669
+      },
+      "pivot_doc_len": {
+        "single": 52
+      }
+    },
+    {
+      "qid": "QALD2_te-24",
+      "query": "Who was the father of Queen Elizabeth II?",
+      "scores": {
+        "single": 15.731823
+      },
+      "pivot_doc_len": {
+        "single": 60
+      }
+    },
+    {
+      "qid": "QALD2_te-25",
+      "query": "Which U.S. state has been admitted latest?",
+      "scores": {
+        "single": 15.486918
+      },
+      "pivot_doc_len": {
+        "single": 64
+      }
+    },
+    {
+      "qid": "QALD2_te-27",
+      "query": "Sean Parnell is the governor of which U.S. state?",
+      "scores": {
+        "single": 10.940807
+      },
+      "pivot_doc_len": {
+        "single": 19
+      }
+    },
+    {
+      "qid": "QALD2_te-28",
+      "query": "Give me all movies directed by Francis Ford Coppola.",
+      "scores": {
+        "single": 15.552812
+      },
+      "pivot_doc_len": {
+        "single": 144
+      }
+    },
+    {
+      "qid": "QALD2_te-3",
+      "query": "Who is the mayor of Berlin?",
+      "scores": {
+        "single": 9.656457
+      },
+      "pivot_doc_len": {
+        "single": 31
+      }
+    },
+    {
+      "qid": "QALD2_te-31",
+      "query": "Give me all current Methodist national leaders.",
+      "scores": {
+        "single": 8.927161
+      },
+      "pivot_doc_len": {
+        "single": 144
+      }
+    },
+    {
+      "qid": "QALD2_te-33",
+      "query": "Give me all Australian nonprofit organizations.",
+      "scores": {
+        "single": 11.14977
+      },
+      "pivot_doc_len": {
+        "single": 168
+      }
+    },
+    {
+      "qid": "QALD2_te-35",
+      "query": "Who developed Skype?",
+      "scores": {
+        "single": 11.202195
+      },
+      "pivot_doc_len": {
+        "single": 60
+      }
+    },
+    {
+      "qid": "QALD2_te-39",
+      "query": "Give me all companies in Munich.",
+      "scores": {
+        "single": 8.549011
+      },
+      "pivot_doc_len": {
+        "single": 88
+      }
+    },
+    {
+      "qid": "QALD2_te-40",
+      "query": "List all boardgames by GMT.",
+      "scores": {
+        "single": 5.77083
+      },
+      "pivot_doc_len": {
+        "single": 152
+      }
+    },
+    {
+      "qid": "QALD2_te-42",
+      "query": "Who is the husband of Amanda Palmer?",
+      "scores": {
+        "single": 7.613069
+      },
+      "pivot_doc_len": {
+        "single": 44
+      }
+    },
+    {
+      "qid": "QALD2_te-43",
+      "query": "Give me all breeds of the German Shepherd dog.",
+      "scores": {
+        "single": 17.197715
+      },
+      "pivot_doc_len": {
+        "single": 152
+      }
+    },
+    {
+      "qid": "QALD2_te-44",
+      "query": "Which cities does the Weser flow through?",
+      "scores": {
+        "single": 15.108955
+      },
+      "pivot_doc_len": {
+        "single": 39
+      }
+    },
+    {
+      "qid": "QALD2_te-45",
+      "query": "Which countries are connected by the Rhine?",
+      "scores": {
+        "single": 10.529731
+      },
+      "pivot_doc_len": {
+        "single": 96
+      }
+    },
+    {
+      "qid": "QALD2_te-46",
+      "query": "Which professional surfers were born on the Philippines?",
+      "scores": {
+        "single": 12.596088
+      },
+      "pivot_doc_len": {
+        "single": 54
+      }
+    },
+    {
+      "qid": "QALD2_te-48",
+      "query": "In which UK city are the headquarters of the MI6?",
+      "scores": {
+        "single": 12.76669
+      },
+      "pivot_doc_len": {
+        "single": 22
+      }
+    },
+    {
+      "qid": "QALD2_te-49",
+      "query": "Which other weapons did the designer of the Uzi develop?",
+      "scores": {
+        "single": 11.222229
+      },
+      "pivot_doc_len": {
+        "single": 80
+      }
+    },
+    {
+      "qid": "QALD2_te-5",
+      "query": "What is the second highest mountain on Earth?",
+      "scores": {
+        "single": 9.482507
+      },
+      "pivot_doc_len": {
+        "single": 64
+      }
+    },
+    {
+      "qid": "QALD2_te-51",
+      "query": "Give me all Frisian islands that belong to the Netherlands.",
+      "scores": {
+        "single": 12.054272
+      },
+      "pivot_doc_len": {
+        "single": 68
+      }
+    },
+    {
+      "qid": "QALD2_te-53",
+      "query": "What is the ruling party in Lisbon?",
+      "scores": {
+        "single": 10.45355
+      },
+      "pivot_doc_len": {
+        "single": 56
+      }
+    },
+    {
+      "qid": "QALD2_te-55",
+      "query": "Which Greek goddesses dwelt on Mount Olympus?",
+      "scores": {
+        "single": 16.312998
+      },
+      "pivot_doc_len": {
+        "single": 128
+      }
+    },
+    {
+      "qid": "QALD2_te-57",
+      "query": "Give me the Apollo 14 astronauts.",
+      "scores": {
+        "single": 8.358986
+      },
+      "pivot_doc_len": {
+        "single": 152
+      }
+    },
+    {
+      "qid": "QALD2_te-58",
+      "query": "What is the time zone of Salt Lake City?",
+      "scores": {
+        "single": 14.340101
+      },
+      "pivot_doc_len": {
+        "single": 54
+      }
+    },
+    {
+      "qid": "QALD2_te-59",
+      "query": "Which U.S. states are in the same timezone as Utah?",
+      "scores": {
+        "single": 15.018221
+      },
+      "pivot_doc_len": {
+        "single": 26
+      }
+    },
+    {
+      "qid": "QALD2_te-6",
+      "query": "Give me all professional skateboarders from Sweden.",
+      "scores": {
+        "single": 9.500618
+      },
+      "pivot_doc_len": {
+        "single": 152
+      }
+    },
+    {
+      "qid": "QALD2_te-60",
+      "query": "Give me a list of all lakes in Denmark.",
+      "scores": {
+        "single": 9.421321
+      },
+      "pivot_doc_len": {
+        "single": 144
+      }
+    },
+    {
+      "qid": "QALD2_te-63",
+      "query": "Give me all Argentine films.",
+      "scores": {
+        "single": 6.539835
+      },
+      "pivot_doc_len": {
+        "single": 144
+      }
+    },
+    {
+      "qid": "QALD2_te-64",
+      "query": "Give me all launch pads operated by NASA.",
+      "scores": {
+        "single": 14.996415
+      },
+      "pivot_doc_len": {
+        "single": 152
+      }
+    },
+    {
+      "qid": "QALD2_te-65",
+      "query": "Which instruments did John Lennon play?",
+      "scores": {
+        "single": 15.447429
+      },
+      "pivot_doc_len": {
+        "single": 60
+      }
+    },
+    {
+      "qid": "QALD2_te-66",
+      "query": "Which ships were called after Benjamin Franklin?",
+      "scores": {
+        "single": 16.037705
+      },
+      "pivot_doc_len": {
+        "single": 152
+      }
+    },
+    {
+      "qid": "QALD2_te-67",
+      "query": "Who are the parents of the wife of Juan Carlos I?",
+      "scores": {
+        "single": 11.373862
+      },
+      "pivot_doc_len": {
+        "single": 32
+      }
+    },
+    {
+      "qid": "QALD2_te-72",
+      "query": "In which U.S. state is Area 51 located?",
+      "scores": {
+        "single": 6.896803
+      },
+      "pivot_doc_len": {
+        "single": 68
+      }
+    },
+    {
+      "qid": "QALD2_te-75",
+      "query": "Which daughters of British earls died in the same place they were born in?",
+      "scores": {
+        "single": 10.55552
+      },
+      "pivot_doc_len": {
+        "single": 32
+      }
+    },
+    {
+      "qid": "QALD2_te-76",
+      "query": "List the children of Margaret Thatcher.",
+      "scores": {
+        "single": 12.275069
+      },
+      "pivot_doc_len": {
+        "single": 200
+      }
+    },
+    {
+      "qid": "QALD2_te-77",
+      "query": "Who was called Scarface?",
+      "scores": {
+        "single": 7.815389
+      },
+      "pivot_doc_len": {
+        "single": 44
+      }
+    },
+    {
+      "qid": "QALD2_te-8",
+      "query": "To which countries does the Himalayan mountain system extend?",
+      "scores": {
+        "single": 12.472843
+      },
+      "pivot_doc_len": {
+        "single": 96
+      }
+    },
+    {
+      "qid": "QALD2_te-80",
+      "query": "Give me all books by William Goldman with more than 300 pages.",
+      "scores": {
+        "single": 9.487379
+      },
+      "pivot_doc_len": {
+        "single": 144
+      }
+    },
+    {
+      "qid": "QALD2_te-81",
+      "query": "Which books by Kerouac were published by Viking Press?",
+      "scores": {
+        "single": 18.897385
+      },
+      "pivot_doc_len": {
+        "single": 17
+      }
+    },
+    {
+      "qid": "QALD2_te-82",
+      "query": "Give me a list of all American inventions.",
+      "scores": {
+        "single": 5.689576
+      },
+      "pivot_doc_len": {
+        "single": 152
+      }
+    },
+    {
+      "qid": "QALD2_te-84",
+      "query": "Who created the comic Captain America?",
+      "scores": {
+        "single": 13.407325
+      },
+      "pivot_doc_len": {
+        "single": 104
+      }
+    },
+    {
+      "qid": "QALD2_te-88",
+      "query": "Which films starring Clint Eastwood did he direct himself?",
+      "scores": {
+        "single": 17.755003
+      },
+      "pivot_doc_len": {
+        "single": 88
+      }
+    },
+    {
+      "qid": "QALD2_te-89",
+      "query": "In which city was the former Dutch queen Juliana buried?",
+      "scores": {
+        "single": 17.888685
+      },
+      "pivot_doc_len": {
+        "single": 9
+      }
+    },
+    {
+      "qid": "QALD2_te-9",
+      "query": "Give me a list of all trumpet players that were bandleaders.",
+      "scores": {
+        "single": 14.402725
+      },
+      "pivot_doc_len": {
+        "single": 152
+      }
+    },
+    {
+      "qid": "QALD2_te-90",
+      "query": "Where is the residence of the prime minister of Spain?",
+      "scores": {
+        "single": 14.405475
+      },
+      "pivot_doc_len": {
+        "single": 26
+      }
+    },
+    {
+      "qid": "QALD2_te-91",
+      "query": "Which U.S. State has the abbreviation MN?",
+      "scores": {
+        "single": 10.487563
+      },
+      "pivot_doc_len": {
+        "single": 4
+      }
+    },
+    {
+      "qid": "QALD2_te-92",
+      "query": "Show me all songs from Bruce Springsteen released between 1980 and 1990.",
+      "scores": {
+        "single": 21.88985
+      },
+      "pivot_doc_len": {
+        "single": 120
+      }
+    },
+    {
+      "qid": "QALD2_te-93",
+      "query": "Which movies did Sam Raimi direct after Army of Darkness?",
+      "scores": {
+        "single": 19.152035
+      },
+      "pivot_doc_len": {
+        "single": 152
+      }
+    },
+    {
+      "qid": "QALD2_te-95",
+      "query": "Who wrote the lyrics for the Polish national anthem?",
+      "scores": {
+        "single": 13.738191
+      },
+      "pivot_doc_len": {
+        "single": 50
+      }
+    },
+    {
+      "qid": "QALD2_te-97",
+      "query": "Who painted The Storm on the Sea of Galilee?",
+      "scores": {
+        "single": 17.953967
+      },
+      "pivot_doc_len": {
+        "single": 80
+      }
+    },
+    {
+      "qid": "QALD2_te-98",
+      "query": "Which country does the creator of Miffy come from?",
+      "scores": {
+        "single": 12.104294
+      },
+      "pivot_doc_len": {
+        "single": 12
+      }
+    },
+    {
+      "qid": "QALD2_te-99",
+      "query": "For which label did Elvis record his first album?",
+      "scores": {
+        "single": 16.958862
+      },
+      "pivot_doc_len": {
+        "single": 29
+      }
+    },
+    {
+      "qid": "QALD2_tr-1",
+      "query": "Give me all female Russian astronauts.",
+      "scores": {
+        "single": 1.463621
+      },
+      "pivot_doc_len": {
+        "single": 136
+      }
+    },
+    {
+      "qid": "QALD2_tr-10",
+      "query": "In which country does the Nile start?",
+      "scores": {
+        "single": 6.731275
+      },
+      "pivot_doc_len": {
+        "single": 44
+      }
+    },
+    {
+      "qid": "QALD2_tr-11",
+      "query": "Which countries have places with more than two caves?",
+      "scores": {
+        "single": 15.026837
+      },
+      "pivot_doc_len": {
+        "single": 168
+      }
+    },
+    {
+      "qid": "QALD2_tr-13",
+      "query": "Which classis does the Millepede belong to?",
+      "scores": {
+        "single": 10.657179
+      },
+      "pivot_doc_len": {
+        "single": 64
+      }
+    },
+    {
+      "qid": "QALD2_tr-15",
+      "query": "Who created Goofy?",
+      "scores": {
+        "single": 9.990203
+      },
+      "pivot_doc_len": {
+        "single": 56
+      }
+    },
+    {
+      "qid": "QALD2_tr-16",
+      "query": "Give me the capitals of all countries in Africa.",
+      "scores": {
+        "single": 7.849326
+      },
+      "pivot_doc_len": {
+        "single": 112
+      }
+    },
+    {
+      "qid": "QALD2_tr-17",
+      "query": "Give me all cities in New Jersey with more than 100000 inhabitants.",
+      "scores": {
+        "single": 10.662318
+      },
+      "pivot_doc_len": {
+        "single": 16
+      }
+    },
+    {
+      "qid": "QALD2_tr-18",
+      "query": "Which museum exhibits The Scream by Munch?",
+      "scores": {
+        "single": 22.277174
+      },
+      "pivot_doc_len": {
+        "single": 72
+      }
+    },
+    {
+      "qid": "QALD2_tr-21",
+      "query": "Which states border Illinois?",
+      "scores": {
+        "single": 10.562432
+      },
+      "pivot_doc_len": {
+        "single": 50
+      }
+    },
+    {
+      "qid": "QALD2_tr-24",
+      "query": "Which mountain is the highest after the Annapurna?",
+      "scores": {
+        "single": 13.169725
+      },
+      "pivot_doc_len": {
+        "single": 56
+      }
+    },
+    {
+      "qid": "QALD2_tr-25",
+      "query": "In which films directed by Garry Marshall was Julia Roberts starring?",
+      "scores": {
+        "single": 17.50527
+      },
+      "pivot_doc_len": {
+        "single": 64
+      }
+    },
+    {
+      "qid": "QALD2_tr-26",
+      "query": "Which bridges are of the same type as the Manhattan Bridge?",
+      "scores": {
+        "single": 18.223013
+      },
+      "pivot_doc_len": {
+        "single": 104
+      }
+    },
+    {
+      "qid": "QALD2_tr-28",
+      "query": "Which European countries have a constitutional monarchy?",
+      "scores": {
+        "single": 17.656685
+      },
+      "pivot_doc_len": {
+        "single": 144
+      }
+    },
+    {
+      "qid": "QALD2_tr-29",
+      "query": "Which awards did WikiLeaks win?",
+      "scores": {
+        "single": 10.66449
+      },
+      "pivot_doc_len": {
+        "single": 80
+      }
+    },
+    {
+      "qid": "QALD2_tr-3",
+      "query": "Who is the daughter of Bill Clinton married to?",
+      "scores": {
+        "single": 14.288675
+      },
+      "pivot_doc_len": {
+        "single": 38
+      }
+    },
+    {
+      "qid": "QALD2_tr-30",
+      "query": "Which state of the USA has the highest population density?",
+      "scores": {
+        "single": 13.770714
+      },
+      "pivot_doc_len": {
+        "single": 76
+      }
+    },
+    {
+      "qid": "QALD2_tr-31",
+      "query": "What is the currency of the Czech Republic?",
+      "scores": {
+        "single": 11.54347
+      },
+      "pivot_doc_len": {
+        "single": 35
+      }
+    },
+    {
+      "qid": "QALD2_tr-32",
+      "query": "Which countries in the European Union adopted the Euro?",
+      "scores": {
+        "single": 16.710257
+      },
+      "pivot_doc_len": {
+        "single": 46
+      }
+    },
+    {
+      "qid": "QALD2_tr-34",
+      "query": "Which countries have more than two official languages?",
+      "scores": {
+        "single": 16.165295
+      },
+      "pivot_doc_len": {
+        "single": 136
+      }
+    },
+    {
+      "qid": "QALD2_tr-35",
+      "query": "Who is the owner of Universal Studios?",
+      "scores": {
+        "single": 8.18133
+      },
+      "pivot_doc_len": {
+        "single": 136
+      }
+    },
+    {
+      "qid": "QALD2_tr-36",
+      "query": "Through which countries does the Yenisei river flow?",
+      "scores": {
+        "single": 19.064419
+      },
+      "pivot_doc_len": {
+        "single": 40
+      }
+    },
+    {
+      "qid": "QALD2_tr-38",
+      "query": "Which monarchs of the United Kingdom were married to a German?",
+      "scores": {
+        "single": 13.934057
+      },
+      "pivot_doc_len": {
+        "single": 88
+      }
+    },
+    {
+      "qid": "QALD2_tr-4",
+      "query": "Which river does the Brooklyn Bridge cross?",
+      "scores": {
+        "single": 12.491925
+      },
+      "pivot_doc_len": {
+        "single": 84
+      }
+    },
+    {
+      "qid": "QALD2_tr-40",
+      "query": "What is the highest mountain in Australia?",
+      "scores": {
+        "single": 8.737467
+      },
+      "pivot_doc_len": {
+        "single": 40
+      }
+    },
+    {
+      "qid": "QALD2_tr-41",
+      "query": "Give me all soccer clubs in Spain.",
+      "scores": {
+        "single": 8.250709
+      },
+      "pivot_doc_len": {
+        "single": 56
+      }
+    },
+    {
+      "qid": "QALD2_tr-42",
+      "query": "What are the official languages of the Philippines?",
+      "scores": {
+        "single": 9.736415
+      },
+      "pivot_doc_len": {
+        "single": 29
+      }
+    },
+    {
+      "qid": "QALD2_tr-43",
+      "query": "Who is the mayor of New York City?",
+      "scores": {
+        "single": 10.622149
+      },
+      "pivot_doc_len": {
+        "single": 34
+      }
+    },
+    {
+      "qid": "QALD2_tr-45",
+      "query": "Which telecommunications organizations are located in Belgium?",
+      "scores": {
+        "single": 11.401051
+      },
+      "pivot_doc_len": {
+        "single": 88
+      }
+    },
+    {
+      "qid": "QALD2_tr-47",
+      "query": "What is the highest place of Karakoram?",
+      "scores": {
+        "single": 11.146528
+      },
+      "pivot_doc_len": {
+        "single": 60
+      }
+    },
+    {
+      "qid": "QALD2_tr-49",
+      "query": "Give me all companies in the advertising industry.",
+      "scores": {
+        "single": 9.844417
+      },
+      "pivot_doc_len": {
+        "single": 152
+      }
+    },
+    {
+      "qid": "QALD2_tr-50",
+      "query": "What did Bruce Carver die from?",
+      "scores": {
+        "single": 9.406666
+      },
+      "pivot_doc_len": {
+        "single": 23
+      }
+    },
+    {
+      "qid": "QALD2_tr-51",
+      "query": "Give me all school types.",
+      "scores": {
+        "single": 5.447793
+      },
+      "pivot_doc_len": {
+        "single": 168
+      }
+    },
+    {
+      "qid": "QALD2_tr-52",
+      "query": "Which presidents were born in 1945?",
+      "scores": {
+        "single": 10.442102
+      },
+      "pivot_doc_len": {
+        "single": 46
+      }
+    },
+    {
+      "qid": "QALD2_tr-53",
+      "query": "Give me all presidents of the United States.",
+      "scores": {
+        "single": 7.165809
+      },
+      "pivot_doc_len": {
+        "single": 152
+      }
+    },
+    {
+      "qid": "QALD2_tr-54",
+      "query": "Who was the wife of U.S. president Lincoln?",
+      "scores": {
+        "single": 8.424491
+      },
+      "pivot_doc_len": {
+        "single": 136
+      }
+    },
+    {
+      "qid": "QALD2_tr-55",
+      "query": "Who developed the video game World of Warcraft?",
+      "scores": {
+        "single": 13.543683
+      },
+      "pivot_doc_len": {
+        "single": 64
+      }
+    },
+    {
+      "qid": "QALD2_tr-57",
+      "query": "List all episodes of the first season of the HBO television series The Sopranos!",
+      "scores": {
+        "single": 19.308911
+      },
+      "pivot_doc_len": {
+        "single": 42
+      }
+    },
+    {
+      "qid": "QALD2_tr-58",
+      "query": "Who produced the most films?",
+      "scores": {
+        "single": 9.200246
+      },
+      "pivot_doc_len": {
+        "single": 50
+      }
+    },
+    {
+      "qid": "QALD2_tr-59",
+      "query": "Give me all people with first name Jimmy.",
+      "scores": {
+        "single": 5.261141
+      },
+      "pivot_doc_len": {
+        "single": 88
+      }
+    },
+    {
+      "qid": "QALD2_tr-6",
+      "query": "Where did Abraham Lincoln die?",
+      "scores": {
+        "single": 9.235436
+      },
+      "pivot_doc_len": {
+        "single": 52
+      }
+    },
+    {
+      "qid": "QALD2_tr-61",
+      "query": "Which mountains are higher than the Nanga Parbat?",
+      "scores": {
+        "single": 25.167913
+      },
+      "pivot_doc_len": {
+        "single": 80
+      }
+    },
+    {
+      "qid": "QALD2_tr-62",
+      "query": "Who created Wikipedia?",
+      "scores": {
+        "single": 8.986745
+      },
+      "pivot_doc_len": {
+        "single": 72
+      }
+    },
+    {
+      "qid": "QALD2_tr-64",
+      "query": "Which software has been developed by organizations founded in California?",
+      "scores": {
+        "single": 11.73257
+      },
+      "pivot_doc_len": {
+        "single": 88
+      }
+    },
+    {
+      "qid": "QALD2_tr-65",
+      "query": "Which companies work in the aerospace industry as well as on nuclear reactor technology?",
+      "scores": {
+        "single": 29.22064
+      },
+      "pivot_doc_len": {
+        "single": 168
+      }
+    },
+    {
+      "qid": "QALD2_tr-68",
+      "query": "Which actors were born in Germany?",
+      "scores": {
+        "single": 7.206241
+      },
+      "pivot_doc_len": {
+        "single": 84
+      }
+    },
+    {
+      "qid": "QALD2_tr-69",
+      "query": "Which caves have more than 3 entrances?",
+      "scores": {
+        "single": 16.316135
+      },
+      "pivot_doc_len": {
+        "single": 152
+      }
+    },
+    {
+      "qid": "QALD2_tr-70",
+      "query": "Give me all films produced by Hal Roach.",
+      "scores": {
+        "single": 16.557314
+      },
+      "pivot_doc_len": {
+        "single": 152
+      }
+    },
+    {
+      "qid": "QALD2_tr-71",
+      "query": "Give me all video games published by Mean Hamster Software.",
+      "scores": {
+        "single": 23.072004
+      },
+      "pivot_doc_len": {
+        "single": 144
+      }
+    },
+    {
+      "qid": "QALD2_tr-74",
+      "query": "Which capitals in Europe were host cities of the summer olympic games?",
+      "scores": {
+        "single": 16.008931
+      },
+      "pivot_doc_len": {
+        "single": 136
+      }
+    },
+    {
+      "qid": "QALD2_tr-75",
+      "query": "Who has been the 5th president of the United States of America?",
+      "scores": {
+        "single": 8.980142
+      },
+      "pivot_doc_len": {
+        "single": 56
+      }
+    },
+    {
+      "qid": "QALD2_tr-77",
+      "query": "Which music albums contain the song Last Christmas?",
+      "scores": {
+        "single": 14.549742
+      },
+      "pivot_doc_len": {
+        "single": 64
+      }
+    },
+    {
+      "qid": "QALD2_tr-78",
+      "query": "Give me all books written by Danielle Steel.",
+      "scores": {
+        "single": 8.872963
+      },
+      "pivot_doc_len": {
+        "single": 128
+      }
+    },
+    {
+      "qid": "QALD2_tr-79",
+      "query": "Which airports are located in California, USA?",
+      "scores": {
+        "single": 10.514883
+      },
+      "pivot_doc_len": {
+        "single": 168
+      }
+    },
+    {
+      "qid": "QALD2_tr-8",
+      "query": "Which states of Germany are governed by the Social Democratic Party?",
+      "scores": {
+        "single": 16.96718
+      },
+      "pivot_doc_len": {
+        "single": 40
+      }
+    },
+    {
+      "qid": "QALD2_tr-80",
+      "query": "Give me all Canadian Grunge record labels.",
+      "scores": {
+        "single": 15.898882
+      },
+      "pivot_doc_len": {
+        "single": 112
+      }
+    },
+    {
+      "qid": "QALD2_tr-81",
+      "query": "Which country has the most official languages?",
+      "scores": {
+        "single": 12.020457
+      },
+      "pivot_doc_len": {
+        "single": 56
+      }
+    },
+    {
+      "qid": "QALD2_tr-82",
+      "query": "In which programming language is GIMP written?",
+      "scores": {
+        "single": 16.378898
+      },
+      "pivot_doc_len": {
+        "single": 28
+      }
+    },
+    {
+      "qid": "QALD2_tr-83",
+      "query": "Who produced films starring Natalie Portman?",
+      "scores": {
+        "single": 15.438171
+      },
+      "pivot_doc_len": {
+        "single": 144
+      }
+    },
+    {
+      "qid": "QALD2_tr-84",
+      "query": "Give me all movies with Tom Cruise.",
+      "scores": {
+        "single": 8.819729
+      },
+      "pivot_doc_len": {
+        "single": 168
+      }
+    },
+    {
+      "qid": "QALD2_tr-85",
+      "query": "In which films did Julia Roberts as well as Richard Gere play?",
+      "scores": {
+        "single": 21.756881
+      },
+      "pivot_doc_len": {
+        "single": 42
+      }
+    },
+    {
+      "qid": "QALD2_tr-87",
+      "query": "Who wrote the book The pillars of the Earth?",
+      "scores": {
+        "single": 10.331569
+      },
+      "pivot_doc_len": {
+        "single": 68
+      }
+    },
+    {
+      "qid": "QALD2_tr-89",
+      "query": "Give me all soccer clubs in the Premier League.",
+      "scores": {
+        "single": 8.003671
+      },
+      "pivot_doc_len": {
+        "single": 48
+      }
+    },
+    {
+      "qid": "QALD2_tr-9",
+      "query": "Which U.S. states possess gold minerals?",
+      "scores": {
+        "single": 13.575855
+      },
+      "pivot_doc_len": {
+        "single": 168
+      }
+    },
+    {
+      "qid": "QALD2_tr-91",
+      "query": "Which organizations were founded in 1950?",
+      "scores": {
+        "single": 8.185325
+      },
+      "pivot_doc_len": {
+        "single": 152
+      }
+    },
+    {
+      "qid": "SemSearch_ES-1",
+      "query": "44 magnum hunting",
+      "scores": {
+        "single": 14.768178
+      },
+      "pivot_doc_len": {
+        "single": 152
+      }
+    },
+    {
+      "qid": "SemSearch_ES-10",
+      "query": "asheville north carolina",
+      "scores": {
+        "single": 11.011056
+      },
+      "pivot_doc_len": {
+        "single": 152
+      }
+    },
+    {
+      "qid": "SemSearch_ES-100",
+      "query": "YMCA Tampa",
+      "scores": {
+        "single": 12.453761
+      },
+      "pivot_doc_len": {
+        "single": 152
+      }
+    },
+    {
+      "qid": "SemSearch_ES-101",
+      "query": "ashley wagner",
+      "scores": {
+        "single": 8.543482
+      },
+      "pivot_doc_len": {
+        "single": 152
+      }
+    },
+    {
+      "qid": "SemSearch_ES-102",
+      "query": "beach flowers",
+      "scores": {
+        "single": 9.018436
+      },
+      "pivot_doc_len": {
+        "single": 152
+      }
+    },
+    {
+      "qid": "SemSearch_ES-104",
+      "query": "bourbonnais il",
+      "scores": {
+        "single": 4.845801
+      },
+      "pivot_doc_len": {
+        "single": 80
+      }
+    },
+    {
+      "qid": "SemSearch_ES-106",
+      "query": "chase masterson",
+      "scores": {
+        "single": 7.794799
+      },
+      "pivot_doc_len": {
+        "single": 152
+      }
+    },
+    {
+      "qid": "SemSearch_ES-107",
+      "query": "concord steel",
+      "scores": {
+        "single": 11.549
+      },
+      "pivot_doc_len": {
+        "single": 144
+      }
+    },
+    {
+      "qid": "SemSearch_ES-108",
+      "query": "danielia cotton",
+      "scores": {
+        "single": 9.898388
+      },
+      "pivot_doc_len": {
+        "single": 152
+      }
+    },
+    {
+      "qid": "SemSearch_ES-11",
+      "query": "austin powers",
+      "scores": {
+        "single": 8.597847
+      },
+      "pivot_doc_len": {
+        "single": 144
+      }
+    },
+    {
+      "qid": "SemSearch_ES-111",
+      "query": "eagle rock, ca",
+      "scores": {
+        "single": 7.718023
+      },
+      "pivot_doc_len": {
+        "single": 144
+      }
+    },
+    {
+      "qid": "SemSearch_ES-114",
+      "query": "glenn frey",
+      "scores": {
+        "single": 9.803531
+      },
+      "pivot_doc_len": {
+        "single": 144
+      }
+    },
+    {
+      "qid": "SemSearch_ES-115",
+      "query": "goodwill of michigan",
+      "scores": {
+        "single": 10.329071
+      },
+      "pivot_doc_len": {
+        "single": 96
+      }
+    },
+    {
+      "qid": "SemSearch_ES-118",
+      "query": "iowa energy",
+      "scores": {
+        "single": 9.75084
+      },
+      "pivot_doc_len": {
+        "single": 104
+      }
+    },
+    {
+      "qid": "SemSearch_ES-119",
+      "query": "john elliott",
+      "scores": {
+        "single": 8.683559
+      },
+      "pivot_doc_len": {
+        "single": 168
+      }
+    },
+    {
+      "qid": "SemSearch_ES-120",
+      "query": "lawrence general hospital",
+      "scores": {
+        "single": 10.96987
+      },
+      "pivot_doc_len": {
+        "single": 80
+      }
+    },
+    {
+      "qid": "SemSearch_ES-123",
+      "query": "michael zimmerman",
+      "scores": {
+        "single": 8.976253
+      },
+      "pivot_doc_len": {
+        "single": 168
+      }
+    },
+    {
+      "qid": "SemSearch_ES-124",
+      "query": "motorola bluetooth hs850",
+      "scores": {
+        "single": 26.243923
+      },
+      "pivot_doc_len": {
+        "single": 152
+      }
+    },
+    {
+      "qid": "SemSearch_ES-125",
+      "query": "nokia e73",
+      "scores": {
+        "single": 15.26252
+      },
+      "pivot_doc_len": {
+        "single": 88
+      }
+    },
+    {
+      "qid": "SemSearch_ES-127",
+      "query": "palm tungsten e2 handheld",
+      "scores": {
+        "single": 23.551664
+      },
+      "pivot_doc_len": {
+        "single": 96
+      }
+    },
+    {
+      "qid": "SemSearch_ES-128",
+      "query": "philadelphia neufchatel cheese",
+      "scores": {
+        "single": 9.670354
+      },
+      "pivot_doc_len": {
+        "single": 136
+      }
+    },
+    {
+      "qid": "SemSearch_ES-129",
+      "query": "pizza populous detroit mi",
+      "scores": {
+        "single": 12.219159
+      },
+      "pivot_doc_len": {
+        "single": 144
+      }
+    },
+    {
+      "qid": "SemSearch_ES-13",
+      "query": "banana paper making",
+      "scores": {
+        "single": 13.626975
+      },
+      "pivot_doc_len": {
+        "single": 152
+      }
+    },
+    {
+      "qid": "SemSearch_ES-130",
+      "query": "plymouth police department",
+      "scores": {
+        "single": 12.960871
+      },
+      "pivot_doc_len": {
+        "single": 168
+      }
+    },
+    {
+      "qid": "SemSearch_ES-132",
+      "query": "sealy mattress co",
+      "scores": {
+        "single": 16.644153
+      },
+      "pivot_doc_len": {
+        "single": 152
+      }
+    },
+    {
+      "qid": "SemSearch_ES-135",
+      "query": "spring shoes canada",
+      "scores": {
+        "single": 13.042554
+      },
+      "pivot_doc_len": {
+        "single": 168
+      }
+    },
+    {
+      "qid": "SemSearch_ES-136",
+      "query": "sri lanka government gazette",
+      "scores": {
+        "single": 15.469155
+      },
+      "pivot_doc_len": {
+        "single": 152
+      }
+    },
+    {
+      "qid": "SemSearch_ES-139",
+      "query": "the big texan steak house",
+      "scores": {
+        "single": 17.311374
+      },
+      "pivot_doc_len": {
+        "single": 144
+      }
+    },
+    {
+      "qid": "SemSearch_ES-14",
+      "query": "ben franklin",
+      "scores": {
+        "single": 5.170095
+      },
+      "pivot_doc_len": {
+        "single": 152
+      }
+    },
+    {
+      "qid": "SemSearch_ES-15",
+      "query": "bradley center",
+      "scores": {
+        "single": 7.979229
+      },
+      "pivot_doc_len": {
+        "single": 80
+      }
+    },
+    {
+      "qid": "SemSearch_ES-16",
+      "query": "brooklyn bridge",
+      "scores": {
+        "single": 8.721897
+      },
+      "pivot_doc_len": {
+        "single": 152
+      }
+    },
+    {
+      "qid": "SemSearch_ES-17",
+      "query": "butte montana",
+      "scores": {
+        "single": 7.207334
+      },
+      "pivot_doc_len": {
+        "single": 152
+      }
+    },
+    {
+      "qid": "SemSearch_ES-18",
+      "query": "canasta cards",
+      "scores": {
+        "single": 11.726406
+      },
+      "pivot_doc_len": {
+        "single": 152
+      }
+    },
+    {
+      "qid": "SemSearch_ES-19",
+      "query": "carl lewis",
+      "scores": {
+        "single": 6.752745
+      },
+      "pivot_doc_len": {
+        "single": 152
+      }
+    },
+    {
+      "qid": "SemSearch_ES-2",
+      "query": "B. F. Skinner",
+      "scores": {
+        "single": 6.785007
+      },
+      "pivot_doc_len": {
+        "single": 144
+      }
+    },
+    {
+      "qid": "SemSearch_ES-20",
+      "query": "carolina",
+      "scores": {
+        "single": 3.577852
+      },
+      "pivot_doc_len": {
+        "single": 112
+      }
+    },
+    {
+      "qid": "SemSearch_ES-21",
+      "query": "charles darwin",
+      "scores": {
+        "single": 8.635746
+      },
+      "pivot_doc_len": {
+        "single": 152
+      }
+    },
+    {
+      "qid": "SemSearch_ES-23",
+      "query": "city of virginia beach",
+      "scores": {
+        "single": 9.510844
+      },
+      "pivot_doc_len": {
+        "single": 152
+      }
+    },
+    {
+      "qid": "SemSearch_ES-24",
+      "query": "coastal carolina",
+      "scores": {
+        "single": 8.20612
+      },
+      "pivot_doc_len": {
+        "single": 144
+      }
+    },
+    {
+      "qid": "SemSearch_ES-25",
+      "query": "david suchet",
+      "scores": {
+        "single": 9.741078
+      },
+      "pivot_doc_len": {
+        "single": 152
+      }
+    },
+    {
+      "qid": "SemSearch_ES-26",
+      "query": "disney orlando",
+      "scores": {
+        "single": 10.30128
+      },
+      "pivot_doc_len": {
+        "single": 168
+      }
+    },
+    {
+      "qid": "SemSearch_ES-29",
+      "query": "ellis college",
+      "scores": {
+        "single": 8.348664
+      },
+      "pivot_doc_len": {
+        "single": 72
+      }
+    },
+    {
+      "qid": "SemSearch_ES-3",
+      "query": "Bookwork",
+      "scores": {
+        "single": 10.829741
+      },
+      "pivot_doc_len": {
+        "single": 152
+      }
+    },
+    {
+      "qid": "SemSearch_ES-30",
+      "query": "eloan line of credit",
+      "scores": {
+        "single": 7.725821
+      },
+      "pivot_doc_len": {
+        "single": 168
+      }
+    },
+    {
+      "qid": "SemSearch_ES-32",
+      "query": "fitzgerald auto mall chambersburg pa",
+      "scores": {
+        "single": 25.085166
+      },
+      "pivot_doc_len": {
+        "single": 152
+      }
+    },
+    {
+      "qid": "SemSearch_ES-33",
+      "query": "harry potter",
+      "scores": {
+        "single": 9.316666
+      },
+      "pivot_doc_len": {
+        "single": 168
+      }
+    },
+    {
+      "qid": "SemSearch_ES-36",
+      "query": "imdb batman returns",
+      "scores": {
+        "single": 8.510094
+      },
+      "pivot_doc_len": {
+        "single": 152
+      }
+    },
+    {
+      "qid": "SemSearch_ES-38",
+      "query": "jack the ripper",
+      "scores": {
+        "single": 10.050761
+      },
+      "pivot_doc_len": {
+        "single": 152
+      }
+    },
+    {
+      "qid": "SemSearch_ES-39",
+      "query": "james caldwell high school",
+      "scores": {
+        "single": 15.049572
+      },
+      "pivot_doc_len": {
+        "single": 96
+      }
+    },
+    {
+      "qid": "SemSearch_ES-4",
+      "query": "NAACP Image Awards",
+      "scores": {
+        "single": 14.061453
+      },
+      "pivot_doc_len": {
+        "single": 152
+      }
+    },
+    {
+      "qid": "SemSearch_ES-41",
+      "query": "joan of arc",
+      "scores": {
+        "single": 7.665509
+      },
+      "pivot_doc_len": {
+        "single": 152
+      }
+    },
+    {
+      "qid": "SemSearch_ES-45",
+      "query": "keith urban",
+      "scores": {
+        "single": 7.513088
+      },
+      "pivot_doc_len": {
+        "single": 152
+      }
+    },
+    {
+      "qid": "SemSearch_ES-47",
+      "query": "king arthur",
+      "scores": {
+        "single": 7.329853
+      },
+      "pivot_doc_len": {
+        "single": 144
+      }
+    },
+    {
+      "qid": "SemSearch_ES-49",
+      "query": "laura bush",
+      "scores": {
+        "single": 10.578431
+      },
+      "pivot_doc_len": {
+        "single": 136
+      }
+    },
+    {
+      "qid": "SemSearch_ES-5",
+      "query": "Scott County",
+      "scores": {
+        "single": 5.924808
+      },
+      "pivot_doc_len": {
+        "single": 152
+      }
+    },
+    {
+      "qid": "SemSearch_ES-50",
+      "query": "laura steele bob and tom",
+      "scores": {
+        "single": 8.204483
+      },
+      "pivot_doc_len": {
+        "single": 56
+      }
+    },
+    {
+      "qid": "SemSearch_ES-52",
+      "query": "lincoln park",
+      "scores": {
+        "single": 7.65864
+      },
+      "pivot_doc_len": {
+        "single": 152
+      }
+    },
+    {
+      "qid": "SemSearch_ES-56",
+      "query": "mario bros",
+      "scores": {
+        "single": 10.95678
+      },
+      "pivot_doc_len": {
+        "single": 152
+      }
+    },
+    {
+      "qid": "SemSearch_ES-58",
+      "query": "mason ohio",
+      "scores": {
+        "single": 7.448028
+      },
+      "pivot_doc_len": {
+        "single": 144
+      }
+    },
+    {
+      "qid": "SemSearch_ES-59",
+      "query": "mercy hospital in des moines, ia",
+      "scores": {
+        "single": 12.515625
+      },
+      "pivot_doc_len": {
+        "single": 136
+      }
+    },
+    {
+      "qid": "SemSearch_ES-6",
+      "query": "air wisconsin",
+      "scores": {
+        "single": 7.401952
+      },
+      "pivot_doc_len": {
+        "single": 72
+      }
+    },
+    {
+      "qid": "SemSearch_ES-60",
+      "query": "michael douglas",
+      "scores": {
+        "single": 6.581123
+      },
+      "pivot_doc_len": {
+        "single": 152
+      }
+    },
+    {
+      "qid": "SemSearch_ES-61",
+      "query": "mr rourke fantasy island",
+      "scores": {
+        "single": 17.594507
+      },
+      "pivot_doc_len": {
+        "single": 128
+      }
+    },
+    {
+      "qid": "SemSearch_ES-7",
+      "query": "airsoft glock",
+      "scores": {
+        "single": 18.038107
+      },
+      "pivot_doc_len": {
+        "single": 168
+      }
+    },
+    {
+      "qid": "SemSearch_ES-71",
+      "query": "richmond virginia",
+      "scores": {
+        "single": 8.552298
+      },
+      "pivot_doc_len": {
+        "single": 152
+      }
+    },
+    {
+      "qid": "SemSearch_ES-72",
+      "query": "rock 103 memphis",
+      "scores": {
+        "single": 13.089371
+      },
+      "pivot_doc_len": {
+        "single": 64
+      }
+    },
+    {
+      "qid": "SemSearch_ES-74",
+      "query": "sacred heart u",
+      "scores": {
+        "single": 10.684648
+      },
+      "pivot_doc_len": {
+        "single": 144
+      }
+    },
+    {
+      "qid": "SemSearch_ES-75",
+      "query": "sagemont church houston tx",
+      "scores": {
+        "single": 19.630639
+      },
+      "pivot_doc_len": {
+        "single": 152
+      }
+    },
+    {
+      "qid": "SemSearch_ES-76",
+      "query": "san antonio",
+      "scores": {
+        "single": 7.63373
+      },
+      "pivot_doc_len": {
+        "single": 136
+      }
+    },
+    {
+      "qid": "SemSearch_ES-77",
+      "query": "savannah tech",
+      "scores": {
+        "single": 11.410949
+      },
+      "pivot_doc_len": {
+        "single": 152
+      }
+    },
+    {
+      "qid": "SemSearch_ES-78",
+      "query": "sharp pc",
+      "scores": {
+        "single": 9.757325
+      },
+      "pivot_doc_len": {
+        "single": 128
+      }
+    },
+    {
+      "qid": "SemSearch_ES-80",
+      "query": "sonny and cher",
+      "scores": {
+        "single": 12.19653
+      },
+      "pivot_doc_len": {
+        "single": 152
+      }
+    },
+    {
+      "qid": "SemSearch_ES-82",
+      "query": "st lucia",
+      "scores": {
+        "single": 5.786931
+      },
+      "pivot_doc_len": {
+        "single": 144
+      }
+    },
+    {
+      "qid": "SemSearch_ES-83",
+      "query": "st paul saints",
+      "scores": {
+        "single": 9.282548
+      },
+      "pivot_doc_len": {
+        "single": 80
+      }
+    },
+    {
+      "qid": "SemSearch_ES-84",
+      "query": "the dish danielle fishel",
+      "scores": {
+        "single": 15.624256
+      },
+      "pivot_doc_len": {
+        "single": 152
+      }
+    },
+    {
+      "qid": "SemSearch_ES-85",
+      "query": "the longest yard sale",
+      "scores": {
+        "single": 14.554104
+      },
+      "pivot_doc_len": {
+        "single": 152
+      }
+    },
+    {
+      "qid": "SemSearch_ES-86",
+      "query": "the morning call lehigh valley pa",
+      "scores": {
+        "single": 16.083489
+      },
+      "pivot_doc_len": {
+        "single": 96
+      }
+    },
+    {
+      "qid": "SemSearch_ES-88",
+      "query": "thomas jefferson",
+      "scores": {
+        "single": 6.74187
+      },
+      "pivot_doc_len": {
+        "single": 152
+      }
+    },
+    {
+      "qid": "SemSearch_ES-89",
+      "query": "university of north dakota",
+      "scores": {
+        "single": 8.57354
+      },
+      "pivot_doc_len": {
+        "single": 128
+      }
+    },
+    {
+      "qid": "SemSearch_ES-9",
+      "query": "american embassy nairobi",
+      "scores": {
+        "single": 13.826526
+      },
+      "pivot_doc_len": {
+        "single": 152
+      }
+    },
+    {
+      "qid": "SemSearch_ES-90",
+      "query": "university of phoenix",
+      "scores": {
+        "single": 7.488986
+      },
+      "pivot_doc_len": {
+        "single": 152
+      }
+    },
+    {
+      "qid": "SemSearch_ES-91",
+      "query": "westminster abbey",
+      "scores": {
+        "single": 9.850666
+      },
+      "pivot_doc_len": {
+        "single": 144
+      }
+    },
+    {
+      "qid": "SemSearch_ES-95",
+      "query": "MADRID",
+      "scores": {
+        "single": 5.39733
+      },
+      "pivot_doc_len": {
+        "single": 144
+      }
+    },
+    {
+      "qid": "SemSearch_ES-96",
+      "query": "New England Coffee",
+      "scores": {
+        "single": 11.073013
+      },
+      "pivot_doc_len": {
+        "single": 184
+      }
+    },
+    {
+      "qid": "SemSearch_ES-97",
+      "query": "PINK PANTHER 2",
+      "scores": {
+        "single": 11.288523
+      },
+      "pivot_doc_len": {
+        "single": 96
+      }
+    },
+    {
+      "qid": "SemSearch_ES-98",
+      "query": "University of Texas at Austin",
+      "scores": {
+        "single": 10.212695
+      },
+      "pivot_doc_len": {
+        "single": 128
+      }
+    },
+    {
+      "qid": "SemSearch_LS-1",
+      "query": "Apollo astronauts who walked on the Moon",
+      "scores": {
+        "single": 22.829673
+      },
+      "pivot_doc_len": {
+        "single": 152
+      }
+    },
+    {
+      "qid": "SemSearch_LS-10",
+      "query": "did nicole kidman have any siblings",
+      "scores": {
+        "single": 12.576011
+      },
+      "pivot_doc_len": {
+        "single": 26
+      }
+    },
+    {
+      "qid": "SemSearch_LS-11",
+      "query": "dioceses of the church of ireland",
+      "scores": {
+        "single": 12.328864
+      },
+      "pivot_doc_len": {
+        "single": 112
+      }
+    },
+    {
+      "qid": "SemSearch_LS-12",
+      "query": "first targets of the atomic bomb",
+      "scores": {
+        "single": 14.548159
+      },
+      "pivot_doc_len": {
+        "single": 152
+      }
+    },
+    {
+      "qid": "SemSearch_LS-13",
+      "query": "five great epics of Tamil literature",
+      "scores": {
+        "single": 17.185
+      },
+      "pivot_doc_len": {
+        "single": 136
+      }
+    },
+    {
+      "qid": "SemSearch_LS-14",
+      "query": "gods who dwelt on Mount Olympus",
+      "scores": {
+        "single": 23.400688
+      },
+      "pivot_doc_len": {
+        "single": 152
+      }
+    },
+    {
+      "qid": "SemSearch_LS-16",
+      "query": "hijackers in the September 11 attacks",
+      "scores": {
+        "single": 13.314737
+      },
+      "pivot_doc_len": {
+        "single": 152
+      }
+    },
+    {
+      "qid": "SemSearch_LS-18",
+      "query": "john lennon, parents",
+      "scores": {
+        "single": 8.965341
+      },
+      "pivot_doc_len": {
+        "single": 120
+      }
+    },
+    {
+      "qid": "SemSearch_LS-2",
+      "query": "Arab states of the Persian Gulf",
+      "scores": {
+        "single": 11.905236
+      },
+      "pivot_doc_len": {
+        "single": 152
+      }
+    },
+    {
+      "qid": "SemSearch_LS-20",
+      "query": "kublai khan siblings",
+      "scores": {
+        "single": 15.29383
+      },
+      "pivot_doc_len": {
+        "single": 104
+      }
+    },
+    {
+      "qid": "SemSearch_LS-21",
+      "query": "lilly allen parents",
+      "scores": {
+        "single": 7.768154
+      },
+      "pivot_doc_len": {
+        "single": 120
+      }
+    },
+    {
+      "qid": "SemSearch_LS-22",
+      "query": "major leagues in the united states",
+      "scores": {
+        "single": 8.014121
+      },
+      "pivot_doc_len": {
+        "single": 168
+      }
+    },
+    {
+      "qid": "SemSearch_LS-24",
+      "query": "matt berry tv series",
+      "scores": {
+        "single": 12.944567
+      },
+      "pivot_doc_len": {
+        "single": 136
+      }
+    },
+    {
+      "qid": "SemSearch_LS-25",
+      "query": "members of u2?",
+      "scores": {
+        "single": 5.599858
+      },
+      "pivot_doc_len": {
+        "single": 56
+      }
+    },
+    {
+      "qid": "SemSearch_LS-26",
+      "query": "movies starring erykah badu",
+      "scores": {
+        "single": 12.069149
+      },
+      "pivot_doc_len": {
+        "single": 54
+      }
+    },
+    {
+      "qid": "SemSearch_LS-29",
+      "query": "nations where Portuguese is an official language",
+      "scores": {
+        "single": 13.473512
+      },
+      "pivot_doc_len": {
+        "single": 144
+      }
+    },
+    {
+      "qid": "SemSearch_LS-3",
+      "query": "astronauts who landed on the Moon",
+      "scores": {
+        "single": 12.788037
+      },
+      "pivot_doc_len": {
+        "single": 112
+      }
+    },
+    {
+      "qid": "SemSearch_LS-30",
+      "query": "orders (or 'choirs') of angels",
+      "scores": {
+        "single": 10.737367
+      },
+      "pivot_doc_len": {
+        "single": 136
+      }
+    },
+    {
+      "qid": "SemSearch_LS-31",
+      "query": "permanent members of the UN Security Council",
+      "scores": {
+        "single": 19.24836
+      },
+      "pivot_doc_len": {
+        "single": 96
+      }
+    },
+    {
+      "qid": "SemSearch_LS-32",
+      "query": "presidents depicted on mount rushmore who died of shooting",
+      "scores": {
+        "single": 18.983501
+      },
+      "pivot_doc_len": {
+        "single": 54
+      }
+    },
+    {
+      "qid": "SemSearch_LS-33",
+      "query": "provinces and territories of Canada",
+      "scores": {
+        "single": 9.36979
+      },
+      "pivot_doc_len": {
+        "single": 136
+      }
+    },
+    {
+      "qid": "SemSearch_LS-34",
+      "query": "ratt albums",
+      "scores": {
+        "single": 10.418169
+      },
+      "pivot_doc_len": {
+        "single": 136
+      }
+    },
+    {
+      "qid": "SemSearch_LS-35",
+      "query": "republics of the former Yugoslavia",
+      "scores": {
+        "single": 9.521008
+      },
+      "pivot_doc_len": {
+        "single": 136
+      }
+    },
+    {
+      "qid": "SemSearch_LS-36",
+      "query": "revolutionaries of 1959 in Cuba",
+      "scores": {
+        "single": 6.967217
+      },
+      "pivot_doc_len": {
+        "single": 144
+      }
+    },
+    {
+      "qid": "SemSearch_LS-37",
+      "query": "standard axioms of set theory",
+      "scores": {
+        "single": 18.331702
+      },
+      "pivot_doc_len": {
+        "single": 136
+      }
+    },
+    {
+      "qid": "SemSearch_LS-38",
+      "query": "states that border oklahoma",
+      "scores": {
+        "single": 10.47113
+      },
+      "pivot_doc_len": {
+        "single": 56
+      }
+    },
+    {
+      "qid": "SemSearch_LS-39",
+      "query": "ten ancient Greek city-kingdoms of Cyprus",
+      "scores": {
+        "single": 15.859709
+      },
+      "pivot_doc_len": {
+        "single": 144
+      }
+    },
+    {
+      "qid": "SemSearch_LS-4",
+      "query": "Axis powers of World War II",
+      "scores": {
+        "single": 14.882495
+      },
+      "pivot_doc_len": {
+        "single": 152
+      }
+    },
+    {
+      "qid": "SemSearch_LS-41",
+      "query": "the four of the companions of the prophet",
+      "scores": {
+        "single": 13.080574
+      },
+      "pivot_doc_len": {
+        "single": 144
+      }
+    },
+    {
+      "qid": "SemSearch_LS-42",
+      "query": "twelve tribes or sons of Israel",
+      "scores": {
+        "single": 11.869252
+      },
+      "pivot_doc_len": {
+        "single": 128
+      }
+    },
+    {
+      "qid": "SemSearch_LS-43",
+      "query": "what books did paul of tarsus write?",
+      "scores": {
+        "single": 10.407022
+      },
+      "pivot_doc_len": {
+        "single": 42
+      }
+    },
+    {
+      "qid": "SemSearch_LS-44",
+      "query": "what languages do they speak in afghanistan",
+      "scores": {
+        "single": 7.757659
+      },
+      "pivot_doc_len": {
+        "single": 136
+      }
+    },
+    {
+      "qid": "SemSearch_LS-46",
+      "query": "where the British monarch is also head of state",
+      "scores": {
+        "single": 12.852519
+      },
+      "pivot_doc_len": {
+        "single": 88
+      }
+    },
+    {
+      "qid": "SemSearch_LS-49",
+      "query": "who invented the python programming language",
+      "scores": {
+        "single": 14.923584
+      },
+      "pivot_doc_len": {
+        "single": 96
+      }
+    },
+    {
+      "qid": "SemSearch_LS-50",
+      "query": "wonders of the ancient world",
+      "scores": {
+        "single": 9.729986
+      },
+      "pivot_doc_len": {
+        "single": 136
+      }
+    },
+    {
+      "qid": "SemSearch_LS-6",
+      "query": "boroughs of New York City",
+      "scores": {
+        "single": 10.119439
+      },
+      "pivot_doc_len": {
+        "single": 168
+      }
+    },
+    {
+      "qid": "SemSearch_LS-7",
+      "query": "Branches of the US military",
+      "scores": {
+        "single": 7.509425
+      },
+      "pivot_doc_len": {
+        "single": 144
+      }
+    },
+    {
+      "qid": "SemSearch_LS-8",
+      "query": "continents in the world",
+      "scores": {
+        "single": 7.943113
+      },
+      "pivot_doc_len": {
+        "single": 128
+      }
+    },
+    {
+      "qid": "SemSearch_LS-9",
+      "query": "degrees of Eastern Orthodox monasticism",
+      "scores": {
+        "single": 19.655545
+      },
+      "pivot_doc_len": {
+        "single": 136
+      }
+    },
+    {
+      "qid": "TREC_Entity-1",
+      "query": "Carriers that Blackberry makes phones for.",
+      "scores": {
+        "single": 14.476318
+      },
+      "pivot_doc_len": {
+        "single": 168
+      }
+    },
+    {
+      "qid": "TREC_Entity-10",
+      "query": "Campuses of Indiana University.",
+      "scores": {
+        "single": 11.042279
+      },
+      "pivot_doc_len": {
+        "single": 152
+      }
+    },
+    {
+      "qid": "TREC_Entity-11",
+      "query": "Donors to the Home Depot Foundation.",
+      "scores": {
+        "single": 18.496837
+      },
+      "pivot_doc_len": {
+        "single": 152
+      }
+    },
+    {
+      "qid": "TREC_Entity-12",
+      "query": "Airlines that Air Canada has code share flights with.",
+      "scores": {
+        "single": 24.170087
+      },
+      "pivot_doc_len": {
+        "single": 80
+      }
+    },
+    {
+      "qid": "TREC_Entity-14",
+      "query": "Authors awarded an Anthony Award at Bouchercon in 2007.",
+      "scores": {
+        "single": 23.018349
+      },
+      "pivot_doc_len": {
+        "single": 52
+      }
+    },
+    {
+      "qid": "TREC_Entity-15",
+      "query": "Universities that are members of the SEC conference for football.",
+      "scores": {
+        "single": 14.969213
+      },
+      "pivot_doc_len": {
+        "single": 52
+      }
+    },
+    {
+      "qid": "TREC_Entity-16",
+      "query": "Sponsors of the Mancuso quilt festivals.",
+      "scores": {
+        "single": 23.808588
+      },
+      "pivot_doc_len": {
+        "single": 168
+      }
+    },
+    {
+      "qid": "TREC_Entity-18",
+      "query": "Members of the band Jefferson Airplane.",
+      "scores": {
+        "single": 12.143992
+      },
+      "pivot_doc_len": {
+        "single": 104
+      }
+    },
+    {
+      "qid": "TREC_Entity-19",
+      "query": "Companies that John Hennessey serves on the board of.",
+      "scores": {
+        "single": 16.674572
+      },
+      "pivot_doc_len": {
+        "single": 29
+      }
+    },
+    {
+      "qid": "TREC_Entity-2",
+      "query": "Winners of the ACM Athena award.",
+      "scores": {
+        "single": 18.309564
+      },
+      "pivot_doc_len": {
+        "single": 152
+      }
+    },
+    {
+      "qid": "TREC_Entity-20",
+      "query": "Scotch whisky distilleries on the island of Islay.",
+      "scores": {
+        "single": 23.953297
+      },
+      "pivot_doc_len": {
+        "single": 136
+      }
+    },
+    {
+      "qid": "TREC_Entity-4",
+      "query": "Professional sports teams in Philadelphia.",
+      "scores": {
+        "single": 10.683543
+      },
+      "pivot_doc_len": {
+        "single": 168
+      }
+    },
+    {
+      "qid": "TREC_Entity-5",
+      "query": "Products of Medimmune, Inc.",
+      "scores": {
+        "single": 12.285675
+      },
+      "pivot_doc_len": {
+        "single": 112
+      }
+    },
+    {
+      "qid": "TREC_Entity-6",
+      "query": "Organizations that award Nobel prizes.",
+      "scores": {
+        "single": 16.46639
+      },
+      "pivot_doc_len": {
+        "single": 144
+      }
+    },
+    {
+      "qid": "TREC_Entity-7",
+      "query": "Airlines that currently use Boeing 747 planes.",
+      "scores": {
+        "single": 21.06811
+      },
+      "pivot_doc_len": {
+        "single": 88
+      }
+    },
+    {
+      "qid": "TREC_Entity-9",
+      "query": "Members of The Beaux Arts Trio.",
+      "scores": {
+        "single": 14.098029
+      },
+      "pivot_doc_len": {
+        "single": 136
+      }
+    }
+  ]
+}

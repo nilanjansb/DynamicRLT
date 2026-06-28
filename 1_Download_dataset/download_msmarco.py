@@ -63,6 +63,15 @@ FILES = {
 
 
 def download_file(dest: Path, url: str, is_compressed: bool, inner_name):
+    """Download a single file from *url* and decompress it into *dest*.
+
+    Args:
+        dest:          Final destination path for the extracted file.
+        url:           Remote URL to fetch.
+        is_compressed: True if the payload is gzip-compressed (.gz or .tar.gz).
+        inner_name:    Member name to extract from a .tar.gz archive, or None
+                       for a plain .gz file.
+    """
     print(f"  Downloading {dest.name} …")
     tmp = dest.with_suffix(".tmp")
     try:

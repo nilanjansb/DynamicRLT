@@ -24,3 +24,5 @@ rankvicuna_logs/
 __pycache__/
 *.pyc
 *.pyo
+
+*_indexes

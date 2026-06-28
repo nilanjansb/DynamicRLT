@@ -70,6 +70,7 @@ DATASETS = {
 
 
 def load_queries(query_file, fmt, valid_qids=None):
+    """Load queries as {qid: text}. Filter to valid_qids if provided."""
     queries = {}
     if fmt == "tsv":
         with open(query_file) as f:
@@ -91,6 +92,7 @@ def load_queries(query_file, fmt, valid_qids=None):
 
 
 def load_qrel_qids(qrels_file, fmt):
+    """Return set of query IDs that have at least one relevance judgment."""
     qids = set()
     with open(qrels_file) as f:
         for i, line in enumerate(f):
@@ -105,6 +107,11 @@ def load_qrel_qids(qrels_file, fmt):
 
 
 def retrieve(dataset_name, cfg, searcher, top_k):
+    """Run SPLADE retrieval for dataset_name and write a TREC run file.
+
+    Retrieves top_k documents per query and writes one line per hit in
+    standard TREC format: qid Q0 docid rank score SPLADE.
+    """
     valid_qids = load_qrel_qids(cfg["qrels"], cfg["qrels_format"])
     queries    = load_queries(cfg["queries"], cfg["query_format"], valid_qids)
     print(f"  {len(queries)} queries with qrels")

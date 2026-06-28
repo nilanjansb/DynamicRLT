@@ -1,0 +1,24 @@
+{
+  "wall_clock_start": "2026-06-23T08:34:46",
+  "wall_clock_end": "2026-06-23T08:58:45",
+  "total_rerank_s": 1439.4611,
+  "avg_s_per_query": 33.4758,
+  "avg_ms_per_query": 33475.84,
+  "total_infer_s": 1408.357,
+  "pct_time_in_infer": 97.84,
+  "n_queries": 43,
+  "n_pairs_scored": 105350,
+  "effective_batch_size": 64,
+  "dataset": "msmarco-dl19",
+  "retriever": "bm25",
+  "monot5_model": "castorini/monot5-3b-msmarco-10k",
+  "duot5_model": "castorini/duot5-3b-msmarco",
+  "corpus_load_s": 4.5027,
+  "duot5_load_s": 10.5167,
+  "config": {
+    "monot5_top_k": 100,
+    "duot5_top_k": 50,
+    "batch_size": 64,
+    "max_input_len": 512
+  }
+}

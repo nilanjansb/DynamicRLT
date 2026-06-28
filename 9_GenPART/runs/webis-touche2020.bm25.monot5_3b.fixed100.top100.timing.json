@@ -1,0 +1,22 @@
+{
+  "wall_clock_start": "2026-06-23T08:27:03",
+  "wall_clock_end": "2026-06-23T08:29:01",
+  "total_rerank_s": 117.4344,
+  "avg_s_per_query": 2.3966,
+  "avg_ms_per_query": 2396.62,
+  "total_infer_s": 111.3361,
+  "pct_time_in_infer": 94.81,
+  "n_queries": 49,
+  "n_pairs_scored": 4900,
+  "effective_batch_size": 64,
+  "dataset": "webis-touche2020",
+  "retriever": "bm25",
+  "model": "castorini/monot5-3b-msmarco-10k",
+  "corpus_load_s": 1.4857,
+  "model_load_s": 10.6211,
+  "config": {
+    "top_k": 100,
+    "batch_size": 64,
+    "max_input_len": 512
+  }
+}

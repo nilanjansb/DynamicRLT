@@ -182,26 +182,28 @@ CUDA_VISIBLE_DEVICES=0 python3 7_GenTDPart/gentdpart.py \
 
 ### 3.5 GenSliding
 
-Adaptive-stride sliding window. Replaces TDPart's fixed pivot extraction with a generated pivot and replaces the fixed stride S with a pivot-driven adaptive stride.
+Adaptive-stride bottom-up sliding window. Uses a pre-generated pivot p̂_τ in place of a fixed stride; each window contains W−1 real docs + p̂ = **W docs total** (same per-window budget as SNOW).
+
+**Phase 1: Adaptive sliding rounds** (sequential across rounds, batched across all queries per round):
 
 ```
-p starts at K (bottom of ranked list).
-Each round t (sequential across rounds, batched across queries per round):
-  1. window = docs[p−W : p]
-  2. Append p̂ as (W+1)-th doc
-  3. Rank window + p̂ in one vLLM call
-  4. |A_t| = docs ranked above p̂ in this window
-  5. stride_t = min(S_max, max(1, |A_t|))
-  6. p ← p − stride_t
-  7. A_global = A_t + A_global,  B_global = B_t + B_global
-Until p ≤ W for that query.
+docs[0..99] (initial BM25/SPLADE order, p starts at K=100)
 
-Final window: rank docs[0:p] + p̂, update A_global, B_global.
+Round 1:  rank docs[81:100] + p̂  →  A₁ (above p̂), B₁ (below p̂)
+          stride₁ = min(S_max, max(1, |B₁|))  →  p = 100 − stride₁
+
+Round 2:  rank docs[p−19:p] + p̂  →  A₂, B₂
+          stride₂ = min(S_max, max(1, |B₂|))  →  p = p − stride₂
+
+...until p ≤ 19 for each query (queries exit the active set independently)
 ```
 
-**Intuition:** when many docs in the window are above the pivot (dense relevant region), stride is large and the pointer advances quickly. When few are above (boundary region), stride shrinks and the window overlaps heavily, refining the partition.
+A_global = A₁ + A₂ + … prepended each round (top→bottom order preserved). When few docs land above p̂ (low-quality region, |B_t| large), stride is large and the pointer fast-forwards; when many land above p̂ (high-quality region, |B_t| small), stride shrinks to 1 and windows overlap heavily to carefully rank the good docs.
 
-**Output:** A_global + B_global (p̂ excluded). Total calls: 1 + n_rounds, where n_rounds ≈ 2–9 per query depending on stride convergence.
+**Phase 2: Final window** (1 vLLM call):  
+Rank docs[0:p] + p̂ for all queries with 0 < p ≤ 19. Update A_global, B_global.
+
+**Output:** A_global + B_global (p̂ excluded). Total: **n_rounds + 1 vLLM calls**, n_rounds ≈ 2–9 depending on stride convergence.
 
 ```bash
 CUDA_VISIBLE_DEVICES=0 python3 8_GenSliding/gensliding.py \

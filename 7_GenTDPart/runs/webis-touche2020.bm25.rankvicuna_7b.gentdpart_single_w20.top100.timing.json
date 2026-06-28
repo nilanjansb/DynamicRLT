@@ -1,0 +1,64 @@
+{
+  "wall_clock_start": "2026-06-22T21:49:08",
+  "wall_clock_end": "2026-06-22T21:52:02",
+  "total_rerank_s": 173.8324,
+  "avg_s_per_query": 3.5476,
+  "avg_ms_per_query": 3547.6,
+  "total_vllm_infer_s": 172.8448,
+  "total_prompt_build_s": 0.9572,
+  "pct_time_in_vllm": 99.43,
+  "n_queries": 49,
+  "n_phases": 3,
+  "pivot_tau": 2,
+  "pivot_source": "Pivot_generation",
+  "phases": [
+    {
+      "phase": 1,
+      "label": "load_generated_pivot",
+      "pivot_tau": 2,
+      "n_queries": 49,
+      "prompt_build_s": 0.0,
+      "vllm_infer_s": 0.0,
+      "permute_parse_s": 0.0,
+      "phase_total_s": 0.0001
+    },
+    {
+      "phase": 2,
+      "label": "parallel_comparison",
+      "n_batches_total": 294,
+      "avg_batches_query": 6.0,
+      "prompt_build_s": 0.9202,
+      "vllm_infer_s": 165.9513,
+      "permute_parse_s": 0.0027,
+      "phase_total_s": 166.8742
+    },
+    {
+      "phase": 3,
+      "label": "final_sort",
+      "n_vllm_calls": 1,
+      "max_ai_size": 20,
+      "prompt_build_s": 0.037,
+      "vllm_infer_s": 6.8935,
+      "permute_parse_s": 0.0002,
+      "phase_total_s": 6.9308
+    }
+  ],
+  "dataset": "webis-touche2020",
+  "retriever": "bm25",
+  "model": "castorini/rank_vicuna_7b_v1",
+  "corpus_load_s": 1.4168,
+  "model_load_s": 23.8463,
+  "config": {
+    "window_size": 20,
+    "pivot_k": 10,
+    "pivot_type": "single",
+    "pivot_tau": null,
+    "budget": 20,
+    "top_k": 100,
+    "stride": 10,
+    "tensor_parallel_size": 1,
+    "gpu_memory_util": 0.9,
+    "max_model_len": 4096,
+    "max_num_seqs": 512
+  }
+}

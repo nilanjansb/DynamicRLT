@@ -67,6 +67,8 @@ OUT_DIR = BASE / "7_GenTDPart/runs"
 
 
 def load_tdpart_module():
+    """Dynamically import 5_TDPart/tdpart.py so its helpers and constants can be
+    reused without making tdpart a proper package or duplicating code."""
     spec = importlib.util.spec_from_file_location("tdpart_base", TDPART_PATH)
     if spec is None or spec.loader is None:
         raise RuntimeError(f"Unable to load TDPart module from {TDPART_PATH}")

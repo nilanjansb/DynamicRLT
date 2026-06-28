@@ -8,7 +8,7 @@ Algorithm : Bottom-up sliding window (window=20, stride=10).
 Inference  : vLLM offline mode, TP=1 per process (run 3 parallel processes, one per GPU).
 Input      : TREC top-100 run files from BM25 or SPLADE.
 Output     : Reranked TREC run files in Sliding_Window/runs/.
-Resumeable : Checkpoint saved after every window step; safe to kill and restart.
+Resumable  : Checkpoint saved after every window step; safe to kill and restart.
 
 File naming: {dataset}.{retriever}.{model_tag}.w{W}s{S}.top{K}.txt
    e.g.    : msmarco-dl19.bm25.rankzephyr_7b.w20s10.top100.txt

@@ -21,12 +21,18 @@ OUT_DIR.mkdir(parents=True, exist_ok=True)
 
 
 def save_jsonl(path, rows):
+    """Write a list of dicts to a JSONL file, one JSON object per line."""
     with open(path, "w") as f:
         for row in rows:
             f.write(json.dumps(row) + "\n")
 
 
 def download(name, hf_id, qrels_hf_id):
+    """Download corpus, queries, and qrels for one BEIR dataset from HuggingFace.
+
+    Skips any file that already exists so interrupted runs can be resumed.
+    Outputs are written to OUT_DIR/<name>/{corpus.jsonl, queries.jsonl, qrels/test.tsv}.
+    """
     dataset_dir = OUT_DIR / name
     done = (
         (dataset_dir / "corpus.jsonl").exists()

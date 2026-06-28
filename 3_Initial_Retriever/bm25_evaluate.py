@@ -58,6 +58,7 @@ def load_run(run_file):
 
 
 def evaluate_run(run_file, qrels_file, fmt, metric="ndcg_cut_10"):
+    """Evaluate a TREC run file against qrels; return (mean_score, num_queries)."""
     qrels = load_qrels(qrels_file, fmt)
     run = load_run(run_file)
 

@@ -1,0 +1,821 @@
+{
+  "dataset": "trec-covid",
+  "pivot_type": "separate",
+  "index": "/DATA/cs26int00020/DynamicRLT/BM25_indexes/trec-covid",
+  "retriever": "bm25",
+  "bm25": {
+    "k1": 0.9,
+    "b": 0.4
+  },
+  "N": 171331,
+  "avgdl": 121.53563,
+  "tau_levels": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "n_queries": 50,
+  "queries": [
+    {
+      "qid": "1",
+      "query": "what is the origin of COVID-19",
+      "scores": {
+        "0": 0.0,
+        "1": 4.296758,
+        "2": 4.182735,
+        "3": 4.011562
+      },
+      "pivot_doc_len": {
+        "0": 32,
+        "1": 152,
+        "2": 152,
+        "3": 152
+      }
+    },
+    {
+      "qid": "10",
+      "query": "has social distancing had an impact on slowing the spread of COVID-19?",
+      "scores": {
+        "0": 8.21308,
+        "1": 16.134295,
+        "2": 13.492678,
+        "3": 15.894258
+      },
+      "pivot_doc_len": {
+        "0": 50,
+        "1": 168,
+        "2": 168,
+        "3": 168
+      }
+    },
+    {
+      "qid": "11",
+      "query": "what are the guidelines for triaging patients infected with coronavirus?",
+      "scores": {
+        "0": 0.0,
+        "1": 8.824525,
+        "2": 8.490288,
+        "3": 8.7857
+      },
+      "pivot_doc_len": {
+        "0": 152,
+        "1": 152,
+        "2": 136,
+        "3": 152
+      }
+    },
+    {
+      "qid": "12",
+      "query": "what are best practices in hospitals and at home in maintaining quarantine?",
+      "scores": {
+        "0": 0.0,
+        "1": 13.324237,
+        "2": 11.75056,
+        "3": 14.946411
+      },
+      "pivot_doc_len": {
+        "0": 46,
+        "1": 168,
+        "2": 120,
+        "3": 152
+      }
+    },
+    {
+      "qid": "13",
+      "query": "what are the transmission routes of coronavirus?",
+      "scores": {
+        "0": 0.0,
+        "1": 5.608325,
+        "2": 5.31435,
+        "3": 6.78806
+      },
+      "pivot_doc_len": {
+        "0": 42,
+        "1": 128,
+        "2": 120,
+        "3": 128
+      }
+    },
+    {
+      "qid": "14",
+      "query": "what evidence is there related to COVID-19 super spreaders",
+      "scores": {
+        "0": 0.0,
+        "1": 12.421854,
+        "2": 14.465774,
+        "3": 12.421854
+      },
+      "pivot_doc_len": {
+        "0": 64,
+        "1": 152,
+        "2": 152,
+        "3": 152
+      }
+    },
+    {
+      "qid": "15",
+      "query": "how long can the coronavirus live outside the body",
+      "scores": {
+        "0": 0.0,
+        "1": 6.858133,
+        "2": 6.904436,
+        "3": 6.858133
+      },
+      "pivot_doc_len": {
+        "0": 4,
+        "1": 152,
+        "2": 72,
+        "3": 152
+      }
+    },
+    {
+      "qid": "16",
+      "query": "how long does coronavirus remain stable  on surfaces?",
+      "scores": {
+        "0": 0.0,
+        "1": 11.181966,
+        "2": 10.604222,
+        "3": 11.4954
+      },
+      "pivot_doc_len": {
+        "0": 128,
+        "1": 152,
+        "2": 152,
+        "3": 152
+      }
+    },
+    {
+      "qid": "17",
+      "query": "are there any clinical trials available for the coronavirus",
+      "scores": {
+        "0": 0.0,
+        "1": 4.776826,
+        "2": 4.861696,
+        "3": 4.808651
+      },
+      "pivot_doc_len": {
+        "0": 48,
+        "1": 152,
+        "2": 152,
+        "3": 152
+      }
+    },
+    {
+      "qid": "18",
+      "query": "what are the best masks for preventing infection by Covid-19?",
+      "scores": {
+        "0": 0.0,
+        "1": 9.73236,
+        "2": 8.657088,
+        "3": 9.906176
+      },
+      "pivot_doc_len": {
+        "0": 64,
+        "1": 152,
+        "2": 152,
+        "3": 152
+      }
+    },
+    {
+      "qid": "19",
+      "query": "what type of hand sanitizer is needed to destroy Covid-19?",
+      "scores": {
+        "0": 0.0,
+        "1": 14.007636,
+        "2": 15.034187,
+        "3": 15.866685
+      },
+      "pivot_doc_len": {
+        "0": 39,
+        "1": 128,
+        "2": 56,
+        "3": 88
+      }
+    },
+    {
+      "qid": "2",
+      "query": "how does the coronavirus respond to changes in the weather",
+      "scores": {
+        "0": 0.0,
+        "1": 6.012543,
+        "2": 7.488222,
+        "3": 6.796057
+      },
+      "pivot_doc_len": {
+        "0": 26,
+        "1": 152,
+        "2": 112,
+        "3": 152
+      }
+    },
+    {
+      "qid": "20",
+      "query": "are patients taking Angiotensin-converting enzyme inhibitors (ACE) at increased risk for COVID-19?",
+      "scores": {
+        "0": 21.434559,
+        "1": 25.361701,
+        "2": 24.964498,
+        "3": 24.641305
+      },
+      "pivot_doc_len": {
+        "0": 64,
+        "1": 168,
+        "2": 168,
+        "3": 168
+      }
+    },
+    {
+      "qid": "21",
+      "query": "what are the mortality rates overall and in specific populations",
+      "scores": {
+        "0": 0.0,
+        "1": 9.99074,
+        "2": 9.937443,
+        "3": 8.256171
+      },
+      "pivot_doc_len": {
+        "0": 46,
+        "1": 168,
+        "2": 152,
+        "3": 168
+      }
+    },
+    {
+      "qid": "22",
+      "query": "are cardiac complications likely in patients with COVID-19?",
+      "scores": {
+        "0": 0.0,
+        "1": 8.770791,
+        "2": 8.922961,
+        "3": 8.821592
+      },
+      "pivot_doc_len": {
+        "0": 48,
+        "1": 168,
+        "2": 152,
+        "3": 168
+      }
+    },
+    {
+      "qid": "23",
+      "query": "what kinds of complications related to COVID-19 are associated with hypertension?",
+      "scores": {
+        "0": 0.0,
+        "1": 10.312691,
+        "2": 7.802737,
+        "3": 9.230662
+      },
+      "pivot_doc_len": {
+        "0": 30,
+        "1": 168,
+        "2": 96,
+        "3": 168
+      }
+    },
+    {
+      "qid": "24",
+      "query": "what kinds of complications related to COVID-19 are associated with diabetes",
+      "scores": {
+        "0": 0.0,
+        "1": 9.596697,
+        "2": 7.326948,
+        "3": 8.782442
+      },
+      "pivot_doc_len": {
+        "0": 40,
+        "1": 144,
+        "2": 84,
+        "3": 152
+      }
+    },
+    {
+      "qid": "25",
+      "query": "which biomarkers predict the severe clinical course of 2019-nCOV infection?",
+      "scores": {
+        "0": 0.931381,
+        "1": 17.286207,
+        "2": 15.686046,
+        "3": 16.721584
+      },
+      "pivot_doc_len": {
+        "0": 36,
+        "1": 152,
+        "2": 104,
+        "3": 152
+      }
+    },
+    {
+      "qid": "26",
+      "query": "what are the initial symptoms of Covid-19?",
+      "scores": {
+        "0": 0.0,
+        "1": 5.398475,
+        "2": 5.052095,
+        "3": 5.398475
+      },
+      "pivot_doc_len": {
+        "0": 35,
+        "1": 88,
+        "2": 80,
+        "3": 88
+      }
+    },
+    {
+      "qid": "27",
+      "query": "what is known about those infected with Covid-19 but are asymptomatic?",
+      "scores": {
+        "0": 0.0,
+        "1": 7.152968,
+        "2": 8.867711,
+        "3": 7.213832
+      },
+      "pivot_doc_len": {
+        "0": 4,
+        "1": 152,
+        "2": 168,
+        "3": 152
+      }
+    },
+    {
+      "qid": "28",
+      "query": "what evidence is there for the value of hydroxychloroquine in treating Covid-19?",
+      "scores": {
+        "0": 0.0,
+        "1": 6.006127,
+        "2": 8.605472,
+        "3": 7.851603
+      },
+      "pivot_doc_len": {
+        "0": 60,
+        "1": 152,
+        "2": 144,
+        "3": 152
+      }
+    },
+    {
+      "qid": "29",
+      "query": "which SARS-CoV-2 proteins-human proteins interactions indicate potential for drug targets. Are there approved drugs that can be repurposed based on this information?",
+      "scores": {
+        "0": 2.0757,
+        "1": 25.021613,
+        "2": 28.276919,
+        "3": 25.021613
+      },
+      "pivot_doc_len": {
+        "0": 46,
+        "1": 152,
+        "2": 152,
+        "3": 152
+      }
+    },
+    {
+      "qid": "3",
+      "query": "will SARS-CoV2 infected people develop immunity? Is cross protection possible?",
+      "scores": {
+        "0": 0.0,
+        "1": 11.705925,
+        "2": 11.595354,
+        "3": 11.705925
+      },
+      "pivot_doc_len": {
+        "0": 4,
+        "1": 152,
+        "2": 152,
+        "3": 152
+      }
+    },
+    {
+      "qid": "30",
+      "query": "is remdesivir an effective treatment for COVID-19",
+      "scores": {
+        "0": 0.0,
+        "1": 8.857974,
+        "2": 8.899751,
+        "3": 9.120596
+      },
+      "pivot_doc_len": {
+        "0": 48,
+        "1": 152,
+        "2": 136,
+        "3": 152
+      }
+    },
+    {
+      "qid": "31",
+      "query": "How does the coronavirus differ from seasonal flu?",
+      "scores": {
+        "0": 0.0,
+        "1": 11.367521,
+        "2": 11.04879,
+        "3": 11.367521
+      },
+      "pivot_doc_len": {
+        "0": 42,
+        "1": 152,
+        "2": 152,
+        "3": 152
+      }
+    },
+    {
+      "qid": "32",
+      "query": "Does SARS-CoV-2 have any subtypes, and if so what are they?",
+      "scores": {
+        "0": 10.902517,
+        "1": 8.822924,
+        "2": 8.92296,
+        "3": 8.822924
+      },
+      "pivot_doc_len": {
+        "0": 10,
+        "1": 152,
+        "2": 136,
+        "3": 152
+      }
+    },
+    {
+      "qid": "33",
+      "query": "What vaccine candidates are being tested for Covid-19?",
+      "scores": {
+        "0": 2.370042,
+        "1": 8.6322,
+        "2": 9.360902,
+        "3": 8.6322
+      },
+      "pivot_doc_len": {
+        "0": 34,
+        "1": 120,
+        "2": 112,
+        "3": 120
+      }
+    },
+    {
+      "qid": "34",
+      "query": "What are the longer-term complications of those who recover from COVID-19?",
+      "scores": {
+        "0": 0.0,
+        "1": 10.307947,
+        "2": 12.36806,
+        "3": 10.957238
+      },
+      "pivot_doc_len": {
+        "0": 4,
+        "1": 168,
+        "2": 168,
+        "3": 168
+      }
+    },
+    {
+      "qid": "35",
+      "query": "What new public datasets are available related to COVID-19?",
+      "scores": {
+        "0": 0.0,
+        "1": 10.291399,
+        "2": 11.504014,
+        "3": 10.530865
+      },
+      "pivot_doc_len": {
+        "0": 54,
+        "1": 168,
+        "2": 168,
+        "3": 168
+      }
+    },
+    {
+      "qid": "36",
+      "query": "What is the protein structure of the SARS-CoV-2 spike?",
+      "scores": {
+        "0": 9.170016,
+        "1": 11.233808,
+        "2": 10.065404,
+        "3": 10.451329
+      },
+      "pivot_doc_len": {
+        "0": 88,
+        "1": 136,
+        "2": 144,
+        "3": 144
+      }
+    },
+    {
+      "qid": "37",
+      "query": "What is the result of phylogenetic analysis of SARS-CoV-2 genome sequence?",
+      "scores": {
+        "0": 0.0,
+        "1": 14.713398,
+        "2": 14.101117,
+        "3": 13.95789
+      },
+      "pivot_doc_len": {
+        "0": 35,
+        "1": 152,
+        "2": 136,
+        "3": 152
+      }
+    },
+    {
+      "qid": "38",
+      "query": "What is the mechanism of inflammatory response and pathogenesis of COVID-19 cases?",
+      "scores": {
+        "0": 0.0,
+        "1": 7.417122,
+        "2": 7.417122,
+        "3": 7.417122
+      },
+      "pivot_doc_len": {
+        "0": 44,
+        "1": 144,
+        "2": 144,
+        "3": 144
+      }
+    },
+    {
+      "qid": "39",
+      "query": "What is the mechanism of cytokine storm syndrome on the COVID-19?",
+      "scores": {
+        "0": 0.0,
+        "1": 11.749039,
+        "2": 12.151494,
+        "3": 11.964696
+      },
+      "pivot_doc_len": {
+        "0": 50,
+        "1": 152,
+        "2": 152,
+        "3": 152
+      }
+    },
+    {
+      "qid": "4",
+      "query": "what causes death from Covid-19?",
+      "scores": {
+        "0": 0.536767,
+        "1": 6.270993,
+        "2": 6.276404,
+        "3": 6.439489
+      },
+      "pivot_doc_len": {
+        "0": 50,
+        "1": 152,
+        "2": 152,
+        "3": 152
+      }
+    },
+    {
+      "qid": "40",
+      "query": "What are the observed mutations in the SARS-CoV-2 genome and how often do the mutations occur?",
+      "scores": {
+        "0": 0.0,
+        "1": 16.719892,
+        "2": 16.166279,
+        "3": 16.118751
+      },
+      "pivot_doc_len": {
+        "0": 60,
+        "1": 152,
+        "2": 152,
+        "3": 152
+      }
+    },
+    {
+      "qid": "41",
+      "query": "What are the impacts of COVID-19 among African-Americans that differ from the rest of the U.S. population?",
+      "scores": {
+        "0": 3.093237,
+        "1": 21.331708,
+        "2": 18.593654,
+        "3": 18.811886
+      },
+      "pivot_doc_len": {
+        "0": 52,
+        "1": 168,
+        "2": 168,
+        "3": 168
+      }
+    },
+    {
+      "qid": "42",
+      "query": "Does Vitamin D impact COVID-19 prevention and treatment?",
+      "scores": {
+        "0": 0.0,
+        "1": 12.938639,
+        "2": 13.634065,
+        "3": 13.068882
+      },
+      "pivot_doc_len": {
+        "0": 50,
+        "1": 168,
+        "2": 168,
+        "3": 168
+      }
+    },
+    {
+      "qid": "43",
+      "query": "How has the COVID-19 pandemic impacted violence in society, including violent crimes?",
+      "scores": {
+        "0": 19.196785,
+        "1": 26.388367,
+        "2": 27.932732,
+        "3": 27.689213
+      },
+      "pivot_doc_len": {
+        "0": 76,
+        "1": 168,
+        "2": 168,
+        "3": 168
+      }
+    },
+    {
+      "qid": "44",
+      "query": "How much impact do masks have on preventing the spread of the COVID-19?",
+      "scores": {
+        "0": 0.0,
+        "1": 11.771765,
+        "2": 12.607069,
+        "3": 11.659345
+      },
+      "pivot_doc_len": {
+        "0": 50,
+        "1": 152,
+        "2": 152,
+        "3": 152
+      }
+    },
+    {
+      "qid": "45",
+      "query": "How has the COVID-19 pandemic impacted mental health?",
+      "scores": {
+        "0": 5.735799,
+        "1": 10.704916,
+        "2": 10.899399,
+        "3": 10.898385
+      },
+      "pivot_doc_len": {
+        "0": 84,
+        "1": 168,
+        "2": 168,
+        "3": 184
+      }
+    },
+    {
+      "qid": "46",
+      "query": "what evidence is there for dexamethasone as a treatment for COVID-19?",
+      "scores": {
+        "0": 1.445623,
+        "1": 10.457106,
+        "2": 8.752356,
+        "3": 9.916057
+      },
+      "pivot_doc_len": {
+        "0": 54,
+        "1": 152,
+        "2": 88,
+        "3": 152
+      }
+    },
+    {
+      "qid": "47",
+      "query": "what are the health outcomes for children who contract COVID-19?",
+      "scores": {
+        "0": 0.0,
+        "1": 12.312289,
+        "2": 11.958882,
+        "3": 12.546256
+      },
+      "pivot_doc_len": {
+        "0": 44,
+        "1": 168,
+        "2": 168,
+        "3": 168
+      }
+    },
+    {
+      "qid": "48",
+      "query": "what are the benefits and risks of re-opening schools in the midst of the COVID-19 pandemic?",
+      "scores": {
+        "0": 18.79397,
+        "1": 18.998609,
+        "2": 18.399289,
+        "3": 18.938383
+      },
+      "pivot_doc_len": {
+        "0": 144,
+        "1": 168,
+        "2": 168,
+        "3": 168
+      }
+    },
+    {
+      "qid": "49",
+      "query": "do individuals who recover from COVID-19 show sufficient immune response, including antibody levels and T-cell mediated immunity, to prevent re-infection?",
+      "scores": {
+        "0": 4.653518,
+        "1": 37.405638,
+        "2": 34.294551,
+        "3": 37.774287
+      },
+      "pivot_doc_len": {
+        "0": 9,
+        "1": 184,
+        "2": 152,
+        "3": 184
+      }
+    },
+    {
+      "qid": "5",
+      "query": "what drugs have been active against SARS-CoV or SARS-CoV-2 in animal studies?",
+      "scores": {
+        "0": 2.361761,
+        "1": 15.535005,
+        "2": 16.319038,
+        "3": 15.380109
+      },
+      "pivot_doc_len": {
+        "0": 48,
+        "1": 136,
+        "2": 144,
+        "3": 136
+      }
+    },
+    {
+      "qid": "50",
+      "query": "what is known about an mRNA vaccine for the SARS-CoV-2 virus?",
+      "scores": {
+        "0": 0.0,
+        "1": 11.412306,
+        "2": 11.656231,
+        "3": 11.650651
+      },
+      "pivot_doc_len": {
+        "0": 4,
+        "1": 120,
+        "2": 168,
+        "3": 168
+      }
+    },
+    {
+      "qid": "6",
+      "query": "what types of rapid testing for Covid-19 have been developed?",
+      "scores": {
+        "0": 0.996836,
+        "1": 11.194475,
+        "2": 11.194475,
+        "3": 11.194475
+      },
+      "pivot_doc_len": {
+        "0": 56,
+        "1": 152,
+        "2": 152,
+        "3": 152
+      }
+    },
+    {
+      "qid": "7",
+      "query": "are there serological tests that detect antibodies to coronavirus?",
+      "scores": {
+        "0": 0.0,
+        "1": 11.305709,
+        "2": 11.453949,
+        "3": 11.534462
+      },
+      "pivot_doc_len": {
+        "0": 39,
+        "1": 144,
+        "2": 144,
+        "3": 144
+      }
+    },
+    {
+      "qid": "8",
+      "query": "how has lack of testing availability led to underreporting of true incidence of Covid-19?",
+      "scores": {
+        "0": 0.0,
+        "1": 20.990128,
+        "2": 22.905761,
+        "3": 22.83003
+      },
+      "pivot_doc_len": {
+        "0": 48,
+        "1": 152,
+        "2": 168,
+        "3": 152
+      }
+    },
+    {
+      "qid": "9",
+      "query": "how has COVID-19 affected Canada",
+      "scores": {
+        "0": 0.0,
+        "1": 7.140403,
+        "2": 6.053145,
+        "3": 7.555729
+      },
+      "pivot_doc_len": {
+        "0": 42,
+        "1": 184,
+        "2": 168,
+        "3": 184
+      }
+    }
+  ]
+}

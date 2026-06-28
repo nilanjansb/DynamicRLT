@@ -13,35 +13,37 @@ Algorithm
 ---------
   The pre-generated pivot is injected into the corpus as a synthetic doc.
 
-  Main loop — bottom-up adaptive rounds (sequential across rounds,
-  batched across ALL queries per round):
+  Phase 1 — Adaptive sliding rounds (sequential across rounds,
+  batched across ALL active queries per round):
     Pointer p starts at top_k (bottom of the initial ranked list).
     Each round t:
-      1. Take window  docs[p-W : p]  (W real docs).
-      2. Append pivot as the (W+1)-th document.
+      1. Take window  docs[p-(W-1) : p]  (W-1 real docs).
+      2. Append pivot as the W-th document (total W docs).
       3. Rerank window+pivot in one vLLM call (all active queries batched).
       4. Find pivot's position in the reranked output.
          Docs ranked above pivot → A_t;  below → B_t.
-      5. Adaptive stride = min(S_max, max(1, |A_t|)).
-         Intuition: we have classified |A_t| docs as above-pivot, so we
-         can safely advance the pointer by that many positions without
-         missing any unclassified doc.
+      5. Adaptive stride = min(S_max, max(1, |B_t|)).
+         Intuition: |B_t| docs are clearly below-pivot (low-quality region),
+         so we can skip over them quickly. When |B_t| is large (mostly
+         irrelevant window), stride is large — fast-forward. When |B_t| is
+         small (mostly relevant window), stride is small — overlap heavily
+         to carefully rank the good docs.
       6. p ← p − stride.
       7. A_global = A_t + A_global;  B_global = B_t + B_global.
          (Prepend: docs from higher windows come first in the final list.)
-    Repeat until p ≤ W for that query (exits the active set).
+    Repeat until p ≤ W-1 for that query (exits the active set).
 
-  Final window (1 vLLM call, all queries batched):
-    Each query with 0 < p ≤ W has up to W remaining docs at the top of the
+  Phase 2 — Final window (1 vLLM call, all remaining queries batched):
+    Each query with 0 < p ≤ W-1 has unclassified docs at the top of the
     list.  Rank docs[0 : p] + pivot and update A_global, B_global.
 
   Output: A_global + B_global  (synthetic pivot excluded — it is not a
   real retrieved document).
 
 vs Fixed Sliding Window (stride always S_max, 9 sequential steps for top-100):
-  GenSliding uses fewer LLM calls when |A_t| is large (good docs are
-  clustered near the top of the window) and overlaps more when |A_t| is
-  small, dynamically adapting to per-query difficulty.
+  GenSliding fast-forwards through low-quality regions (|B_t| large → big
+  stride) and slows down in high-quality regions (|B_t| small → stride ≈ 1,
+  heavy overlap), dynamically adapting to per-query difficulty.
 
 vs SNOW (one parallel pass over 5 non-overlapping groups):
   SNOW makes 2 vLLM calls total (1 group pass + 1 final sort).
@@ -64,7 +66,7 @@ File naming (varies by --pivot-type):
          msmarco-dl19.bm25.rankzephyr_7b.gensliding_tautogether_tau2_w20s10.top100.txt
          msmarco-dl19.bm25.rankzephyr_7b.gensliding_single_w20s10.top100.txt
 
-Resumable: checkpoint saved after every round and after the final window;
+Resumable: checkpoint saved after every round (Phase 1) and after Phase 2;
 safe to kill and restart.
 
 Usage:
@@ -102,7 +104,7 @@ log = logging.getLogger(__name__)
 # Paths & constants
 # ─────────────────────────────────────────────────────────────────────────────
 
-BASE          = Path("/DATA/cs26int00020/Cultural_ablation")
+BASE          = Path(os.environ.get("BASE_DIR", Path(__file__).resolve().parents[1]))
 TDPART_PATH   = BASE / "5_TDPart/tdpart.py"
 PIVOT_DIR     = BASE / "2_Pivot_generation/pivot_docs"
 RETRIEVER_DIR = BASE / "3_Initial_Retriever"
@@ -125,7 +127,7 @@ def _load_tdpart():
 td = _load_tdpart()
 
 MODELS        = td.MODELS
-WINDOW_SIZE   = td.WINDOW_SIZE    # 20   — W in the algorithm
+WINDOW_SIZE   = td.WINDOW_SIZE    # 20   — W in the algorithm (W-1 real docs + 1 pivot)
 MAX_STRIDE    = td.STRIDE         # 10   — S_max (upper bound on adaptive stride)
 TOP_K         = td.TOP_K          # 100
 MAX_DOC_WORDS = td.MAX_DOC_WORDS  # 100
@@ -190,14 +192,16 @@ def gensliding_rerank(
     GenSliding reranking — variable-stride bottom-up sliding window driven by
     a pre-generated LLM pivot document.
 
-    Main loop:
-      All active queries (p > W) are batched into ONE vLLM call per round.
+    Phase 1 — Adaptive sliding rounds:
+      All active queries (p > W-1) are batched into ONE vLLM call per round.
+      Each window contains W-1 real docs + 1 pivot = W docs total.
       After each round, each query's pointer advances by its own adaptive
-      stride = min(S_max, max(1, |A_t|)), so different queries may exit the
-      main loop at different rounds.
+      stride = min(S_max, max(1, |B_t|)), so different queries may exit the
+      active set at different rounds.
 
-    Final window:
-      Queries with 0 < p ≤ W are processed together in one vLLM call.
+    Phase 2 — Final window:
+      Queries with 0 < p ≤ W-1 are processed together in one vLLM call.
+      Window contains the remaining p docs + pivot (≤ W docs total).
 
     No Phase 3 sort: A_global is already ordered by window origin
     (docs from higher windows prepended first), giving a natural top-down
@@ -205,8 +209,9 @@ def gensliding_rerank(
 
     Parameters
     ----------
+    window_size : W — each window contains W-1 real docs + 1 pivot = W total.
     max_stride  : Upper bound S_max on the adaptive stride.  The actual stride
-                  at each step equals min(max_stride, max(1, |A_t|)).
+                  at each step equals min(max_stride, max(1, |B_t|)).
     """
     # ── Initialise per-query state ────────────────────────────────────────────
     doc_lists: Dict[str, List[str]] = {
@@ -227,8 +232,8 @@ def gensliding_rerank(
     # Inject pivot text into corpus under reserved synthetic docids
     pivot_ids: Dict[str, str] = {}
     for qid in qids_ordered:
-        pid           = gen_pivot_docid(qid, pivot_tau)
-        corpus[pid]   = generated_pivots[qid]
+        pid            = gen_pivot_docid(qid, pivot_tau)
+        corpus[pid]    = generated_pivots[qid]
         pivot_ids[qid] = pid
 
     # Per-query sliding state
@@ -240,40 +245,44 @@ def gensliding_rerank(
     B : Dict[str, List[str]] = {qid: [] for qid in qids_ordered}
 
     # ── Checkpoint resume ─────────────────────────────────────────────────────
-    resume_round   = 0      # round index to resume from (0 = fresh start)
-    main_loop_done = False  # True once all queries have exited the main loop
-    round_timings : List[dict] = []
+    resume_phase  = 1   # which phase to resume from
+    resume_round  = 0   # intra-phase-1: first round index not yet done
+    phase_timings : List[dict] = []
+    round_details : List[dict] = []   # per-round breakdown, stored inside Phase 1 timing
 
     if ckpt_file and ckpt_file.exists():
         try:
-            ckpt           = json.loads(ckpt_file.read_text())
-            resume_round   = int(ckpt.get("next_round",    0))
-            main_loop_done = bool(ckpt.get("main_loop_done", False))
-            round_timings  = ckpt.get("round_timings",   [])
+            ckpt          = json.loads(ckpt_file.read_text())
+            resume_phase  = int(ckpt.get("next_phase",   1))
+            resume_round  = int(ckpt.get("resume_round", 0))
+            phase_timings = ckpt.get("phase_timings",   [])
+            round_details = ckpt.get("round_details",   [])
             p.update({qid: int(v) for qid, v in ckpt.get("p", {}).items()})
             A.update(ckpt.get("A", {}))
             B.update(ckpt.get("B", {}))
             log.info(
-                f"  Checkpoint loaded: next_round={resume_round}, "
-                f"main_loop_done={main_loop_done}."
+                f"  Checkpoint loaded: next_phase={resume_phase}, "
+                f"resume_round={resume_round}."
             )
         except Exception as e:
             log.warning(f"  Could not load checkpoint ({e}); starting from scratch.")
-            resume_round   = 0
-            main_loop_done = False
-            round_timings  = []
+            resume_phase  = 1
+            resume_round  = 0
+            phase_timings = []
+            round_details = []
 
-    def save_ckpt(next_round: int, main_done: bool) -> None:
+    def save_ckpt(next_phase: int, resume_round: int = 0) -> None:
         if not ckpt_file:
             return
         try:
             ckpt_file.write_text(json.dumps({
-                "next_round"    : next_round,
-                "main_loop_done": main_done,
-                "p"             : p,
-                "A"             : A,
-                "B"             : B,
-                "round_timings" : round_timings,
+                "next_phase"   : next_phase,
+                "resume_round" : resume_round,
+                "p"            : p,
+                "A"            : A,
+                "B"            : B,
+                "phase_timings": phase_timings,
+                "round_details": round_details,
             }))
         except Exception as e:
             log.warning(f"  Checkpoint write failed: {e}")
@@ -281,13 +290,14 @@ def gensliding_rerank(
     wall_start     = time.time()
     wall_start_iso = datetime.datetime.now().isoformat(timespec="seconds")
 
+    docs_per_window = window_size - 1   # real docs per window; pivot fills the W-th slot
+
     # ── Prompt length safety check (probe first bottom window) ────────────────
-    if resume_round == 0 and not main_loop_done:
+    if resume_phase <= 1 and resume_round == 0:
         sample_qids = random.sample(qids_ordered, min(3, n_queries))
         max_seen = 0
         for qid in sample_qids:
-            # First window: docs[-W:] + pivot = W+1 docs
-            probe_ids = doc_lists[qid][-window_size:] + [pivot_ids[qid]]
+            probe_ids = doc_lists[qid][-docs_per_window:] + [pivot_ids[qid]]
             text      = td.make_prompt(
                 tokenizer, queries[qid], probe_ids, corpus, max_model_len=max_model_len
             )
@@ -300,18 +310,20 @@ def gensliding_rerank(
                     f"Consider reducing --max-doc-words."
                 )
         log.info(
-            f"  Prompt length check (W+1={window_size + 1} docs): "
+            f"  Prompt length check (W={window_size} docs: {docs_per_window} real + 1 pivot): "
             f"max sample = {max_seen} tokens "
             f"(limit {max_model_len - 200} input + 200 output = {max_model_len})."
         )
 
-    # ── Main loop: variable-stride bottom-up rounds ───────────────────────────
-    if not main_loop_done:
-        active    = [qid for qid in qids_ordered if p[qid] > window_size]
+    # ── Phase 1: Adaptive sliding rounds ─────────────────────────────────────
+    if resume_phase <= 1:
+        t0        = time.time()
+        active    = [qid for qid in qids_ordered if p[qid] > docs_per_window]
         round_idx = resume_round   # incremented at the top of each iteration
 
         log.info(
-            f"  Main loop: {n_queries:,} queries, W={window_size}, S_max={max_stride}. "
+            f"  Phase 1 — adaptive sliding: {n_queries:,} queries, "
+            f"W={window_size} ({docs_per_window} real + pivot), S_max={max_stride}. "
             f"Starting from round {round_idx + 1} "
             f"with {len(active):,} active queries."
         )
@@ -320,13 +332,12 @@ def gensliding_rerank(
             round_idx += 1
             t_round    = time.time()
 
-            # ── Build one prompt per active query ─────────────────────────────
             _tb           = time.time()
-            batch_prompts : List[str]                         = []
-            batch_meta    : List[Tuple[str, int, int]]        = []  # (qid, start, end)
+            batch_prompts : List[str]                  = []
+            batch_meta    : List[Tuple[str, int, int]] = []   # (qid, start, end)
 
             for qid in active:
-                start      = max(0, p[qid] - window_size)
+                start      = max(0, p[qid] - docs_per_window)
                 end        = p[qid]
                 window_ids = doc_lists[qid][start:end] + [pivot_ids[qid]]
                 batch_prompts.append(
@@ -339,18 +350,16 @@ def gensliding_rerank(
             t_build = time.time() - _tb
 
             log.info(
-                f"  Round {round_idx}: {len(active):,} active queries  "
-                f"docs[p-{window_size}:p]+pivot — batching {len(batch_prompts)} prompts …"
+                f"  Phase 1 round {round_idx}: {len(active):,} active queries  "
+                f"docs[p-{docs_per_window}:p]+pivot — batching {len(batch_prompts)} prompts …"
             )
 
-            # ── Batch inference ───────────────────────────────────────────────
             _ti     = time.time()
             outputs = llm.generate(batch_prompts, sampling_params)
             t_infer = time.time() - _ti
 
-            # ── Parse, partition, advance pointers ───────────────────────────
-            _tp          = time.time()
-            stride_vals  : List[int] = []
+            _tp         = time.time()
+            stride_vals : List[int] = []
 
             for (qid, start, end), output in zip(batch_meta, outputs):
                 window_ids   = doc_lists[qid][start:end] + [pivot_ids[qid]]
@@ -361,61 +370,68 @@ def gensliding_rerank(
                 reordered    = td.apply_permutation(window_ids, perm)
                 above, below = td.partition_on_pivot(reordered, pivot)
 
-                # Prepend to globals: docs from higher windows lead the final list
                 A[qid] = above + A[qid]
                 B[qid] = below + B[qid]
 
-                # Adaptive stride: advance by how many docs we classified above pivot
-                stride      = min(max_stride, max(1, len(above)))
+                stride      = min(max_stride, max(1, len(below)))
                 p[qid]     -= stride
                 stride_vals.append(stride)
             t_parse = time.time() - _tp
 
-            # Update active set: queries still needing main-loop rounds
-            active      = [qid for qid in qids_ordered if p[qid] > window_size]
-            r_elapsed   = time.time() - t_round
-            avg_stride  = sum(stride_vals) / len(stride_vals) if stride_vals else 0
+            active     = [qid for qid in qids_ordered if p[qid] > docs_per_window]
+            r_elapsed  = time.time() - t_round
+            avg_stride = sum(stride_vals) / len(stride_vals) if stride_vals else 0
 
             log.info(
-                f"  Round {round_idx} done in {r_elapsed:.2f}s  "
+                f"  Phase 1 round {round_idx} done in {r_elapsed:.2f}s  "
                 f"[build={t_build:.2f}s  infer={t_infer:.2f}s  "
                 f"parse={t_parse:.2f}s]  "
                 f"avg_stride={avg_stride:.1f}  active_remaining={len(active)}"
             )
-            round_timings.append({
+            round_details.append({
                 "round"          : round_idx,
                 "n_prompts"      : len(batch_prompts),
                 "n_active_after" : len(active),
-                "avg_stride"     : round(avg_stride,  2),
-                "prompt_build_s" : round(t_build,     4),
-                "vllm_infer_s"   : round(t_infer,     4),
-                "permute_parse_s": round(t_parse,     4),
-                "round_total_s"  : round(r_elapsed,   4),
+                "avg_stride"     : round(avg_stride, 2),
+                "prompt_build_s" : round(t_build,    4),
+                "vllm_infer_s"   : round(t_infer,    4),
+                "permute_parse_s": round(t_parse,    4),
+                "round_total_s"  : round(r_elapsed,  4),
             })
-            save_ckpt(next_round=round_idx, main_done=False)
+            save_ckpt(next_phase=1, resume_round=round_idx)
 
-        main_loop_done = True
+        elapsed = time.time() - t0
         log.info(
-            f"  Main loop complete after {round_idx} rounds "
-            f"(resumed from {resume_round})."
+            f"  Phase 1 done in {elapsed:.2f}s  "
+            f"({round_idx} rounds, "
+            f"{sum(r['n_prompts'] for r in round_details):,} prompts total)"
         )
-        save_ckpt(next_round=round_idx, main_done=True)
+        phase_timings.append({
+            "phase"          : 1,
+            "label"          : "adaptive_sliding",
+            "n_rounds"       : round_idx,
+            "n_prompts_total": sum(r["n_prompts"]       for r in round_details),
+            "prompt_build_s" : round(sum(r["prompt_build_s"]  for r in round_details), 4),
+            "vllm_infer_s"   : round(sum(r["vllm_infer_s"]    for r in round_details), 4),
+            "permute_parse_s": round(sum(r["permute_parse_s"] for r in round_details), 4),
+            "phase_total_s"  : round(elapsed, 4),
+            "rounds"         : round_details,
+        })
+        save_ckpt(next_phase=2, resume_round=round_idx)
 
-    # ── Final window pass ─────────────────────────────────────────────────────
-    # Queries with 0 < p ≤ window_size still have unclassified docs at the top.
-    # Rank docs[0:p] + pivot for all such queries in one batched vLLM call.
-    final_qids = [qid for qid in qids_ordered if 0 < p[qid]]
+    # ── Phase 2: Final window ─────────────────────────────────────────────────
+    if resume_phase <= 2:
+        final_qids = [qid for qid in qids_ordered if 0 < p[qid]]
+        t0         = time.time()
 
-    if final_qids:
-        t0 = time.time()
         log.info(
-            f"  Final window: {len(final_qids):,} queries with p ≤ {window_size} "
-            f"unclassified docs — 1 vLLM call …"
+            f"  Phase 2 — final window: {len(final_qids):,} queries with "
+            f"0 < p ≤ {docs_per_window} unclassified docs (1 vLLM call) …"
         )
 
         _tb           = time.time()
-        batch_prompts : List[str]              = []
-        batch_meta_f  : List[Tuple[str, int]]  = []   # (qid, p_val)
+        batch_prompts : List[str]             = []
+        batch_meta_f  : List[Tuple[str, int]] = []   # (qid, p_val)
 
         for qid in final_qids:
             remaining_ids = doc_lists[qid][:p[qid]] + [pivot_ids[qid]]
@@ -428,9 +444,13 @@ def gensliding_rerank(
             batch_meta_f.append((qid, p[qid]))
         t_build_f = time.time() - _tb
 
-        _ti       = time.time()
-        outputs   = llm.generate(batch_prompts, sampling_params)
-        t_infer_f = time.time() - _ti
+        if batch_prompts:
+            _ti       = time.time()
+            outputs   = llm.generate(batch_prompts, sampling_params)
+            t_infer_f = time.time() - _ti
+        else:
+            outputs   = []
+            t_infer_f = 0.0
 
         _tp = time.time()
         for (qid, p_val), output in zip(batch_meta_f, outputs):
@@ -441,50 +461,48 @@ def gensliding_rerank(
             perm          = td.parse_permutation(generated, eff_w)
             reordered     = td.apply_permutation(remaining_ids, perm)
             above, below  = td.partition_on_pivot(reordered, pivot)
-            # Prepend: top-of-list docs from the final window lead A_global
             A[qid]  = above + A[qid]
             B[qid]  = below + B[qid]
-            p[qid]  = 0   # mark fully processed
+            p[qid]  = 0
         t_parse_f = time.time() - _tp
 
         elapsed_f = time.time() - t0
         log.info(
-            f"  Final window done in {elapsed_f:.2f}s  "
+            f"  Phase 2 done in {elapsed_f:.2f}s  "
             f"[build={t_build_f:.2f}s  infer={t_infer_f:.2f}s  "
-            f"parse={t_parse_f:.2f}s]"
+            f"parse={t_parse_f:.2f}s]  ({len(batch_prompts)} prompts)"
         )
-        round_timings.append({
-            "round"          : "final_window",
+        phase_timings.append({
+            "phase"          : 2,
+            "label"          : "final_window",
             "n_prompts"      : len(batch_prompts),
-            "n_active_after" : 0,
-            "avg_stride"     : None,
             "prompt_build_s" : round(t_build_f,  4),
             "vllm_infer_s"   : round(t_infer_f,  4),
             "permute_parse_s": round(t_parse_f,  4),
-            "round_total_s"  : round(elapsed_f,  4),
+            "phase_total_s"  : round(elapsed_f,  4),
         })
+        save_ckpt(next_phase=3)
 
     # ── Assemble final ranking ────────────────────────────────────────────────
-    # A_global (above-pivot, ordered top→bottom by window origin) + B_global.
-    # Synthetic pivot excluded.  Truncate to top_k as a safety guard.
     ranked: Dict[str, List[str]] = {}
     for qid in qids_ordered:
         ranked[qid] = (A[qid] + B[qid])[:top_k]
 
     # ── Aggregate timing ──────────────────────────────────────────────────────
-    total_s          = time.time() - wall_start
-    wall_end_iso     = datetime.datetime.now().isoformat(timespec="seconds")
-    total_infer_s    = sum(r.get("vllm_infer_s",   0) for r in round_timings)
-    total_build_s    = sum(r.get("prompt_build_s",  0) for r in round_timings)
-    avg_s_per_query  = total_s / n_queries if n_queries else 0
-    n_main_rounds    = sum(1 for r in round_timings if r["round"] != "final_window")
-    total_vllm_calls = len(round_timings)
+    total_s         = time.time() - wall_start
+    wall_end_iso    = datetime.datetime.now().isoformat(timespec="seconds")
+    total_infer_s   = sum(ph.get("vllm_infer_s",  0) for ph in phase_timings)
+    total_build_s   = sum(ph.get("prompt_build_s", 0) for ph in phase_timings)
+    avg_s_per_query = total_s / n_queries if n_queries else 0
+    n_main_rounds   = next(
+        (ph["n_rounds"] for ph in phase_timings if ph["phase"] == 1), 0
+    )
 
     log.info(
         f"\n  ── GenSliding summary ──────────────────────────────────\n"
         f"  Queries          : {n_queries:,}\n"
-        f"  Main rounds      : {n_main_rounds}  (+1 final window)\n"
-        f"  Total vLLM calls : {total_vllm_calls}\n"
+        f"  Phase 1 rounds   : {n_main_rounds}  (+1 final window)\n"
+        f"  Total phases     : {len(phase_timings)}\n"
         f"  Pivot tau        : {pivot_tau}\n"
         f"  Total wall time  : {total_s:.2f}s\n"
         f"  Avg per query    : {avg_s_per_query * 1000:.1f}ms\n"
@@ -503,11 +521,10 @@ def gensliding_rerank(
         "total_prompt_build_s": round(total_build_s,          4),
         "pct_time_in_vllm"    : round(total_infer_s / total_s * 100, 2) if total_s else 0,
         "n_queries"           : n_queries,
-        "n_main_rounds"       : n_main_rounds,
-        "total_vllm_calls"    : total_vllm_calls,
+        "n_phases"            : len(phase_timings),
         "pivot_tau"           : pivot_tau,
         "pivot_source"        : "Pivot_generation",
-        "rounds"              : round_timings,
+        "phases"              : phase_timings,
     }
 
     if ckpt_file and ckpt_file.exists():
@@ -554,7 +571,7 @@ def parse_args() -> argparse.Namespace:
         help="First-stage retriever whose TREC files are used as input.",
     )
     p.add_argument("--top-k",        type=int,   default=TOP_K,       help="Docs to rerank per query.")
-    p.add_argument("--window-size",  type=int,   default=WINDOW_SIZE, help="Window size W (real docs per window; pivot appended as W+1-th).")
+    p.add_argument("--window-size",  type=int,   default=WINDOW_SIZE, help="Window size W: W-1 real docs + 1 pivot = W total docs per window.")
     p.add_argument("--max-stride",   type=int,   default=MAX_STRIDE,  help="Upper bound S_max on the adaptive stride.")
     p.add_argument("--gpus",         type=int,   default=1,           help="Tensor parallel size for vLLM.")
     p.add_argument("--gpu-mem-util", type=float, default=0.90)
@@ -612,7 +629,7 @@ def main() -> None:
     log.info(f"GPUs       : {args.gpus}  |  mem_util={args.gpu_mem_util}  "
              f"|  max_len={args.max_model_len}  |  max_seqs={args.max_num_seqs}")
     tau_info = f"pivot_tau={args.pivot_tau}" if args.pivot_type != "single" else "pivot_type=single"
-    log.info(f"GenSliding : W={W}  S_max={S}  {tau_info}  top_k={K}")
+    log.info(f"GenSliding : W={W} ({W-1} real+pivot)  S_max={S}  {tau_info}  top_k={K}")
     log.info("=" * 65)
 
     try:

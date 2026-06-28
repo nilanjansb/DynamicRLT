@@ -21,6 +21,7 @@ QRELS_FILES = {
 
 
 def load_qrels(qrels_file, fmt):
+    """Load qrels as {qid: {docid: rel}}."""
     qrels = {}
     with open(qrels_file) as f:
         for i, line in enumerate(f):
@@ -40,6 +41,7 @@ def load_qrels(qrels_file, fmt):
 
 
 def load_run(run_file):
+    """Load TREC run as {qid: {docid: score}}."""
     run = {}
     with open(run_file) as f:
         for line in f:
@@ -52,6 +54,7 @@ def load_run(run_file):
 
 
 def evaluate_run(run_file, qrels_file, fmt, metric="ndcg_cut_10"):
+    """Evaluate a TREC run file against qrels; return (mean_score, num_queries)."""
     qrels = load_qrels(qrels_file, fmt)
     run   = {q: d for q, d in load_run(run_file).items() if q in qrels}
     results = pytrec_eval.RelevanceEvaluator(qrels, {metric}).evaluate(run)

@@ -1,0 +1,22 @@
+{
+  "wall_clock_start": "2026-06-23T08:13:17",
+  "wall_clock_end": "2026-06-23T08:25:04",
+  "total_rerank_s": 707.0552,
+  "avg_s_per_query": 2.3569,
+  "avg_ms_per_query": 2356.85,
+  "total_infer_s": 688.3428,
+  "pct_time_in_infer": 97.35,
+  "n_queries": 300,
+  "n_pairs_scored": 29966,
+  "effective_batch_size": 64,
+  "dataset": "scifact",
+  "retriever": "bm25",
+  "model": "castorini/monot5-3b-msmarco-10k",
+  "corpus_load_s": 0.1076,
+  "model_load_s": 10.6211,
+  "config": {
+    "top_k": 100,
+    "batch_size": 64,
+    "max_input_len": 512
+  }
+}
